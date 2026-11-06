@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a park became a home · Devlog · JinJinJenn</title>
+<meta name="description" content="Why moving a Sims 4 household into a park kept breaking, and the small change that fixed it.">
+<link rel="stylesheet" href="devlog.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="home" href="./">&larr; Devlog</a>
+    <h1>How a park became a home</h1>
+    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · MoveAnywhere</p>
+  </header>
+  <main>
+    <p>The goal sounds small: open Manage Worlds, pick a household, and move them into <em>any</em> lot, a park included, like a normal move. In the base game you can't. And the first versions of the mod that forced it through left the park half-broken.</p>
+
+    <h2>What "half-broken" looked like</h2>
+    <p>The household moved in, but the lot still said <strong>Park</strong>. The lot-type dropdown was locked ("can't be changed while the lot is owned"), the build catalog showed only <strong>Park Items</strong> with red, unaffordable tiles, and there was a <code>$0</code> business wallet instead of the family's funds.</p>
+
+    <figure>
+      <a href="../img/moveanywhere.jpg"><img src="../img/moveanywhere.jpg" width="1200" height="347" alt="Build mode in the same park without and with the mod: lot type Park with a locked dropdown and red Park Items, versus Residential with a normal catalog and household funds."></a>
+      <figcaption>The same park after a move-in. Left: before. Right: after the fix.</figcaption>
+    </figure>
+
+    <h2>Why eleven tries failed</h2>
+    <p>Each earlier version tried to turn the park into a residential lot <em>while the player was standing in it</em>. That change makes the game tear the lot down and rebuild it (you get a white "Building Lot" screen) and it still didn't fix the lot's saved type. Worse, a Manage Worlds move isn't handled by the game's scripts at all; the engine itself writes the move straight into the save data. Our code never even got to run at the right moment.</p>
+
+    <h2>The road here</h2>
+    <ul>
+      <li><strong>First tries:</strong> console commands, then overriding the "move" commands. The Manage Worlds move never went through them.</li>
+      <li><strong>Patching the menu itself:</strong> the "not enough funds" and "can't live on a non-residential lot" checks live in the game's Flash interface. Rebuilding those files with the usual tools crashed the game on the loading screen; editing the same bytes in place didn't.</li>
+      <li><strong>Changing the lot type on the spot:</strong> got us the white "Building Lot" screen, or a lot that <em>said</em> Residential to our code while the menus still read Park.</li>
+      <li><strong>Clearing the "venue owner":</strong> a red herring. It changed nothing visible.</li>
+      <li><strong>Reading the game's own code</strong> instead of guessing: that's what showed the engine does the move itself, and where the lot type is really stored.</li>
+    </ul>
+
+    <h2>The fix: change <em>when</em>, not <em>how</em></h2>
+    <p>The engine writes the move into the save data, and then, when the lot loads, reads the lot's type from that same data. So the mod now waits for the moment the save data is released after a move, and any lot a household has just moved into that isn't residential gets its saved type changed to residential. The lot then loads as an ordinary home. We never touch a lot that's currently loaded, which is what caused the rebuild screen.</p>
+    <p>It's a handful of lines. Finding the right place for them took reading a lot of the game's own code.</p>
+
+    <h2>How we know it works</h2>
+    <p>An automated test moves a household into the park through the real menus, opens build mode, saves, restarts the game and checks again. Last run: <strong>version 13.1, 28 of 28 checks passed</strong>. The same test with the mod switched off fails, which is the point: a pass has to mean something.</p>
+
+    <p><strong>Still to test:</strong> moving from the in-game phone instead of Manage Worlds, and moving onto a lot where someone already lives.</p>
+  </main>
+  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+</div>
+</body>
+</html>
