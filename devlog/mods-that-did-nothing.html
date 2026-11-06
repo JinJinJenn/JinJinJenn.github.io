@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two mods that quietly did nothing · Devlog · JinJinJenn</title>
+<meta name="description" content="Surprise Gifts and Toddler TV both loaded fine and did nothing. How the robot tester caught them, and what the fixes were.">
+<meta name="theme-color" content="#2f9e5c">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://jinjinjenn.github.io/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="JinJinJenn">
+<meta property="og:title" content="Two mods that quietly did nothing · Devlog · JinJinJenn">
+<meta property="og:description" content="Surprise Gifts and Toddler TV both loaded fine and did nothing. How the robot tester caught them, and what the fixes were.">
+<meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="devlog.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="home" href="./">&larr; Devlog</a>
+    <h1>Two mods that quietly did nothing</h1>
+    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · fixes</p>
+  </header>
+  <main>
+    <p>Once the test robot existed, we pointed it at the small mods too. Two of them loaded with no errors and did absolutely nothing. A mod that crashes is easy to notice. A mod that silently does nothing can sit there for weeks.</p>
+
+    <h2>Surprise Gifts</h2>
+    <p>The log said <em>"gift candidates: 0"</em> every single day. The mod hunted for gift items by searching object names, but the game's data doesn't carry readable names for them, so the search matched nothing. The fix was a curated list of known items, checked against what the game will actually accept, and a command that hands one over on demand so a test can trigger it.</p>
+
+    <h2>Toddler TV</h2>
+    <p>The game already has a toddler-only "Watch" option on every TV. Only one condition blocked it: the TV has to be switched on. The first version of the mod went after the wrong rule and changed nothing. The fix removes that single condition, and when a toddler starts watching an off TV, the TV turns itself on to the kids' channel and shuts off a few minutes later.</p>
+    <p>One honest limit: there's no toddler animation for pressing the remote, so the TV just comes on by itself. Toddlers can't pick channels.</p>
+
+    <h2>How we know</h2>
+    <p>Both were checked in the real game on a test copy of a save: the game's own check, the interaction itself, and a screenshot. Those screenshots are on the <a href="../">main page</a>.</p>
+  </main>
+  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+</div>
+</body>
+</html>
