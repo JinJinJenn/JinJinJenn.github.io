@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Every computer is a good computer · Devlog · JinJinJenn</title>
+<meta name="description" content="A computer in The Sims 4 has hidden upgrade stats. A small mod sets them to the top on every computer, even the cheapest.">
+<meta name="theme-color" content="#2f9e5c">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://jinjinjenn.github.io/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="JinJinJenn">
+<meta property="og:title" content="Every computer is a good computer · Devlog · JinJinJenn">
+<meta property="og:description" content="A small mod gives even the cheapest Sims 4 computer the top upgrades.">
+<meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="devlog.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="home" href="./">&larr; Devlog</a>
+    <h1>Every computer is a good computer</h1>
+    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · mods</p>
+  </header>
+  <main>
+    <p>The request was simple: all computers in the game should count as high-end, so even a cheap one gets the nice benefits. The catch is that the game has no "computer level" to turn up. I checked all 24 computer objects and they offer the same options.</p>
+    <p>The hint that cracked it: a computer has stats. Each one quietly carries three upgrade values from 0 to 100: a gaming-skill upgrade, a hacking-money upgrade, and a tournament payout multiplier. Cheap and expensive computers start identical, at zero.</p>
+    <h2>The mod</h2>
+    <p>It raises those values to the top on every computer: when a lot loads, every half minute for computers bought later, and on demand with a console command. It only ever raises a value, never lowers one.</p>
+    <h2>Proof</h2>
+    <p>The robot spawned a bargain-bin computer in a test copy of a save. Before: both upgrades "not started". After the mod ran: both "completed". A second computer added a minute later was boosted by itself.</p>
+    <p>One honest unknown: how strong the tournament payout setting feels in play. It's one number in the mod and easy to turn down.</p>
+  </main>
+  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+</div>
+</body>
+</html>
