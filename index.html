@@ -34,9 +34,25 @@
   .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
   header { padding: 64px 0 36px; }
   .brand { display: flex; align-items: center; gap: 14px; }
-  .gem { width: 44px; height: 44px; flex: none; animation: bob 4s ease-in-out infinite; }
+  /* 3D jewel: two square pyramids (8 faces), pure CSS. Half-width 60, height 110 each, face tilt = atan(60/110). */
+  .gem3d { width: 72px; height: 100px; flex: none; perspective: 520px; position: relative;
+           animation: bob 4s ease-in-out infinite; filter: drop-shadow(0 6px 10px rgba(47, 158, 92, .35)); }
+  .gem3d .spin { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d;
+                 transform: scale(.42) rotateX(-16deg) rotateY(0deg); animation: spin 8s linear infinite; }
+  .gem3d .f { position: absolute; left: -60px; width: 120px; height: 125.3px; backface-visibility: hidden; }
+  .gem3d .t { top: -125.3px; transform-origin: 50% 100%; clip-path: polygon(50% 0, 0 100%, 100% 100%);
+              transform: rotateY(calc(var(--k) * 90deg)) translateZ(60px) rotateX(28.6deg); }
+  .gem3d .b { top: 0; transform-origin: 50% 0; clip-path: polygon(0 0, 100% 0, 50% 100%); filter: brightness(.82);
+              transform: rotateY(calc(var(--k) * 90deg)) translateZ(60px) rotateX(-28.6deg); }
+  .gem3d .c0 { background: linear-gradient(160deg, #9af7b9, #46cf7e); }
+  .gem3d .c1 { background: linear-gradient(160deg, #63dd93, #2fae64); }
+  .gem3d .c2 { background: linear-gradient(160deg, #46cf7e, #1f8a4c); }
+  .gem3d .c3 { background: linear-gradient(160deg, #3cc274, #1b7a44); }
+  @keyframes spin { from { transform: scale(.42) rotateX(-16deg) rotateY(0deg); }
+                    to   { transform: scale(.42) rotateX(-16deg) rotateY(360deg); } }
   @keyframes bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
-  @media (prefers-reduced-motion: reduce) { .gem { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .gem3d, .gem3d .spin { animation: none; }
+    .gem3d .spin { transform: scale(.42) rotateX(-16deg) rotateY(28deg); } }
   h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.02em; line-height: 1.1; }
   .tagline { margin: 14px 0 0; color: var(--muted); font-size: 1.12rem; max-width: 34em; }
   nav { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -91,11 +107,7 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <svg class="gem" viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16 1 27 16 16 31 5 16Z" fill="#39b56a"/>
-        <path d="M16 1 27 16H5Z" fill="#63d68c"/>
-        <path d="M16 1 21 16H11Z" fill="#8ce6ab"/>
-      </svg>
+      <div class="gem3d" aria-hidden="true"><div class="spin"><i class="f t c0" style="--k:0"></i><i class="f t c1" style="--k:1"></i><i class="f t c2" style="--k:2"></i><i class="f t c3" style="--k:3"></i><i class="f b c0" style="--k:0"></i><i class="f b c1" style="--k:1"></i><i class="f b c2" style="--k:2"></i><i class="f b c3" style="--k:3"></i></div></div>
       <h1>JinJinJenn</h1>
     </div>
     <p class="tagline">Cozy Sims&nbsp;4 mods and little game experiments. Small things that make play feel a bit kinder.</p>
