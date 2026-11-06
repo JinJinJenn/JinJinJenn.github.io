@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two more ways to move in · Devlog · JinJinJenn</title>
+<meta name="description" content="Testing the in-game move menu and evictions with the park-to-home mod: what we found, and what the game does with evicted Sims.">
+<meta name="theme-color" content="#2f9e5c">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://jinjinjenn.github.io/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="JinJinJenn">
+<meta property="og:title" content="Two more ways to move in · Devlog · JinJinJenn">
+<meta property="og:description" content="Testing the in-game move menu and evictions with the park-to-home mod.">
+<meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="devlog.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="home" href="./">&larr; Devlog</a>
+    <h1>Two more ways to move in</h1>
+    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · testing</p>
+  </header>
+  <main>
+    <p>The park-to-home mod was proven through the world map. But players can also move a household from inside the game, and a lot might already have people living on it. Both needed testing before calling it done.</p>
+
+    <h2>Moving from inside the game</h2>
+    <p>The plan was "use the phone". The phone has no such option in this version of the game, so the robot scrolled the whole Household menu to be sure. The in-game move turned out to be a Sim interaction that opens the same map as the world screen ("Moving with: Taylor"). The test triggers it directly, picks the park, and confirms.</p>
+    <p>Result: the park was selectable, the household arrived and lived there, no "Building Lot" screen, normal money, build mode works. All 15 checks passed.</p>
+
+    <h2>Evicting people who live there</h2>
+    <p>Moving onto an occupied lot makes the game ask: move in with them, or evict? Evict works while playing. We checked what happens to the evicted five: the household count didn't change, and all five Sims still exist, just without a home, findable in household management. Nobody is deleted.</p>
+
+    <h2>Still on the list</h2>
+    <ul>
+      <li>A household with very little money (our test family is rich, so that gate was never hit).</li>
+      <li>A save where a household <em>already</em> lives in a park.</li>
+      <li>Evicted Sims automatically landing in an empty home.</li>
+    </ul>
+  </main>
+  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+</div>
+</body>
+</html>
