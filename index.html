@@ -58,6 +58,16 @@
   .feature li { margin: 2px 0; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 14px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+  .card .shot, .feature .shot {
+    display: block; width: 100%; height: auto; border-radius: 10px; margin: -4px 0 14px; border: 1px solid var(--line);
+    aspect-ratio: 16 / 9; object-fit: cover; background: var(--line);
+  }
+  .feature .shot { aspect-ratio: auto; margin: 6px 0 4px; }
+  .card .placeholder {
+    display: grid; place-items: center; aspect-ratio: 16 / 9; border-radius: 10px; margin: -4px 0 14px;
+    background: linear-gradient(135deg, var(--pink-soft), var(--sky-soft)); color: var(--muted); font-size: .85rem;
+  }
+  figcaption { font-size: .85rem; color: var(--muted); }
   .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
   .card p { margin: 0; color: var(--muted); font-size: .97rem; }
   .pill {
@@ -112,37 +122,52 @@
           <li>the normal build catalog, not "Park Items"</li>
           <li>no surprise "Building Lot" screen</li>
         </ul>
+        <figure style="margin:0">
+          <a href="img/moveanywhere.jpg" title="Open full size"><img class="shot" src="img/moveanywhere.jpg" width="1200" height="347" loading="lazy"
+               alt="Build mode after moving into a park. Before: lot type Park, can't be changed, Park Items catalog with red items and a $0 wallet. With MoveAnywhere: lot type Residential, normal catalog, household funds."></a>
+          <figcaption>The same park after a Manage Worlds move-in, without and with MoveAnywhere.</figcaption>
+        </figure>
         <p class="note">Checked end to end by an automated test that moves in, opens build mode, saves and
           reloads. Download coming once it has been played with for a while.</p>
       </article>
 
       <div class="grid">
         <div class="card">
+          <img class="shot" src="img/lovenotes.jpg" width="640" height="360" loading="lazy"
+               alt="An in-game note pops up: A little note. Saw this and thought of you. Have the coziest day!">
           <span class="pill workshop">In the workshop</span>
           <h3>Love Notes</h3>
           <p>Write a line in a little text file and it pops up in the game as a sweet note.</p>
         </div>
         <div class="card">
+          <div class="placeholder" role="img" aria-label="Picture coming soon">picture coming soon</div>
           <span class="pill workshop">In the workshop</span>
           <h3>Surprise Gifts</h3>
           <p>Every now and then a free little something shows up in your Sim's inventory.</p>
         </div>
         <div class="card">
+          <img class="shot" src="img/thinkingofyou.jpg" width="640" height="360" loading="lazy"
+               alt="Moodlet tooltip: Thinking of You, Happy +1. A warm little wave of affection out of nowhere. Someone is on your mind, and it feels lovely.">
           <span class="pill workshop">In the workshop</span>
           <h3>Thinking of You</h3>
           <p>At random moments a Sim in your household gets a warm "Thinking of You" moodlet.</p>
         </div>
         <div class="card">
+          <img class="shot" src="img/toasts.jpg" width="640" height="360" loading="lazy"
+               alt="An in-game pop-up: Happy Birthday! Cake, candles and the coziest day. Make a wish!">
           <span class="pill workshop">In the workshop</span>
           <h3>Toasts</h3>
           <p>Birthday and anniversary pop-ups on real calendar dates you choose.</p>
         </div>
         <div class="card">
+          <img class="shot" src="img/gentlehearts.jpg" width="640" height="360" loading="lazy"
+               alt="Moodlet tooltip on a child Sim: Gentle Heart, Happy +1. Feeling safe, cared for and a little bit brave.">
           <span class="pill workshop">In the workshop</span>
           <h3>Gentle Hearts</h3>
           <p>Kids and teens get steady happy moodlets, so the rough days weigh a little less.</p>
         </div>
         <div class="card">
+          <div class="placeholder" role="img" aria-label="Picture coming soon">picture coming soon</div>
           <span class="pill workshop">In the workshop</span>
           <h3>Toddler TV</h3>
           <p>Lets toddlers turn on and watch the TV.</p>
