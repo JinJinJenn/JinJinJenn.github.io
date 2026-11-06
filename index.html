@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JinJinJenn</title>
+<meta name="description" content="Sims 4 mods and little game experiments by JinJinJenn.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 1 27 16 16 31 5 16Z' fill='%2339b56a'/%3E%3Cpath d='M16 1 27 16H5Z' fill='%2363d68c'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbf8f3; --surface: #ffffff; --ink: #2b2a33; --muted: #6b6878; --line: #ece6dc;
+    --accent: #2f9e5c; --accent-soft: #e3f5ea; --pink: #e86fa0; --pink-soft: #fde8f1; --sky-soft: #e8f1fd;
+    --shadow: 0 1px 2px rgba(43, 42, 51, .06), 0 8px 24px rgba(43, 42, 51, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17161c; --surface: #211f28; --ink: #f1eef6; --muted: #a7a2b5; --line: #312e3a;
+      --accent: #5fd08f; --accent-soft: #1d3326; --pink: #f08cb5; --pink-soft: #3a2230; --sky-soft: #1f2a3b;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17161c; --surface: #211f28; --ink: #f1eef6; --muted: #a7a2b5; --line: #312e3a;
+    --accent: #5fd08f; --accent-soft: #1d3326; --pink: #f08cb5; --pink-soft: #3a2230; --sky-soft: #1f2a3b;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 64px 0 36px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .gem { width: 44px; height: 44px; flex: none; animation: bob 4s ease-in-out infinite; }
+  @keyframes bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
+  @media (prefers-reduced-motion: reduce) { .gem { animation: none; } }
+  h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.02em; line-height: 1.1; }
+  .tagline { margin: 14px 0 0; color: var(--muted); font-size: 1.12rem; max-width: 34em; }
+  nav { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
+  nav a {
+    text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+    padding: 6px 14px; border-radius: 999px; font-size: .95rem;
+  }
+  nav a:hover { border-color: var(--accent); }
+  section { padding: 28px 0; }
+  h2 { font-size: 1.35rem; margin: 0 0 6px; }
+  .lede { margin: 0 0 18px; color: var(--muted); }
+  .feature {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px;
+    box-shadow: var(--shadow); display: grid; gap: 10px;
+  }
+  .feature h3 { margin: 0; font-size: 1.25rem; }
+  .feature p { margin: 0; }
+  .feature ul { margin: 4px 0 0; padding-left: 1.2em; }
+  .feature li { margin: 2px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .97rem; }
+  .pill {
+    display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .02em; border-radius: 999px;
+    padding: 2px 10px; margin-bottom: 8px;
+  }
+  .pill.testing { background: var(--accent-soft); color: var(--accent); }
+  .pill.workshop { background: var(--pink-soft); color: var(--pink); }
+  .pill.soon { background: var(--sky-soft); color: var(--muted); }
+  .soon-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .note { font-size: .9rem; color: var(--muted); margin-top: 14px; }
+  footer { padding: 36px 0 56px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 28px; }
+  footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+  button.theme {
+    font: inherit; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 999px;
+    padding: 2px 12px; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg class="gem" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 1 27 16 16 31 5 16Z" fill="#39b56a"/>
+        <path d="M16 1 27 16H5Z" fill="#63d68c"/>
+        <path d="M16 1 21 16H11Z" fill="#8ce6ab"/>
+      </svg>
+      <h1>JinJinJenn</h1>
+    </div>
+    <p class="tagline">Cozy Sims&nbsp;4 mods and little game experiments. Small things that make play feel a bit kinder.</p>
+    <nav aria-label="Sections">
+      <a href="#mods">Sims 4 mods</a>
+      <a href="#gamedev">Game design</a>
+      <a href="#web">Web</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mods">
+      <h2>Sims 4 mods</h2>
+      <p class="lede">Made for my own game first, shared once they're solid. Built and tested on The Sims&nbsp;4 1.105.</p>
+
+      <article class="feature">
+        <div><span class="pill testing">Working in testing</span></div>
+        <h3>MoveAnywhere</h3>
+        <p>Move a household into <strong>any</strong> lot, parks included, straight from Manage Worlds. The lot
+          arrives as a real home:</p>
+        <ul>
+          <li>lot type reads Residential and stays editable</li>
+          <li>build mode uses the household's own funds, with no stray business wallet</li>
+          <li>the normal build catalog, not "Park Items"</li>
+          <li>no surprise "Building Lot" screen</li>
+        </ul>
+        <p class="note">Checked end to end by an automated test that moves in, opens build mode, saves and
+          reloads. Download coming once it has been played with for a while.</p>
+      </article>
+
+      <div class="grid">
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Love Notes</h3>
+          <p>Write a line in a little text file and it pops up in the game as a sweet note.</p>
+        </div>
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Surprise Gifts</h3>
+          <p>Every now and then a free little something shows up in your Sim's inventory.</p>
+        </div>
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Thinking of You</h3>
+          <p>At random moments a Sim in your household gets a warm "Thinking of You" moodlet.</p>
+        </div>
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Toasts</h3>
+          <p>Birthday and anniversary pop-ups on real calendar dates you choose.</p>
+        </div>
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Gentle Hearts</h3>
+          <p>Kids and teens get steady happy moodlets, so the rough days weigh a little less.</p>
+        </div>
+        <div class="card">
+          <span class="pill workshop">In the workshop</span>
+          <h3>Toddler TV</h3>
+          <p>Lets toddlers turn on and watch the TV.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gamedev">
+      <h2>Game design</h2>
+      <p class="lede">Sketches, prototypes and small games.</p>
+      <div class="soon-row">
+        <div class="card"><span class="pill soon">Coming soon</span><p>Nothing here yet. Check back later.</p></div>
+      </div>
+    </section>
+
+    <section id="web">
+      <h2>Web</h2>
+      <p class="lede">Little sites and pages.</p>
+      <div class="soon-row">
+        <div class="card"><span class="pill soon">Coming soon</span><p>Nothing here yet. Check back later.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="row">
+      <span>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a></span>
+      <span>Not affiliated with EA or Maxis. <button class="theme" type="button" id="theme">Theme</button></span>
+    </div>
+  </footer>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement, key = 'jjj-theme';
+    try { var saved = localStorage.getItem(key); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
+    document.getElementById('theme').addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark'
+                                                 : matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(key, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
