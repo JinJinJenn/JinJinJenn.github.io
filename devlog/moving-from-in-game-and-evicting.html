@@ -33,12 +33,13 @@
     <h2>Evicting people who live there</h2>
     <p>Moving onto an occupied lot makes the game ask: move in with them, or evict? Evict works while playing. We checked what happens to the evicted five: the household count didn't change, and all five Sims still exist, just without a home, findable in household management. Nobody is deleted.</p>
 
-    <h2>Still on the list</h2>
+    <h2>Update, a few hours later: the three loose ends are tied</h2>
     <ul>
-      <li>A household with very little money (our test family is rich, so that gate was never hit).</li>
-      <li>A save where a household <em>already</em> lives in a park.</li>
-      <li>Evicted Sims automatically landing in an empty home.</li>
+      <li><strong>A household with very little money.</strong> It really couldn't move in: the game greys out the confirm button when the family can't afford the lot. The mod now quietly shows the move screen a big balance while it's open, then puts the real amount back afterwards. Nobody is charged for the lot.</li>
+      <li><strong>A save where a household already lives in a park.</strong> The first test failed: the park still loaded as a park once. Converting it the moment the save loads, instead of a little later, fixed it.</li>
+      <li><strong>Evicted Sims landing in an empty home.</strong> Now automatic: an evicted household moves into a vacant, furnished house (preferring one nearby with a couple of bedrooms). If the town has no empty house, they stay homeless, never deleted.</li>
     </ul>
+    <p>Each of these has a robot test that passed on a copy of a save.</p>
   </main>
   <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>
