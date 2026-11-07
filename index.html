@@ -103,6 +103,13 @@
   .pill.soon { background: var(--sky-soft); color: var(--muted); }
   .soon-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
   .note { font-size: .9rem; color: var(--muted); margin-top: 14px; }
+  .chars { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin-top: 14px; }
+  .char { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 0 14px 16px; box-shadow: var(--shadow); text-align: center; overflow: hidden; }
+  .char .stage { display: flex; align-items: flex-end; justify-content: center; height: 250px; margin: 0 -14px 12px; padding-top: 12px;
+                 background: linear-gradient(160deg, var(--pink-soft), var(--sky-soft)); }
+  .char .stage img { display: block; height: 238px; width: auto; }
+  .char h3 { margin: 0; font-size: 1.05rem; }
+  .char p { margin: 4px 0 0; color: var(--muted); font-size: .93rem; }
   footer { padding: 36px 0 56px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 28px; }
   footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
   button.theme {
@@ -123,6 +130,7 @@
       <a href="#mods">Sims 4 mods</a>
       <a href="#gamedev">Game design</a>
       <a href="#web">Web</a>
+      <a href="#characters">Characters</a>
       <a href="devlog/">Devlog</a>
       <a href="about.html">About</a>
     </nav>
@@ -200,6 +208,28 @@
       </div>
     </section>
 
+    <section id="characters">
+      <h2>Characters</h2>
+      <p class="lede">Sims from my saves, caught mid-turn. The names here are made up.</p>
+      <div class="chars">
+        <figure class="char" style="margin:0">
+          <div class="stage"><img src="img/characters/char-01.webp" width="123" height="420" loading="lazy" alt="Marisol, a Sims 4 character with long dark braids, a grey vest and magenta trousers, slowly turning around."></div>
+          <h3>Marisol</h3>
+          <p>Plays it cool. Always has a jacket on.</p>
+        </figure>
+        <figure class="char" style="margin:0">
+          <div class="stage"><img src="img/characters/char-02.webp" width="112" height="420" loading="lazy" alt="Wren, a Sims 4 character with long blonde hair, a purple graphic tank top and patterned trousers, slowly turning around."></div>
+          <h3>Wren</h3>
+          <p>Sunny, loud shirts, bigger boots than the plan called for.</p>
+        </figure>
+        <figure class="char" style="margin:0">
+          <div class="stage"><img src="img/characters/char-03.webp" width="127" height="420" loading="lazy" alt="Ellis, a Sims 4 character with wavy brown hair and a blue moon-and-stars shirt, slowly turning around."></div>
+          <h3>Ellis</h3>
+          <p>Quietly sure of the moon-and-stars shirt.</p>
+        </figure>
+      </div>
+      <p class="note">More to come as I work through the saves.</p>
+    </section>
     <section id="gamedev">
       <h2>Game design</h2>
       <p class="lede">Sketches, prototypes and small games.</p>
