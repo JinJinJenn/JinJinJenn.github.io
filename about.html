@@ -14,117 +14,10 @@
 <meta property="og:description" content="A cozy-game tinkerer who builds small things that make play feel kinder.">
 <meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-  :root {
-    --bg: #fbf8f3; --surface: #ffffff; --ink: #2b2a33; --muted: #6b6878; --line: #ece6dc;
-    --accent: #2f9e5c; --accent-soft: #e3f5ea; --pink: #e86fa0; --pink-soft: #fde8f1; --sky-soft: #e8f1fd;
-    --shadow: 0 1px 2px rgba(43, 42, 51, .06), 0 8px 24px rgba(43, 42, 51, .06);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #17161c; --surface: #211f28; --ink: #f1eef6; --muted: #a7a2b5; --line: #312e3a;
-      --accent: #5fd08f; --accent-soft: #1d3326; --pink: #f08cb5; --pink-soft: #3a2230; --sky-soft: #1f2a3b;
-      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #17161c; --surface: #211f28; --ink: #f1eef6; --muted: #a7a2b5; --line: #312e3a;
-    --accent: #5fd08f; --accent-soft: #1d3326; --pink: #f08cb5; --pink-soft: #3a2230; --sky-soft: #1f2a3b;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.6 ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, -apple-system, sans-serif;
-  }
-  a { color: var(--accent); text-underline-offset: 3px; }
-  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
-  header { padding: 64px 0 36px; }
-  .brand { display: flex; align-items: center; gap: 14px; }
-  /* 3D jewel: two square pyramids (8 faces), pure CSS. Half-width 60, height 110 each, face tilt = atan(60/110). */
-  .gem3d { width: 72px; height: 100px; flex: none; perspective: 520px; position: relative;
-           animation: bob 4s ease-in-out infinite; filter: drop-shadow(0 6px 10px rgba(47, 158, 92, .35)); }
-  .gem3d .spin { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d;
-                 transform: scale(.42) rotateX(-16deg) rotateY(0deg); animation: spin 8s linear infinite; }
-  .gem3d .f { position: absolute; left: -60px; width: 120px; height: 125.3px; backface-visibility: hidden; }
-  .gem3d .t { top: -125.3px; transform-origin: 50% 100%; clip-path: polygon(50% 0, 0 100%, 100% 100%);
-              transform: rotateY(calc(var(--k) * 90deg)) translateZ(60px) rotateX(28.6deg); }
-  .gem3d .b { top: 0; transform-origin: 50% 0; clip-path: polygon(0 0, 100% 0, 50% 100%); filter: brightness(.82);
-              transform: rotateY(calc(var(--k) * 90deg)) translateZ(60px) rotateX(-28.6deg); }
-  .gem3d .c0 { background: linear-gradient(160deg, #9af7b9, #46cf7e); }
-  .gem3d .c1 { background: linear-gradient(160deg, #63dd93, #2fae64); }
-  .gem3d .c2 { background: linear-gradient(160deg, #46cf7e, #1f8a4c); }
-  .gem3d .c3 { background: linear-gradient(160deg, #3cc274, #1b7a44); }
-  @keyframes spin { from { transform: scale(.42) rotateX(-16deg) rotateY(0deg); }
-                    to   { transform: scale(.42) rotateX(-16deg) rotateY(360deg); } }
-  @keyframes bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-5px) } }
-  @media (prefers-reduced-motion: reduce) { .gem3d, .gem3d .spin { animation: none; }
-    .gem3d .spin { transform: scale(.42) rotateX(-16deg) rotateY(28deg); } }
-  h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.02em; line-height: 1.1; }
-  .tagline { margin: 14px 0 0; color: var(--muted); font-size: 1.12rem; max-width: 34em; }
-  nav { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
-  nav a {
-    text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
-    padding: 6px 14px; border-radius: 999px; font-size: .95rem;
-  }
-  nav a:hover { border-color: var(--accent); }
-  section { padding: 28px 0; }
-  h2 { font-size: 1.35rem; margin: 0 0 6px; }
-  .lede { margin: 0 0 18px; color: var(--muted); }
-  .feature {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px;
-    box-shadow: var(--shadow); display: grid; gap: 10px;
-  }
-  .feature h3 { margin: 0; font-size: 1.25rem; }
-  .feature p { margin: 0; }
-  .feature ul { margin: 4px 0 0; padding-left: 1.2em; }
-  .feature li { margin: 2px 0; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 14px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
-  .card .shot, .feature .shot {
-    display: block; width: 100%; height: auto; border-radius: 10px; margin: -4px 0 14px; border: 1px solid var(--line);
-    aspect-ratio: 16 / 9; object-fit: cover; background: var(--line);
-  }
-  .feature .shot { aspect-ratio: auto; margin: 6px 0 4px; }
-  .card .placeholder {
-    display: grid; place-items: center; aspect-ratio: 16 / 9; border-radius: 10px; margin: -4px 0 14px;
-    background: linear-gradient(135deg, var(--pink-soft), var(--sky-soft)); color: var(--muted); font-size: .85rem;
-  }
-  figcaption { font-size: .85rem; color: var(--muted); }
-  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
-  .card p { margin: 0; color: var(--muted); font-size: .97rem; }
-  .pill {
-    display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .02em; border-radius: 999px;
-    padding: 2px 10px; margin-bottom: 8px;
-  }
-  .pill.testing { background: var(--accent-soft); color: var(--accent); }
-  .pill.workshop { background: var(--pink-soft); color: var(--pink); }
-  .pill.soon { background: var(--sky-soft); color: var(--muted); }
-  .soon-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
-  .note { font-size: .9rem; color: var(--muted); margin-top: 14px; }
-  footer { padding: 36px 0 56px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 28px; }
-  footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
-  button.theme {
-    font: inherit; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 999px;
-    padding: 2px 12px; cursor: pointer;
-  }
-  .about { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: start; margin-top: 8px; }
-  .portrait { margin: 0; }
-  .portrait .frame { aspect-ratio: 4 / 5; border-radius: 22px; border: 1px solid var(--line); box-shadow: var(--shadow);
-    background: linear-gradient(135deg, var(--pink-soft), var(--sky-soft)); display: grid; place-items: center;
-    color: var(--muted); font-size: .85rem; text-align: center; padding: 12px; overflow: hidden; }
-  .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .about h2 { margin-top: 26px; }
-  .about h2:first-child { margin-top: 0; }
-  .about p { margin: 0 0 12px; }
-  .likes { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 4px 0 0; list-style: none; }
-  .likes li { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; font-size: .93rem; }
-  @media (max-width: 640px) { .about { grid-template-columns: 1fr; } .portrait { max-width: 220px; } }
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-<div class="wrap">
+<body class="interior-page about-page">
+<div class="interior-wrap">
   <header>
     <div class="brand"><h1>About</h1></div>
     <p class="tagline">The person behind the mods, as much as they want to be known.</p>
@@ -136,8 +29,8 @@
   <main>
     <div class="about">
       <figure class="portrait">
-        <div class="frame" id="portrait-slot">Portrait coming soon</div>
-        <figcaption>Hi, I'm Jenn.</figcaption>
+        <div class="portrait-art"><img src="assets/art/creator.png" width="941" height="1672" alt="Generated rainbow-haired creator artwork"></div>
+        <figcaption>Creator artwork</figcaption>
       </figure>
       <div>
         <h2>Hi, I'm JinJinJenn</h2>
@@ -174,22 +67,10 @@
   <footer>
     <div class="row">
       <span>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a></span>
-      <span>Not affiliated with EA or Maxis. <button class="theme" type="button" id="theme">Theme</button></span>
+      <span>Not affiliated with EA or Maxis. <button class="theme" type="button" id="theme" data-theme-toggle>Theme</button></span>
     </div>
   </footer>
 </div>
-<script>
-  (function () {
-    var root = document.documentElement, key = 'jjj-theme';
-    try { var saved = localStorage.getItem(key); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
-    document.getElementById('theme').addEventListener('click', function () {
-      var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark'
-                                                 : matchMedia('(prefers-color-scheme: dark)').matches;
-      var next = dark ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem(key, next); } catch (e) {}
-    });
-  })();
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
