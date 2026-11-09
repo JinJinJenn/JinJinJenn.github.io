@@ -17,14 +17,14 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="devlog.css" rel="stylesheet"/>
 <script defer="" src="../assets/site.js"></script><link href="../assets/promo.css" rel="stylesheet"/><script defer="" src="../assets/parallax.js"></script></head>
-<body class="interior-page journal-page">
+<body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
 <a class="home" href="./">← Devlog</a>
 <h1>Seven failed tries and a robot tester</h1>
 <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · tooling</p>
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
-<main><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="The illustrated rainbow-haired creator at a computer with a friendly robot" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/jenn-robot-workbench.webp"/></div><figcaption>Generated testing-workbench illustration, not the actual QA robot interface.</figcaption></figure>
+<main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="A friendly illustrated robot inspecting a miniature house under a protective dome" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/robot-tester.webp"/></div><figcaption>Generated testing illustration, not the actual QA robot interface.</figcaption></figure>
 <p>Testing a Sims 4 mod by hand goes like this: install it, start the game, wait through the loading screens, load the save, click through six menus, look at the result, quit, tweak the code, repeat. My partner was doing that for the first couple of versions and got, understandably, frustrated.</p>
 <p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and had learned the real lesson: the problem wasn't the mod, it was that every attempt cost ten minutes of clicking and told us almost nothing. So we built an automated QA robot. Thank goodness.</p>
 <h2>The tools</h2>

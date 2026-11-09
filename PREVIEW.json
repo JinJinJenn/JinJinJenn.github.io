@@ -4,6 +4,9 @@
   "reference_mods_baseline": "5f015baefda00707c63896aff82c3671251b5976",
   "mods_repository_modified": false,
   "captured_sims": "Original char-01/02/03 PNG and animated WebP files retained byte-for-byte. Names remain invented.",
-  "creator_art": "Rainbow-Haired Gamer Fashion Character.png; copied unchanged; generated artwork, not an in-game capture.",
-  "garden_art": "Five original layers copied unchanged from the read-only mods baseline."
+  "creator_art": "New generated creator hero plus original generated full-body creator on About. Neither is a real person photograph or an in-game capture.",
+  "garden_art": "Five original layers copied unchanged from the read-only mods baseline.",
+  "article_covers": "Six distinct generated editorial illustrations; original article copy retained.",
+  "motion": "Bounded decorative parallax, manual pause, reduced-motion support and original captured turntables with still-image fallback.",
+  "review_state": "Unpublished branch preview. Preservation, resource and HTTP checks pass; visual/browser review still pending."
 }

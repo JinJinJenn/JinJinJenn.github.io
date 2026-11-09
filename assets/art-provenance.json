@@ -64,32 +64,74 @@
       "web_sha256": "7ae45f37a8ae988814e37000a304a24de8d21feef046f212a5628c943e420a77",
       "bytes": 178862,
       "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/hello-world-illustration.webp",
+      "source_sha256": "bd989d8a8353acc443803f5502ccb537245dc0118d515b52dda692dfef6ffc68",
+      "web_sha256": "4aad1221f8eb9c087f67955816dddc72b6fb5f3e4448867a1c5ed2e7674245af",
+      "bytes": 405800,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/every-computer-is-a-good-computer.webp",
+      "source_sha256": "f1bd979bcf55e16d748a07431e5592fdcccbfb86de54de8fc657bcd172e0f0e1",
+      "web_sha256": "78fb6cec10530e22323417ead153383f6c15ceb90217151262dcf9ea643460b4",
+      "bytes": 303156,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/two-more-ways-to-move-in.webp",
+      "source_sha256": "9fbd7cda70383a69043fb6955d6794e80d7a70ebe93fb32595e8afe40956ac28",
+      "web_sha256": "142a6030423a23d24ce4b475f9af7399196fbf99e1ee1248336f4604ee56a08d",
+      "bytes": 362046,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/quiet-mod-fixes.webp",
+      "source_sha256": "989c316131a2f89f2efca88d628f7f54036d93a53caf6ebf7c717255e52d4728",
+      "web_sha256": "317bb55fa17031a12139e28214c7920b680346bfc704b59d253cddca2f63c2ff",
+      "bytes": 291962,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/robot-tester.webp",
+      "source_sha256": "ed920409777ba3f173ab9818617a3c3e893b3582cb5ee10731000f1acd266c41",
+      "web_sha256": "34b9f419f226ab40a8948fdf0fdf592550b68cec38f533671b943860efcb5093",
+      "bytes": 236684,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/how-a-park-became-a-home-illustration.webp",
+      "source_sha256": "a3e15545d2fdd0f8a02d1a7ab8d5beac9d7e8f8e46f61c0579cbdbf012763d68",
+      "web_sha256": "2753d503b1865911ed88db3799393795006b3538090eba3af1154e4612834ce8",
+      "bytes": 409504,
+      "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
     }
   ],
   "article_covers": {
     "hello-world": {
-      "file": "assets/promo/jenn-creator-hero.webp",
-      "caption": "Generated creator artwork, not a photograph or in-game capture."
+      "file": "assets/promo/hello-world-illustration.webp",
+      "caption": "Generated welcome illustration, not a photograph or in-game capture."
     },
     "every-computer-is-a-good-computer": {
-      "file": "assets/promo/cozy-computer-den.webp",
-      "caption": "Generated gaming-room illustration. The mod behavior is described below."
+      "file": "assets/promo/every-computer-is-a-good-computer.webp",
+      "caption": "Generated computer-upgrade illustration. The mod behavior is described below."
     },
     "moving-from-in-game-and-evicting": {
-      "file": "assets/promo/move-anywhere-cutout.webp",
-      "caption": "Generated MoveAnywhere concept illustration, not an in-game screenshot."
+      "file": "assets/promo/two-more-ways-to-move-in.webp",
+      "caption": "Generated moving-house illustration, not an in-game screenshot."
     },
     "mods-that-did-nothing": {
-      "file": "assets/promo/toddler-tv-cutout.webp",
-      "caption": "Generated Toddler TV concept illustration, not an in-game screenshot."
+      "file": "assets/promo/quiet-mod-fixes.webp",
+      "caption": "Generated illustration of testing Toddler TV and Surprise Gifts, not an in-game screenshot."
     },
     "seven-failed-tries-and-a-robot-tester": {
-      "file": "assets/promo/jenn-robot-workbench.webp",
-      "caption": "Generated testing-workbench illustration, not the actual QA robot interface."
+      "file": "assets/promo/robot-tester.webp",
+      "caption": "Generated testing illustration, not the actual QA robot interface."
     },
     "how-a-park-became-a-home": {
-      "file": "assets/promo/move-anywhere-promo.webp",
-      "caption": "Supplied generated MoveAnywhere promotional artwork, not an in-game screenshot."
+      "file": "assets/promo/how-a-park-became-a-home-illustration.webp",
+      "caption": "Generated park-to-home illustration, not an in-game screenshot."
     }
   },
   "additional_sources": {
