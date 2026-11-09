@@ -8,5 +8,11 @@
   "garden_art": "Five original layers copied unchanged from the read-only mods baseline.",
   "article_covers": "Six distinct generated editorial illustrations; original article copy retained.",
   "motion": "Bounded decorative parallax, manual pause, reduced-motion support and original captured turntables with still-image fallback.",
-  "review_state": "Unpublished branch preview. Preservation, resource and HTTP checks pass; visual/browser review still pending."
+  "review_state": "Unpublished branch preview. Preservation, resource and HTTP checks pass; visual/browser review still pending.",
+  "delivery_optimization": {
+    "originals_retained": true,
+    "source_bytes": 6957650,
+    "delivered_bytes": 1081826,
+    "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
+  }
 }
