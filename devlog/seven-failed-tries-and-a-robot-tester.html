@@ -1,59 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Seven failed tries and a robot tester · Devlog · JinJinJenn</title>
-<meta name="description" content="How we got fed up with testing a Sims 4 mod by hand and built an automated QA harness, with its tools and its recovery tricks.">
-<meta name="theme-color" content="#2f9e5c">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://jinjinjenn.github.io/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="JinJinJenn">
-<meta property="og:title" content="Seven failed tries and a robot tester · Devlog · JinJinJenn">
-<meta property="og:description" content="How we got fed up with testing a Sims 4 mod by hand and built an automated QA harness, with its tools and its recovery tricks.">
-<meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="devlog.css">
-<script src="../assets/site.js" defer></script></head>
+<meta content="How we got fed up with testing a Sims 4 mod by hand and built an automated QA harness, with its tools and its recovery tricks." name="description"/>
+<meta content="#2f9e5c" name="theme-color"/>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://jinjinjenn.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="JinJinJenn" property="og:site_name"/>
+<meta content="Seven failed tries and a robot tester · Devlog · JinJinJenn" property="og:title"/>
+<meta content="How we got fed up with testing a Sims 4 mod by hand and built an automated QA harness, with its tools and its recovery tricks." property="og:description"/>
+<meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="devlog.css" rel="stylesheet"/>
+<script defer="" src="../assets/site.js"></script><link href="../assets/promo.css" rel="stylesheet"/><script defer="" src="../assets/parallax.js"></script></head>
 <body class="interior-page journal-page">
 <div class="interior-wrap">
-  <header>
-    <a class="home" href="./">&larr; Devlog</a>
-    <h1>Seven failed tries and a robot tester</h1>
-    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · tooling</p>
-  </header>
-  <main>
-    <p>Testing a Sims&nbsp;4 mod by hand goes like this: install it, start the game, wait through the loading screens, load the save, click through six menus, look at the result, quit, tweak the code, repeat. My partner was doing that for the first couple of versions and got, understandably, frustrated.</p>
-    <p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and had learned the real lesson: the problem wasn't the mod, it was that every attempt cost ten minutes of clicking and told us almost nothing. So we built an automated QA robot. Thank goodness.</p>
-
-    <h2>The tools</h2>
-    <ul>
-      <li><strong>A launcher</strong> that starts the game, waits through menus and loading screens, closes popups, and loads a <em>test copy</em> of a save.</li>
-      <li><strong>A tiny helper mod inside the game</strong> that can read the game's state and run commands. Instead of guessing from screenshots, a test can ask the game directly: "what type is this lot? whose money does build mode spend?"</li>
-      <li><strong>A scripted clicker</strong> that drives the real menus like a player, taking a screenshot at every step.</li>
-      <li><strong>Checks and a verdict</strong>: a list of pass/fail checks, plus the screenshots. The last park run: 28 of 28 passed.</li>
-      <li><strong>The game's own research</strong>: a full readable copy of the game's code, so we can look things up instead of guessing (guessing was how we got to seven failures).</li>
-    </ul>
-
-    <h2>The recovery</h2>
-    <p>Driving a game by robot means things go wrong, so most of the work was making sure wrong things are harmless:</p>
-    <ul>
-      <li><strong>Test copies only.</strong> The harness refuses to start the game on anything but a renamed test copy of a save, checks which save actually loaded, and kills the game if it's the wrong one.</li>
-      <li><strong>Settings get restored.</strong> Killing the game mid-run once left its settings file empty, so the next start ran with every mod switched off. Now a full known-good copy of the settings is put back after every run.</li>
-      <li><strong>Safe installs.</strong> Mods are copied in atomically and only while the game is closed (a half-copied mod crashed one early test), and whatever they replace is backed up first.</li>
-      <li><strong>Saves are fenced.</strong> Any save the game attempts during a test is redirected away from the real slots.</li>
-      <li><strong>Locked screen? Stop.</strong> If the PC's screen is locked, clicks and screenshots can't work, so the robot says so instead of clicking at nothing.</li>
-      <li><strong>Popups can't stall it.</strong> A random "new personality trait" dialog froze one run, so the game's own auto-answer switch is turned on during tests.</li>
-      <li><strong>Everything is logged.</strong> Every run leaves a journal and screenshots, so a failure can be replayed on paper instead of redone by hand.</li>
-      <li><strong>Keep the receipts.</strong> My working notes and logs used to get deleted after 30 days. Debugging a game for weeks, that's how you lose the "why did we do it this way?" trail. They're now kept for ten years, with a private backup copy.</li>
-    </ul>
-
-    <h2>The best part: a test that can fail</h2>
-    <p>We also run the same test with the mod switched off. It <em>must</em> fail. If it passed, the test would be measuring nothing. It fails, the park shows up broken in the screenshots, and the real run goes green. That before/after picture is on the <a href="../">main page</a>.</p>
-    <p>Now the question after every change isn't "does it feel right?" but "what did the run say?" Much calmer household.</p>
-  </main>
-  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+<header>
+<a class="home" href="./">← Devlog</a>
+<h1>Seven failed tries and a robot tester</h1>
+<p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · tooling</p>
+<div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
+<main><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="The illustrated rainbow-haired creator at a computer with a friendly robot" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/jenn-robot-workbench.webp"/></div><figcaption>Generated testing-workbench illustration, not the actual QA robot interface.</figcaption></figure>
+<p>Testing a Sims 4 mod by hand goes like this: install it, start the game, wait through the loading screens, load the save, click through six menus, look at the result, quit, tweak the code, repeat. My partner was doing that for the first couple of versions and got, understandably, frustrated.</p>
+<p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and had learned the real lesson: the problem wasn't the mod, it was that every attempt cost ten minutes of clicking and told us almost nothing. So we built an automated QA robot. Thank goodness.</p>
+<h2>The tools</h2>
+<ul>
+<li><strong>A launcher</strong> that starts the game, waits through menus and loading screens, closes popups, and loads a <em>test copy</em> of a save.</li>
+<li><strong>A tiny helper mod inside the game</strong> that can read the game's state and run commands. Instead of guessing from screenshots, a test can ask the game directly: "what type is this lot? whose money does build mode spend?"</li>
+<li><strong>A scripted clicker</strong> that drives the real menus like a player, taking a screenshot at every step.</li>
+<li><strong>Checks and a verdict</strong>: a list of pass/fail checks, plus the screenshots. The last park run: 28 of 28 passed.</li>
+<li><strong>The game's own research</strong>: a full readable copy of the game's code, so we can look things up instead of guessing (guessing was how we got to seven failures).</li>
+</ul>
+<h2>The recovery</h2>
+<p>Driving a game by robot means things go wrong, so most of the work was making sure wrong things are harmless:</p>
+<ul>
+<li><strong>Test copies only.</strong> The harness refuses to start the game on anything but a renamed test copy of a save, checks which save actually loaded, and kills the game if it's the wrong one.</li>
+<li><strong>Settings get restored.</strong> Killing the game mid-run once left its settings file empty, so the next start ran with every mod switched off. Now a full known-good copy of the settings is put back after every run.</li>
+<li><strong>Safe installs.</strong> Mods are copied in atomically and only while the game is closed (a half-copied mod crashed one early test), and whatever they replace is backed up first.</li>
+<li><strong>Saves are fenced.</strong> Any save the game attempts during a test is redirected away from the real slots.</li>
+<li><strong>Locked screen? Stop.</strong> If the PC's screen is locked, clicks and screenshots can't work, so the robot says so instead of clicking at nothing.</li>
+<li><strong>Popups can't stall it.</strong> A random "new personality trait" dialog froze one run, so the game's own auto-answer switch is turned on during tests.</li>
+<li><strong>Everything is logged.</strong> Every run leaves a journal and screenshots, so a failure can be replayed on paper instead of redone by hand.</li>
+<li><strong>Keep the receipts.</strong> My working notes and logs used to get deleted after 30 days. Debugging a game for weeks, that's how you lose the "why did we do it this way?" trail. They're now kept for ten years, with a private backup copy.</li>
+</ul>
+<h2>The best part: a test that can fail</h2>
+<p>We also run the same test with the mod switched off. It <em>must</em> fail. If it passed, the test would be measuring nothing. It fails, the park shows up broken in the screenshots, and the real run goes green. That before/after picture is on the <a href="../">main page</a>.</p>
+<p>Now the question after every change isn't "does it feel right?" but "what did the run say?" Much calmer household.</p>
+</main>
+<footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>
 </body>
 </html>

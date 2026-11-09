@@ -1,0 +1,99 @@
+{
+  "title": "Jenn transparent promotional art",
+  "purpose": "Conceptual decorative promotional illustrations, not in-game screenshots or mod UI. No embedded labels. Pair with accessible HTML page titles and verified feature descriptions.",
+  "assets": [
+    {
+      "file": "assets/promo/gentle-hearts-cutout.webp",
+      "source_sha256": "d7aeca97672fcb19ab81ba85c4967f5ae49df4747754d4a014471f833059ad58",
+      "web_sha256": "0f7a0dc4509de4c4396d500fff252a45712a84831b6806338afe8fa80318ffaa",
+      "bytes": 271096,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/jenn-creator-hero.webp",
+      "source_sha256": "03113b4eabc58d88f1eeb959271966b6ca3a3019d705622a7e3577876d7a314c",
+      "web_sha256": "2c5c65225e58f45f3634e3c1e062fb5eedc5b3b604275b55cdb001d8047cd2af",
+      "bytes": 267036,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/jenn-robot-workbench.webp",
+      "source_sha256": "e048fa50074f5d608ce7a4aa7cecea771313a519a2693f2d89afc8a849a2fd9b",
+      "web_sha256": "eb2cc5e07fd1b50a079d8210023f18a07a9bc8daaf495bef52eedb343602a599",
+      "bytes": 301644,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/love-notes-cutout.webp",
+      "source_sha256": "8ee578ebd9504bd1dd189e3af3fd5fd9ecdbc4ee8a89c30fc3f8b38574f90e4f",
+      "web_sha256": "159409585c50a010d0f62e54d9ef0e510d36cbd59bcff1d7a2445194b4024f42",
+      "bytes": 261130,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/move-anywhere-cutout.webp",
+      "source_sha256": "3bf7d3f412a416e410927b6f69bbd87464934eebd8e3aceda2808c4774eedf94",
+      "web_sha256": "a0f67a79084b70f45a4f15e365066d9dd0493d4dc02442c4829d19aae403dacf",
+      "bytes": 354818,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/surprise-gifts-cutout.webp",
+      "source_sha256": "cf041d2332053cecc9d934a28f03705d943b1cbcc66f2e4ae385fbbcac837541",
+      "web_sha256": "b3f7a8b768b2d6ff8d7b2a519d1da3affa378a7b5b58d2f7cb8874b9abf7147b",
+      "bytes": 239534,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/thinking-of-you-cutout.webp",
+      "source_sha256": "845db35a63f4112609e9532c9874e4756c0a08cf667ed6e87588055ee3325abf",
+      "web_sha256": "ab46aa1764f0bdd26c9e96754ca486ebcb9d2346ccbb6259ae565a649a2b80c1",
+      "bytes": 125428,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/toasts-cutout.webp",
+      "source_sha256": "a67beb72f4f6a26a8cf76f877eaf9bf8f0ba040659c2fe6934a83ad1ef0b9643",
+      "web_sha256": "3bfb7d53630c46eb65d0cae63e36c612ddfa41122c367b6027dec61523b8e97c",
+      "bytes": 262292,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    },
+    {
+      "file": "assets/promo/toddler-tv-cutout.webp",
+      "source_sha256": "093a4984a696329b107633765d77191d835559ed32060a2a79d67ac3c0b4d544",
+      "web_sha256": "7ae45f37a8ae988814e37000a304a24de8d21feef046f212a5628c943e420a77",
+      "bytes": 178862,
+      "source": "Generated promotional illustration; original PNG preserved separately."
+    }
+  ],
+  "article_covers": {
+    "hello-world": {
+      "file": "assets/promo/jenn-creator-hero.webp",
+      "caption": "Generated creator artwork, not a photograph or in-game capture."
+    },
+    "every-computer-is-a-good-computer": {
+      "file": "assets/promo/cozy-computer-den.webp",
+      "caption": "Generated gaming-room illustration. The mod behavior is described below."
+    },
+    "moving-from-in-game-and-evicting": {
+      "file": "assets/promo/move-anywhere-cutout.webp",
+      "caption": "Generated MoveAnywhere concept illustration, not an in-game screenshot."
+    },
+    "mods-that-did-nothing": {
+      "file": "assets/promo/toddler-tv-cutout.webp",
+      "caption": "Generated Toddler TV concept illustration, not an in-game screenshot."
+    },
+    "seven-failed-tries-and-a-robot-tester": {
+      "file": "assets/promo/jenn-robot-workbench.webp",
+      "caption": "Generated testing-workbench illustration, not the actual QA robot interface."
+    },
+    "how-a-park-became-a-home": {
+      "file": "assets/promo/move-anywhere-promo.webp",
+      "caption": "Supplied generated MoveAnywhere promotional artwork, not an in-game screenshot."
+    }
+  },
+  "additional_sources": {
+    "assets/promo/move-anywhere-promo.webp": "User-supplied generated promotional illustration, 9 November 2026.",
+    "assets/promo/cozy-computer-den.webp": "Existing generated Cozy rainbow gamer den-2.png from the supplied art collection."
+  }
+}

@@ -1,47 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Two more ways to move in · Devlog · JinJinJenn</title>
-<meta name="description" content="Testing the in-game move menu and evictions with the park-to-home mod: what we found, and what the game does with evicted Sims.">
-<meta name="theme-color" content="#2f9e5c">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://jinjinjenn.github.io/apple-touch-icon.png">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="JinJinJenn">
-<meta property="og:title" content="Two more ways to move in · Devlog · JinJinJenn">
-<meta property="og:description" content="Testing the in-game move menu and evictions with the park-to-home mod.">
-<meta property="og:image" content="https://jinjinjenn.github.io/img/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="devlog.css">
-<script src="../assets/site.js" defer></script></head>
+<meta content="Testing the in-game move menu and evictions with the park-to-home mod: what we found, and what the game does with evicted Sims." name="description"/>
+<meta content="#2f9e5c" name="theme-color"/>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://jinjinjenn.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="article" property="og:type"/>
+<meta content="JinJinJenn" property="og:site_name"/>
+<meta content="Two more ways to move in · Devlog · JinJinJenn" property="og:title"/>
+<meta content="Testing the in-game move menu and evictions with the park-to-home mod." property="og:description"/>
+<meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="devlog.css" rel="stylesheet"/>
+<script defer="" src="../assets/site.js"></script><link href="../assets/promo.css" rel="stylesheet"/><script defer="" src="../assets/parallax.js"></script></head>
 <body class="interior-page journal-page">
 <div class="interior-wrap">
-  <header>
-    <a class="home" href="./">&larr; Devlog</a>
-    <h1>Two more ways to move in</h1>
-    <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · testing</p>
-  </header>
-  <main>
-    <p>The park-to-home mod was proven through the world map. But players can also move a household from inside the game, and a lot might already have people living on it. Both needed testing before calling it done.</p>
-
-    <h2>Moving from inside the game</h2>
-    <p>The plan was "use the phone". The phone has no such option in this version of the game, so the robot scrolled the whole Household menu to be sure. The in-game move turned out to be a Sim interaction that opens the same map as the world screen ("Moving with: Taylor"). The test triggers it directly, picks the park, and confirms.</p>
-    <p>Result: the park was selectable, the household arrived and lived there, no "Building Lot" screen, normal money, build mode works. All 15 checks passed.</p>
-
-    <h2>Evicting people who live there</h2>
-    <p>Moving onto an occupied lot makes the game ask: move in with them, or evict? Evict works while playing. We checked what happens to the evicted five: the household count didn't change, and all five Sims still exist, just without a home, findable in household management. Nobody is deleted.</p>
-
-    <h2>Update, a few hours later: the three loose ends are tied</h2>
-    <ul>
-      <li><strong>A household with very little money.</strong> It really couldn't move in: the game greys out the confirm button when the family can't afford the lot. The mod now quietly shows the move screen a big balance while it's open, then puts the real amount back afterwards. Nobody is charged for the lot.</li>
-      <li><strong>A save where a household already lives in a park.</strong> The first test failed: the park still loaded as a park once. Converting it the moment the save loads, instead of a little later, fixed it.</li>
-      <li><strong>Evicted Sims landing in an empty home.</strong> Now automatic: an evicted household moves into a vacant, furnished house (preferring one nearby with a couple of bedrooms). If the town has no empty house, they stay homeless, never deleted.</li>
-    </ul>
-    <p>Each of these has a robot test that passed on a copy of a save.</p>
-  </main>
-  <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
+<header>
+<a class="home" href="./">← Devlog</a>
+<h1>Two more ways to move in</h1>
+<p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · testing</p>
+<div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
+<main><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="An illustrated cottage with a rainbow and a house key" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/move-anywhere-cutout.webp"/></div><figcaption>Generated MoveAnywhere concept illustration, not an in-game screenshot.</figcaption></figure>
+<p>The park-to-home mod was proven through the world map. But players can also move a household from inside the game, and a lot might already have people living on it. Both needed testing before calling it done.</p>
+<h2>Moving from inside the game</h2>
+<p>The plan was "use the phone". The phone has no such option in this version of the game, so the robot scrolled the whole Household menu to be sure. The in-game move turned out to be a Sim interaction that opens the same map as the world screen ("Moving with: Taylor"). The test triggers it directly, picks the park, and confirms.</p>
+<p>Result: the park was selectable, the household arrived and lived there, no "Building Lot" screen, normal money, build mode works. All 15 checks passed.</p>
+<h2>Evicting people who live there</h2>
+<p>Moving onto an occupied lot makes the game ask: move in with them, or evict? Evict works while playing. We checked what happens to the evicted five: the household count didn't change, and all five Sims still exist, just without a home, findable in household management. Nobody is deleted.</p>
+<h2>Update, a few hours later: the three loose ends are tied</h2>
+<ul>
+<li><strong>A household with very little money.</strong> It really couldn't move in: the game greys out the confirm button when the family can't afford the lot. The mod now quietly shows the move screen a big balance while it's open, then puts the real amount back afterwards. Nobody is charged for the lot.</li>
+<li><strong>A save where a household already lives in a park.</strong> The first test failed: the park still loaded as a park once. Converting it the moment the save loads, instead of a little later, fixed it.</li>
+<li><strong>Evicted Sims landing in an empty home.</strong> Now automatic: an evicted household moves into a vacant, furnished house (preferring one nearby with a couple of bedrooms). If the town has no empty house, they stay homeless, never deleted.</li>
+</ul>
+<p>Each of these has a robot test that passed on a copy of a save.</p>
+</main>
+<footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>
 </body>
 </html>
