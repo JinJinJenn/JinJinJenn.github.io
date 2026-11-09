@@ -17,7 +17,7 @@ server is recommended for checking every route and the custom 404 page.
 
 ## Preserved
 
-- Original About and six devlog article bodies, URLs and sitemap.
+- Original About content, six devlog articles, URLs and sitemap. Article copy has been revised where it was clipped or sent readers elsewhere for images; substantive meaning and historical test results remain.
 - Root anchors `#mods`, `#characters`, `#gamedev` and `#web`.
 - Seven mod entries and original screenshots.
 - Three original five-frame in-game character turntables and PNG stills.
@@ -39,8 +39,8 @@ decorative parallax. `?motion=off&gpu=0` is a static fallback review route.
 ## Review before merging
 
 Preservation, local-resource, HTTP-route and JavaScript syntax checks pass.
-Rendered desktop/mobile layouts and real-browser interaction testing are still
-pending review. Check the character turntables, all article images, mobile nav,
+User-supplied desktop screenshots have been reviewed. Mobile rendering and
+live-browser interaction testing remain pending. Check the character turntables, all article images, mobile nav,
 light/dark themes, pause/reduced-motion states and the garden fallback.
 
 No hosting migration is required. Once reviewed, merge this branch into main
