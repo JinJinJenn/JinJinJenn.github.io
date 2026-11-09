@@ -9,15 +9,16 @@
  const reset=()=>layers.forEach(l=>{l.style.removeProperty('--px');l.style.removeProperty('--py');});
  function paint(){frame=0;if(stopped()){reset();return;}
    const h=innerHeight;
-   for(const s of visible){const b=s.getBoundingClientRect();const scroll=Math.max(-1,Math.min(1,(h/2-(b.top+b.height/2))/h));
-     for(const l of s.querySelectorAll('[data-parallax-layer]')){const d=Number(l.dataset.parallaxLayer)||.3;const limit=fine.matches?12:4;l.style.setProperty('--px',(x*limit*d).toFixed(2)+'px');l.style.setProperty('--py',((scroll*14+y*limit)*d).toFixed(2)+'px');}
+   for(const s of visible){const b=s.getBoundingClientRect();const scroll=Math.max(-1,Math.min(1,(h/2-(b.top+b.height/2))/h));const hero=s.classList.contains('hero-scene');
+     const pointer=fine.matches?(hero?26:10):0,travel=fine.matches?(hero?38:16):6;
+     for(const l of s.querySelectorAll('[data-parallax-layer]')){const d=Number(l.dataset.parallaxLayer)||.3;l.style.setProperty('--px',(x*pointer*d).toFixed(2)+'px');l.style.setProperty('--py',((scroll*travel+y*pointer*.55)*d).toFixed(2)+'px');}
    }
  }
  function schedule(){if(!frame)frame=requestAnimationFrame(paint);}
  if(!('IntersectionObserver' in window))return;
  const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting)visible.add(e.target);else visible.delete(e.target);}schedule();},{rootMargin:'80px'});
  scenes.forEach(s=>observer.observe(s));
- addEventListener('pointermove',e=>{if(!fine.matches||stopped())return;x=e.clientX/innerWidth-.5;y=e.clientY/innerHeight-.5;schedule();},{passive:true});
+ addEventListener('pointermove',e=>{if(!fine.matches||stopped())return;x=e.clientX/innerWidth*2-1;y=e.clientY/innerHeight*2-1;schedule();},{passive:true});
  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});
  document.addEventListener('visibilitychange',schedule);reduced.addEventListener('change',schedule);
  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['data-paused']});

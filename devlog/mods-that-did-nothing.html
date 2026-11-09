@@ -15,8 +15,8 @@
 <meta content="Surprise Gifts and Toddler TV both loaded fine and did nothing. How the robot tester caught them, and what the fixes were." property="og:description"/>
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link href="devlog.css" rel="stylesheet"/>
-<script defer="" src="../assets/site.js"></script><link href="../assets/promo.css" rel="stylesheet"/><script defer="" src="../assets/parallax.js"></script><link href="../assets/refinements.css" rel="stylesheet"/></head>
+<link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=58ce1174f347" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -24,7 +24,7 @@
 <h1>Two mods that quietly did nothing</h1>
 <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · fixes</p>
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
-<main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="An illustrated television and gift box with check marks and a magnifying glass" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/quiet-mod-fixes.webp"/></div><figcaption>Generated illustration of testing Toddler TV and Surprise Gifts, not an in-game screenshot.</figcaption></figure>
+<main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="An illustrated television and gift box with check marks and a magnifying glass" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/quiet-mod-fixes.webp"/></div><figcaption>Illustration made with AI for this post.</figcaption></figure>
 <p>Once the test robot existed, we pointed it at the small mods too. Two of them loaded with no errors and did absolutely nothing. A mod that crashes is easy to notice. A mod that silently does nothing can sit there for weeks.</p>
 <h2>Surprise Gifts</h2>
 <p>The log said <em>"gift candidates: 0"</em> every single day. The mod hunted for gift items by searching object names, but the game's data doesn't carry readable names for them, so the search matched nothing. The fix was a curated list of known items, checked against what the game will actually accept, and a command that hands one over on demand so a test can trigger it.</p>

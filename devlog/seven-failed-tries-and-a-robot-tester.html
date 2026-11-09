@@ -15,8 +15,8 @@
 <meta content="How we got fed up with testing a Sims 4 mod by hand and built an automated QA harness, with its tools and its recovery tricks." property="og:description"/>
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link href="devlog.css" rel="stylesheet"/>
-<script defer="" src="../assets/site.js"></script><link href="../assets/promo.css" rel="stylesheet"/><script defer="" src="../assets/parallax.js"></script><link href="../assets/refinements.css" rel="stylesheet"/></head>
+<link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=58ce1174f347" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -24,7 +24,7 @@
 <h1>Seven failed tries and a robot tester</h1>
 <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · tooling</p>
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
-<main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="A friendly illustrated robot inspecting a miniature house under a protective dome" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/robot-tester.webp"/></div><figcaption>Generated testing illustration, not the actual QA robot interface.</figcaption></figure>
+<main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="A friendly illustrated robot inspecting a miniature house under a protective dome" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/robot-tester.webp"/></div><figcaption>Illustration made with AI for this post.</figcaption></figure>
 <p>Testing a Sims 4 mod by hand goes like this: install it, start the game, wait through the loading screens, load the save, click through six menus, look at the result, quit, tweak the code, repeat. My partner was doing that for the first couple of versions and got, understandably, frustrated.</p>
 <p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and had learned the real lesson: the problem wasn't the mod, it was that every attempt cost ten minutes of clicking and told us almost nothing. So we built an automated QA robot. Thank goodness.</p>
 <h2>The tools</h2>
