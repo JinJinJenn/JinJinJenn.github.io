@@ -16,7 +16,7 @@
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
-<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=58ce1174f347" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=b66e4b25ccda" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -30,7 +30,7 @@
 <p>The household moved in, but the lot still said <strong>Park</strong>. The lot-type dropdown was locked ("can't be changed while the lot is owned"), the build catalog showed only <strong>Park Items</strong> with red, unaffordable tiles, and there was a <code>$0</code> business wallet instead of the family's funds.</p>
 <figure>
 <a href="../img/moveanywhere.jpg"><img alt="Build mode in the same park without and with the mod: lot type Park with a locked dropdown and red Park Items, versus Residential with a normal catalog and household funds." height="347" src="../img/moveanywhere.jpg" width="1200"/></a>
-<figcaption>The same park after a move-in. Left: before. Right: after the fix.</figcaption>
+<figcaption>The left side shows the park after the broken move-in, and the right side shows it after the fix.</figcaption>
 </figure>
 <h2>Why eleven tries failed</h2>
 <p>Each earlier version tried to turn the park into a residential lot <em>while the player was standing in it</em>. That change makes the game tear the lot down and rebuild it (you get a white "Building Lot" screen) and it still didn't fix the lot's saved type. Worse, a Manage Worlds move isn't handled by the game's scripts at all; the engine itself writes the move straight into the save data. Our code never even got to run at the right moment.</p>
@@ -46,8 +46,8 @@
 <p>The engine writes the move into the save data, and then, when the lot loads, reads the lot's type from that same data. So the mod now waits for the moment the save data is released after a move, and any lot a household has just moved into that isn't residential gets its saved type changed to residential. The lot then loads as an ordinary home. We never touch a lot that's currently loaded, which is what caused the rebuild screen.</p>
 <p>It's a handful of lines. Finding the right place for them took reading a lot of the game's own code.</p>
 <h2>How we know it works</h2>
-<p>An automated test moves a household into the park through the real menus, opens build mode, saves, restarts the game and checks again. Last run: <strong>version 13.1, 28 of 28 checks passed</strong>. The same test with the mod switched off fails, which is the point: a pass has to mean something.</p>
-<p><strong>Still to test:</strong> moving from the in-game phone instead of Manage Worlds, and moving onto a lot where someone already lives.</p>
+<p>An automated test moves a household into the park through the real menus, opens build mode, saves, restarts the game and checks again. On 6 November 2026, <strong>version 13.1 passed all 28 checks</strong>. The same test with the mod switched off fails, which is the point: a pass has to mean something.</p>
+<p class="article-update"><strong>Follow-up, 6 November 2026:</strong> The <a href="moving-from-in-game-and-evicting.html">next round of MoveAnywhere testing</a> covered moving from inside the game and onto an occupied lot, along with low-funds households and existing park-home saves. Those tests passed on copies of a save. The in-game move uses a Sim interaction rather than a phone option in this version of the game.</p>
 </main>
 <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>

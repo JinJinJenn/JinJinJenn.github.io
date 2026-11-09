@@ -16,7 +16,7 @@
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
-<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=58ce1174f347" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=b66e4b25ccda" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=5"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -25,12 +25,12 @@
 <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · testing</p>
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
 <main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="Two illustrated cottages with open doors, moving boxes and a key" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/two-more-ways-to-move-in.webp"/></div><figcaption>Illustration made with AI for this post.</figcaption></figure>
-<p>The park-to-home mod was proven through the world map. But players can also move a household from inside the game, and a lot might already have people living on it. Both needed testing before calling it done.</p>
+<p>MoveAnywhere had already passed its tests through the world map. But players can also move a household from inside the game, and a lot might already have people living on it. Both needed testing before calling it done.</p>
 <h2>Moving from inside the game</h2>
 <p>The plan was "use the phone". The phone has no such option in this version of the game, so the robot scrolled the whole Household menu to be sure. The in-game move turned out to be a Sim interaction that opens the same map as the world screen ("Moving with: Taylor"). The test triggers it directly, picks the park, and confirms.</p>
-<p>Result: the park was selectable, the household arrived and lived there, no "Building Lot" screen, normal money, build mode works. All 15 checks passed.</p>
+<p>The park was selectable and the household arrived and lived there without a "Building Lot" screen. Household funds and build mode worked normally, and all 15 checks passed.</p>
 <h2>Evicting people who live there</h2>
-<p>Moving onto an occupied lot makes the game ask: move in with them, or evict? Evict works while playing. We checked what happens to the evicted five: the household count didn't change, and all five Sims still exist, just without a home, findable in household management. Nobody is deleted.</p>
+<p>Moving onto an occupied lot makes the game ask whether to move in with the residents or evict them. In the initial eviction test, the household count stayed the same and all five evicted Sims remained available in household management, but they no longer had a home. The later update below adds automatic rehousing where a suitable empty house is available.</p>
 <h2>Update, a few hours later: the three loose ends are tied</h2>
 <ul>
 <li><strong>A household with very little money.</strong> It really couldn't move in: the game greys out the confirm button when the family can't afford the lot. The mod now quietly shows the move screen a big balance while it's open, then puts the real amount back afterwards. Nobody is charged for the lot.</li>
