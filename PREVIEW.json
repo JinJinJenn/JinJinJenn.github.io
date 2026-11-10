@@ -3,7 +3,7 @@
   "main_baseline": "08c5744715647a0f90b899e97627b96e67553bcb",
   "reference_mods_baseline": "5f015baefda00707c63896aff82c3671251b5976",
   "mods_repository_modified": false,
-  "captured_sims": "Original char-01/02/03 PNG and animated WebP files retained byte-for-byte. Names remain invented.",
+  "captured_sims": "Original char-01/02/03 PNG and animated WebP files retained byte-for-byte. Neutral capture labels replace invented names; descriptions are limited to visible appearance, without personality or backstory claims.",
   "creator_art": "New generated creator hero plus original generated full-body creator on About. Neither is a real person photograph or an in-game capture.",
   "garden_art": "Five original layers copied unchanged from the read-only mods baseline.",
   "article_covers": "Six distinct generated editorial illustrations, clearly labeled. Relevant original gameplay captures also appear inside the articles.",
@@ -16,7 +16,7 @@
     "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
   },
   "editorial_changes": "Original article meaning and test results retained; clipped copy and dead-end image referrals revised, and the park article links to the later completed tests.",
-  "local_preview_revision": 13,
+  "local_preview_revision": 14,
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
   "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved.",
