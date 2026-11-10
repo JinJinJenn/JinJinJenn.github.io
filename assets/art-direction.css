@@ -64,3 +64,12 @@
 .promo-stage[data-art-layout='thoughtful']>.art-companion{position:absolute;right:0;top:9%;width:35%;height:46%;object-fit:contain;z-index:1}
 .promo-stage[data-art-layout='tv-corner']>.art-character{position:absolute;right:0;bottom:2%;width:90%;height:94%;object-fit:contain;z-index:2}
 .promo-stage[data-art-layout='tv-corner']>.art-companion{position:absolute;left:0;top:8%;width:27%;height:36%;object-fit:contain;z-index:1}
+
+/* Identify a mod before asking readers to interpret its artwork or screenshots. */
+.mod-summary{margin:0 0 18px;min-height:164px}
+#mods .mod-summary h3{margin:0 0 10px}
+#mods .mod-summary .pill{margin:0 0 12px;font-size:.72rem}
+#mods .mod-summary p{margin:0}
+.capture-label{font-size:.72rem;letter-spacing:.06em}
+@media(max-width:800px){.mod-summary{min-height:150px}}
+@media(max-width:540px){.mod-summary{min-height:0;margin-bottom:22px}}

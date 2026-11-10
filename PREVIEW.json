@@ -16,13 +16,14 @@
     "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
   },
   "editorial_changes": "Original article meaning and test results retained; clipped copy and dead-end image referrals revised, and the park article links to the later completed tests.",
-  "local_preview_revision": 17,
+  "local_preview_revision": 18,
   "mod_test_scope": "The development target is The Sims 4 1.105. The dated 28/28 result applies only to the MoveAnywhere park-move scenario; it is not a collection-wide compatibility result. Existing per-mod statuses remain unchanged.",
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
   "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved.",
   "additional_creator_art": "Distinct note-writing, thoughtful, TV-corner and wayfinding poses, with original props retained. The supplied MoveAnywhere graphic remains unchanged, beside its existing explanation on wide screens.",
-  "capture_viewer": "Original screenshot links gain an optional keyboard-accessible enlarged viewer without leaving the article. With JavaScript unavailable they remain direct file links. Generated artwork is not included in the capture viewer.",
+  "capture_viewer": "Original screenshot links gain a keyboard-accessible viewer with fit/zoom and scroll inspection. With JavaScript unavailable they remain direct file links. Generated artwork is not included in the capture viewer.",
+  "mod_card_reading_order": "Each smaller mod card starts with its existing name, status and purpose, followed by the unchanged promotional artwork and labelled actual game capture.",
   "layer_kit_reuse": "All 20 layer-kit PNGs match the preserved original mod-site WebPs by decoded pixels. Two unused, text-free botanical layers now frame the shared footer in a separate decorative area. Baked-text interface images are not used, and existing animated jewels/controls remain intact.",
   "thumbnail_delivery": {
     "files": 32,
