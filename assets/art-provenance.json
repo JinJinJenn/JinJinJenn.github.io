@@ -134,6 +134,20 @@
       "web_sha256": "93cc93490d60cd363adbc9785a4251f7ae03e12a40c387733413b08894ece7fd",
       "bytes": 104238,
       "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/thinking-creator.webp",
+      "source_sha256": "16c807127cb9eacc7796293fa4b8bd6c131f6d34ef8350ffa6223076158bc158",
+      "web_sha256": "94c6f4081fd6fef989d3051f023b0da2fc8adc2d9cbb6fea3d99a8fb3b813744",
+      "bytes": 123136,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/toddler-tv-creator.webp",
+      "source_sha256": "703e29b1b327804051cf5d6881e050d7381ab672384b460d6c2d50352e7746b2",
+      "web_sha256": "edae99e6629ef5741f0e8f64a3b264aef9c8260ad59ba3d049a414f4d7f70986",
+      "bytes": 108610,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
     }
   ],
   "article_covers": {
@@ -378,6 +392,26 @@
       "sha256": "b75619e49b043f5b41951500f12713ca939228a78e2999e9bf171ad7310444d7"
     },
     {
+      "file": "assets/thumbs/thinking-creator-640.webp",
+      "source_file": "assets/promo/thinking-creator.webp",
+      "source_width": 821,
+      "width": 525,
+      "height": 640,
+      "source_bytes": 123136,
+      "bytes": 54920,
+      "sha256": "689e0a5320db6feefa8653b6901298aa2865b1c6cc8bde1af7c4ffbec4abffc7"
+    },
+    {
+      "file": "assets/thumbs/thinking-creator.webp",
+      "source_file": "assets/promo/thinking-creator.webp",
+      "source_width": 821,
+      "width": 263,
+      "height": 320,
+      "source_bytes": 123136,
+      "bytes": 18650,
+      "sha256": "941f1f6a0c592fe03034ecb8b768ddb09c19553b413537da72342f3791710c7f"
+    },
+    {
       "file": "assets/thumbs/thinking-of-you-cutout-640.webp",
       "source_file": "assets/promo/thinking-of-you-cutout.webp",
       "source_width": 1280,
@@ -416,6 +450,26 @@
       "source_bytes": 262292,
       "bytes": 30488,
       "sha256": "05b50e90b14c91f93dc8ad99531b21882bd1921922c60185502731679da48095"
+    },
+    {
+      "file": "assets/thumbs/toddler-tv-creator-640.webp",
+      "source_file": "assets/promo/toddler-tv-creator.webp",
+      "source_width": 1000,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 108610,
+      "bytes": 49588,
+      "sha256": "38d71654b6586bd57723cbe2da262a285fa2e4eca933a7752177020a32b35077"
+    },
+    {
+      "file": "assets/thumbs/toddler-tv-creator.webp",
+      "source_file": "assets/promo/toddler-tv-creator.webp",
+      "source_width": 1000,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 108610,
+      "bytes": 18378,
+      "sha256": "0eee156358eb575c115e47d2979f9a0f26fb9844c3a3589a787ed19dc10a9fa1"
     },
     {
       "file": "assets/thumbs/toddler-tv-cutout-640.webp",

@@ -47,3 +47,20 @@
 @media(max-width:580px){.layer-kit-garden{height:88px}.layer-kit-garden .garden-edge-left{display:none}.layer-kit-garden .garden-edge-right{right:-12px}}
 @media(prefers-reduced-motion:reduce){.layer-kit-garden img{will-change:auto}}
 :root[data-paused='true'] .layer-kit-garden img{will-change:auto}
+
+/* The original MoveAnywhere promo shares a row with its explanation, not a new template. */
+.feature-introduction{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:32px;align-items:center;margin-bottom:28px}
+.feature-introduction>.promo-stage{height:320px;width:100%;margin:0;background:none}
+.feature-introduction>.promo-stage .promo-orbit{display:none}
+.feature-summary{min-width:0}
+.feature-summary h3{margin-top:14px}
+.feature-summary p{margin-bottom:12px}
+.feature-summary ul{margin-bottom:0;padding-left:22px}
+@media(max-width:800px){.feature-introduction{grid-template-columns:1fr;gap:18px}.feature-introduction>.promo-stage{height:260px;max-width:500px;justify-self:center}}
+@media(max-width:540px){.feature-introduction>.promo-stage{height:200px}}
+
+/* Alternate the figure/prop arrangement instead of repeating one portrait layout. */
+.promo-stage[data-art-layout='thoughtful']>.art-character{position:absolute;left:-2%;bottom:2%;width:78%;height:94%;object-fit:contain;z-index:2}
+.promo-stage[data-art-layout='thoughtful']>.art-companion{position:absolute;right:0;top:9%;width:35%;height:46%;object-fit:contain;z-index:1}
+.promo-stage[data-art-layout='tv-corner']>.art-character{position:absolute;right:0;bottom:2%;width:90%;height:94%;object-fit:contain;z-index:2}
+.promo-stage[data-art-layout='tv-corner']>.art-companion{position:absolute;left:0;top:8%;width:27%;height:36%;object-fit:contain;z-index:1}
