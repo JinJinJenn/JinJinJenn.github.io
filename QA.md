@@ -30,3 +30,12 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - About was checked at 320px, 390px, desktop, 200% text and dark theme. Both portraits remained visible; no overlap, horizontal overflow, missing images or JavaScript errors were found. Keyboard skip-to-content continued to work.
 - The computer-post excerpt now names the gaming-skill and hacking-money upgrades, rather than implying all hidden stats change.
 - Original article artwork, gameplay captures and turntables remain byte-for-byte unchanged. The complete builder reproduced the checkpoint without drift. Physical-device and Safari/Firefox limitations above still apply.
+
+
+## Revision 22: article reading and mobile cover delivery
+
+- All six posts now put their existing first paragraph before the cover, without adding or removing any prose or artwork. On the 320px robot-post check, useful text begins near 601px instead of 840px.
+- Article covers reuse the 480px and 800px delivery files. Their original 1280px files remain the fallback and social-preview image. On the robot post, 390px DPR1 selected 46,846 bytes, 390px DPR2 and desktop DPR1 selected 108,698 bytes, and desktop DPR2 retained the original 236,684-byte cover.
+- Eighteen page/viewport/mode cases passed with no JavaScript errors or overflow. This included all six posts at 320/390px and representative desktop, 200% text, dark and reduced-motion checks. Real screenshot zoom, Escape and focus return still worked.
+- Existing manual pause persisted across all six articles. The home plumbob stopped drawing offscreen and while paused, then resumed after returning to view. This is an isolated-browser observation, not a physical GPU or battery benchmark.
+- Source checks verified unchanged prose, captions, full-cover fallbacks, actual game images and all original routes. Physical-device and other-browser testing remain outstanding.
