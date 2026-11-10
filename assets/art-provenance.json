@@ -206,6 +206,26 @@
       "sha256": "4f049e148d6b455ecf435f549c080dbc5bde7ac7da33ed1db6374c4b1ba7182a"
     },
     {
+      "file": "assets/thumbs/every-computer-is-a-good-computer-480.webp",
+      "source_file": "assets/promo/every-computer-is-a-good-computer.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 303156,
+      "bytes": 63702,
+      "sha256": "f144115517a26c8a33be04511e45d4274be3ec9e120f1a219d8c4376a9307795"
+    },
+    {
+      "file": "assets/thumbs/every-computer-is-a-good-computer-800.webp",
+      "source_file": "assets/promo/every-computer-is-a-good-computer.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 303156,
+      "bytes": 137880,
+      "sha256": "7e5b60b30f3ff01c8a2bc1e70c2743d2a9ad7ca354c82732137a1a41afb857bc"
+    },
+    {
       "file": "assets/thumbs/every-computer-is-a-good-computer.webp",
       "source_file": "assets/promo/every-computer-is-a-good-computer.webp",
       "source_width": 1280,
@@ -256,6 +276,26 @@
       "sha256": "24f762aca753f44e9c1d382af77998a4acef9dd17fb82e180adf7bc5b88c0468"
     },
     {
+      "file": "assets/thumbs/hello-world-illustration-480.webp",
+      "source_file": "assets/promo/hello-world-illustration.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 405800,
+      "bytes": 79952,
+      "sha256": "c947a294b88ded020fe3637439caff48b5a5ab24a745d28c8314e80774a8ae54"
+    },
+    {
+      "file": "assets/thumbs/hello-world-illustration-800.webp",
+      "source_file": "assets/promo/hello-world-illustration.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 405800,
+      "bytes": 182224,
+      "sha256": "1cb1819d57d76827ad59d450611364a0e45aa8fcab638b218f2839a69ae7a860"
+    },
+    {
       "file": "assets/thumbs/hello-world-illustration.webp",
       "source_file": "assets/promo/hello-world-illustration.webp",
       "source_width": 1280,
@@ -264,6 +304,26 @@
       "source_bytes": 405800,
       "bytes": 43424,
       "sha256": "f82c216ee8f8e5a8e06494240102991608afe49eef098782187d0b7507f99588"
+    },
+    {
+      "file": "assets/thumbs/how-a-park-became-a-home-illustration-480.webp",
+      "source_file": "assets/promo/how-a-park-became-a-home-illustration.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 409504,
+      "bytes": 72938,
+      "sha256": "a6cfe87c4e705e346360fe9e2e890c851643e13ee38df5ebb33e95c237f6a68f"
+    },
+    {
+      "file": "assets/thumbs/how-a-park-became-a-home-illustration-800.webp",
+      "source_file": "assets/promo/how-a-park-became-a-home-illustration.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 409504,
+      "bytes": 176628,
+      "sha256": "35db26f7bb8389a5bab34c062951ba25bcaf25410e711faa92a0ac666b682c58"
     },
     {
       "file": "assets/thumbs/how-a-park-became-a-home-illustration.webp",
@@ -386,6 +446,26 @@
       "sha256": "9f32789dbb33f38ecb579f464068c9e02a1c4ae1a337a10e0bccd52445b88927"
     },
     {
+      "file": "assets/thumbs/quiet-mod-fixes-480.webp",
+      "source_file": "assets/promo/quiet-mod-fixes.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 291962,
+      "bytes": 53162,
+      "sha256": "bde66f440ff594e53b4415fc8163bdaaa449523afd50ece6a8d784276857a778"
+    },
+    {
+      "file": "assets/thumbs/quiet-mod-fixes-800.webp",
+      "source_file": "assets/promo/quiet-mod-fixes.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 291962,
+      "bytes": 124254,
+      "sha256": "089a38e000b6328ed0845b364ef0a48be5860efc1ce6feecd5eacd8163467c0c"
+    },
+    {
       "file": "assets/thumbs/quiet-mod-fixes.webp",
       "source_file": "assets/promo/quiet-mod-fixes.webp",
       "source_width": 1280,
@@ -394,6 +474,26 @@
       "source_bytes": 291962,
       "bytes": 29184,
       "sha256": "429a6aa1b012cfffe8627ad4176eaa80a47e3c1fd538df3111108f35e8052467"
+    },
+    {
+      "file": "assets/thumbs/robot-tester-480.webp",
+      "source_file": "assets/promo/robot-tester.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 236684,
+      "bytes": 46846,
+      "sha256": "f6b4327487bcdc0facca838dfbe637e4fdffb2b5bf926f76a18f15269e8df413"
+    },
+    {
+      "file": "assets/thumbs/robot-tester-800.webp",
+      "source_file": "assets/promo/robot-tester.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 236684,
+      "bytes": 108698,
+      "sha256": "864beaaf5d7ecb59022490524ffee0c945afa453c2170f1eb173361f62798dd3"
     },
     {
       "file": "assets/thumbs/robot-tester.webp",
@@ -544,6 +644,26 @@
       "source_bytes": 178862,
       "bytes": 21404,
       "sha256": "ac4b30cb217428edad5324ef758a3a57d9f3e7879a669cbe2c52e2f2c5ba0454"
+    },
+    {
+      "file": "assets/thumbs/two-more-ways-to-move-in-480.webp",
+      "source_file": "assets/promo/two-more-ways-to-move-in.webp",
+      "source_width": 1280,
+      "width": 480,
+      "height": 320,
+      "source_bytes": 362046,
+      "bytes": 70480,
+      "sha256": "8961bf5a899789af4657234c81de5feb8b077011c3d96e83121c33dc1b51987d"
+    },
+    {
+      "file": "assets/thumbs/two-more-ways-to-move-in-800.webp",
+      "source_file": "assets/promo/two-more-ways-to-move-in.webp",
+      "source_width": 1280,
+      "width": 800,
+      "height": 533,
+      "source_bytes": 362046,
+      "bytes": 158686,
+      "sha256": "c7dfe13b65a2d42652823bb12dfa3e8f1bf3ad7fdd3b405f9a55fc9684ec07c5"
     },
     {
       "file": "assets/thumbs/two-more-ways-to-move-in.webp",

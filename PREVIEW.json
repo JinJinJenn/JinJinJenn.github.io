@@ -16,7 +16,7 @@
     "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
   },
   "editorial_changes": "Original article meaning and test results retained; clipped copy and dead-end image referrals revised, and the park article links to the later completed tests.",
-  "local_preview_revision": 20,
+  "local_preview_revision": 21,
   "mod_test_scope": "The development target is The Sims 4 1.105. The dated 28/28 result applies only to the MoveAnywhere park-move scenario; it is not a collection-wide compatibility result. Existing per-mod statuses remain unchanged.",
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
@@ -27,10 +27,10 @@
   "mod_card_reading_order": "Each smaller mod card starts with its existing name, status and purpose, followed by the unchanged promotional artwork and labelled actual game capture.",
   "layer_kit_reuse": "All 20 layer-kit PNGs match the preserved original mod-site WebPs by decoded pixels. Two unused, text-free botanical layers now frame the shared footer in a separate decorative area. Baked-text interface images are not used, and existing animated jewels/controls remain intact.",
   "thumbnail_delivery": {
-    "files": 36,
+    "files": 48,
     "full_art_bytes": 5128734,
-    "thumbnail_bytes": 1593478,
-    "note": "Responsive small-image delivery for ornaments, reading links and promotional mod art. Full artwork remains the fallback and article covers are unchanged."
+    "thumbnail_bytes": 2868928,
+    "note": "Responsive small-image delivery for devlog cards, ornaments, reading links and promotional mod art. Full artwork remains the fallback and article covers are unchanged."
   },
   "copy_and_browsing": "Seven existing mod anchors have a compact jump list. Three tested/fixed projects link directly to their existing devlogs. Availability and remaining historical safety/stat wording are clarified without adding release promises or changing game evidence."
 }

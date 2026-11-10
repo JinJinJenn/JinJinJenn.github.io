@@ -1,8 +1,8 @@
-# Preview 13 verification
+# Preview verification
 
 The current preview is not deployed. The original main and separate mod site remain unchanged.
 
-## Rendering and interaction
+## Revision 13 baseline: rendering and interaction
 
 An isolated headless Chrome session with a fresh temporary profile checked the local static site. No existing browser session was used.
 
@@ -21,3 +21,12 @@ Source checks cover original page URLs, six posts, seven mod entries, real scree
 ## Remaining review
 
 Headless mobile emulation does not measure a physical phone's GPU, battery use or touch feel. Safari and Firefox have not been tested. The owner should review the visual direction and interactions before replacing the main site. No merge or public deployment is included in this checkpoint.
+
+
+## Revision 21: interior reading and artwork delivery
+
+- The About page introduces Jenn before the two portraits on narrow screens, while preserving the side-by-side art and reading columns on desktop. The visible artwork caption now identifies it as generated.
+- Existing illustrated devlog cards use 480px and 800px delivery copies, with unchanged full-size fallbacks and article covers. At both 390px and 1440px, isolated Chrome selected 480px copies at DPR1 and 800px copies at DPR2. The six cover files totaled 387,080 and 888,370 bytes respectively, versus 2,009,152 bytes for the full-size set. These are local encoded-resource measurements, not a cellular-speed claim.
+- About was checked at 320px, 390px, desktop, 200% text and dark theme. Both portraits remained visible; no overlap, horizontal overflow, missing images or JavaScript errors were found. Keyboard skip-to-content continued to work.
+- The computer-post excerpt now names the gaming-skill and hacking-money upgrades, rather than implying all hidden stats change.
+- Original article artwork, gameplay captures and turntables remain byte-for-byte unchanged. The complete builder reproduced the checkpoint without drift. Physical-device and Safari/Firefox limitations above still apply.
