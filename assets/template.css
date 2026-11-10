@@ -13,7 +13,7 @@
 .template-masthead{position:relative;isolation:isolate;overflow:hidden;min-height:218px;background:#aa6398 url('optimized/garden.webp') center 43%/cover;border-bottom:2px solid var(--border)}
 .template-masthead .scene-landscape{background-position:center 43%;z-index:-2}
 .template-masthead .scene-shade{background:linear-gradient(180deg,#28102d30,#29132d05);z-index:-1}
-.template-masthead .canopy{top:-72px;width:100%;left:0;z-index:1;opacity:.92;max-width:none}
+.template-masthead .canopy{top:-72px;width:100%;left:clamp(-240px,-12vw,-44px);z-index:1;opacity:.92;max-width:none}
 .template-masthead .site-header{position:relative;z-index:5}
 .template-page.interior-page{background:radial-gradient(ellipse at 0 30%,#efd9ec44,transparent 35%),radial-gradient(ellipse at 100% 65%,#dde7cc44,transparent 35%),var(--paper)}
 .template-page .interior-wrap,.template-page.about-page .interior-wrap,.template-page.journal-page .interior-wrap,.template-page.journal-page:has(.devlog-index-grid) .interior-wrap,.template-page.not-found-page .interior-wrap{max-width:var(--site-shell);margin-top:32px;margin-bottom:64px;padding:0;border:2px solid var(--border);border-radius:14px;background:var(--surface);overflow:hidden;text-align:left}
@@ -89,7 +89,7 @@
  .template-page .site-header nav a{font-size:.73rem;padding:7px 5px;min-height:42px;transform:none}
  .template-page .site-header nav a:before{display:none}
  .template-masthead{min-height:242px}
- .template-masthead .canopy{top:0;width:150%;max-width:none;left:-12%}
+ .template-masthead .canopy{top:0;width:150%;max-width:none;left:calc(-12% + clamp(-240px,-12vw,-44px))}
  .template-page .interior-wrap{margin-top:20px;margin-bottom:32px}
  .template-page .interior-wrap>.template-page-heading{padding-top:24px;padding-bottom:22px}
  .template-page .template-page-heading h1{font-size:2.3rem;max-width:none}

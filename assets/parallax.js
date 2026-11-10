@@ -14,7 +14,7 @@
      for(const l of s.querySelectorAll('[data-parallax-layer]')){const d=Number(l.dataset.parallaxLayer)||.3;
        let px=x*pointer*d,py=(scroll*travel+y*pointer*.55)*d;
        if(l.dataset.parallaxMode==='outward'){
-         // This branch is composed at 0,0. Never pull it down into the text.
+         // CSS parks this branch off-canvas. Keep its motion outward from that resting position.
          const mx=hasPointer?Math.max(0,Math.min(1,(x+1)/2)):0,my=hasPointer?Math.max(0,Math.min(1,(y+1)/2)):0;
          px=-Math.min(32,mx*pointer*Math.abs(d));
          py=-Math.min(42,(my*pointer*.55+Math.max(0,scroll)*travel)*Math.abs(d));
