@@ -1,0 +1,56 @@
+/* A small, self-contained jewel. No page-sized filter or bloom buffer. */
+.jenn-plumbob {
+  --plumbob-size: 192px;
+  position: relative;
+  display: block;
+  width: var(--plumbob-size);
+  aspect-ratio: 3 / 4;
+  flex: none;
+  contain: layout paint;
+  isolation: isolate;
+  pointer-events: none;
+  user-select: none;
+}
+.jenn-plumbob__canvas,
+.jenn-plumbob__still {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.jenn-plumbob__canvas { opacity: 0; }
+.jenn-plumbob__still {
+  background: radial-gradient(ellipse at 50% 48%, #9cffa237, transparent 62%);
+}
+.jenn-plumbob[data-plumbob-ready='true'] .jenn-plumbob__canvas { opacity: 1; }
+.jenn-plumbob[data-plumbob-ready='true'] .jenn-plumbob__still { visibility: hidden; }
+:root[data-theme='dark'] .jenn-plumbob__still {
+  background: radial-gradient(ellipse at 50% 48%, #7afda94a, transparent 65%);
+}
+/* Attach to the creator artwork, not the welcome copy or its clickable area. */
+.creator-stage > .jenn-plumbob {
+  position: absolute;
+  z-index: 3;
+  right: -5%;
+  top: -24px;
+}
+@media (min-width: 1450px) {
+  .jenn-plumbob { --plumbob-size: 218px; }
+  .creator-stage > .jenn-plumbob { right: -4%; top: -30px; }
+}
+@media (max-width: 1100px) {
+  .jenn-plumbob { --plumbob-size: 156px; }
+  .creator-stage > .jenn-plumbob { right: -6%; top: -12px; }
+}
+@media (max-width: 760px), (pointer: coarse) {
+  .jenn-plumbob { --plumbob-size: 120px; }
+  .creator-stage > .jenn-plumbob { right: 0; top: 0; }
+}
+@media (max-width: 540px) {
+  .jenn-plumbob { --plumbob-size: 104px; }
+  .creator-stage > .jenn-plumbob { right: 0; top: 0; }
+}
+@media (forced-colors: active) {
+  .jenn-plumbob { display: none; }
+}
