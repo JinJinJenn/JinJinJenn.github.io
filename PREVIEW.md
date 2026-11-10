@@ -39,9 +39,7 @@ decorative parallax. `?motion=off&gpu=0` is a static fallback review route.
 ## Review before merging
 
 Preservation, local-resource, HTTP-route and JavaScript syntax checks pass.
-User-supplied desktop screenshots have been reviewed. Mobile rendering and
-live-browser interaction testing remain pending. Check the character turntables, all article images, mobile nav,
-light/dark themes, pause/reduced-motion states and the garden fallback.
+Isolated headless Chrome checks and screenshot review passed for desktop, 320/390px mobile emulation, 200% text, gallery controls, theme persistence, reduced motion and offscreen animation suspension. Physical phone/GPU testing and Safari/Firefox review remain pending. See QA.md for coverage and limits.
 
 No hosting migration is required. Once reviewed, merge this branch into main
 through the existing GitHub Pages workflow. Until then, do not change the Pages

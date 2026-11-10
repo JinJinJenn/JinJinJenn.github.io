@@ -188,6 +188,26 @@
       "sha256": "9cb80c54bdd2870d1b01482a4b2968a56f68e3c933b2aacd4dfc97bf98460b7d"
     },
     {
+      "file": "assets/thumbs/gentle-hearts-cutout-640.webp",
+      "source_file": "assets/promo/gentle-hearts-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 271096,
+      "bytes": 73922,
+      "sha256": "69c3acd33d5504501bfa2d89ba6dfadc1e8c7fd1531f4e06bdc8e1ac9d8a3057"
+    },
+    {
+      "file": "assets/thumbs/gentle-hearts-cutout.webp",
+      "source_file": "assets/promo/gentle-hearts-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 271096,
+      "bytes": 24102,
+      "sha256": "24f762aca753f44e9c1d382af77998a4acef9dd17fb82e180adf7bc5b88c0468"
+    },
+    {
       "file": "assets/thumbs/hello-world-illustration.webp",
       "source_file": "assets/promo/hello-world-illustration.webp",
       "source_width": 1280,
@@ -218,6 +238,56 @@
       "sha256": "ed533c83a0859717d5b83d57c99fe840cdffefd7a692f3cde416f00968723c26"
     },
     {
+      "file": "assets/thumbs/lost-map-creator-640.webp",
+      "source_file": "assets/promo/lost-map-creator.webp",
+      "source_width": 820,
+      "width": 640,
+      "height": 585,
+      "source_bytes": 104238,
+      "bytes": 65874,
+      "sha256": "82c3ac0df31b15308cadc49ca57f2cc2e86902699cc34c7e9a04e9b997714db7"
+    },
+    {
+      "file": "assets/thumbs/lost-map-creator.webp",
+      "source_file": "assets/promo/lost-map-creator.webp",
+      "source_width": 820,
+      "width": 320,
+      "height": 292,
+      "source_bytes": 104238,
+      "bytes": 24966,
+      "sha256": "151d1f64c3011b6c8fbb6b464830fa109cf8c7094e9d1514e421ca167f80e3a8"
+    },
+    {
+      "file": "assets/thumbs/love-notes-creator-640.webp",
+      "source_file": "assets/promo/love-notes-creator.webp",
+      "source_width": 700,
+      "width": 585,
+      "height": 640,
+      "source_bytes": 116848,
+      "bytes": 76316,
+      "sha256": "dccf94d384acc19e878f6615e9998d4571ee2874063c9577f097739db7edb9c0"
+    },
+    {
+      "file": "assets/thumbs/love-notes-creator.webp",
+      "source_file": "assets/promo/love-notes-creator.webp",
+      "source_width": 700,
+      "width": 292,
+      "height": 320,
+      "source_bytes": 116848,
+      "bytes": 26448,
+      "sha256": "f20c3bed359a19f4431879b9dcadd3f66f480642562c931014dba47635466d37"
+    },
+    {
+      "file": "assets/thumbs/love-notes-cutout-640.webp",
+      "source_file": "assets/promo/love-notes-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 587,
+      "source_bytes": 261130,
+      "bytes": 80972,
+      "sha256": "d8e97694e82d937492e6843a20f14cec0ef583f36eb4cd8f28a7f0f746fe9653"
+    },
+    {
       "file": "assets/thumbs/love-notes-cutout.webp",
       "source_file": "assets/promo/love-notes-cutout.webp",
       "source_width": 1280,
@@ -228,6 +298,16 @@
       "sha256": "8b89e897810ede465be7b626c6dddacc4268f85be83774b387e7b8a4d4f060ea"
     },
     {
+      "file": "assets/thumbs/move-anywhere-cutout-640.webp",
+      "source_file": "assets/promo/move-anywhere-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 499,
+      "source_bytes": 354818,
+      "bytes": 107044,
+      "sha256": "8ef8fdff318dae0379f8fe6cb4a29c05a41d8a0b630d7e6eafdd482cc85772a0"
+    },
+    {
       "file": "assets/thumbs/move-anywhere-cutout.webp",
       "source_file": "assets/promo/move-anywhere-cutout.webp",
       "source_width": 1280,
@@ -236,6 +316,26 @@
       "source_bytes": 354818,
       "bytes": 35940,
       "sha256": "3004c29b901ce11afd39429103e6235736dba9093ad7c7c2090bfc448ac71f1f"
+    },
+    {
+      "file": "assets/thumbs/move-anywhere-promo-640.webp",
+      "source_file": "assets/promo/move-anywhere-promo.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 281944,
+      "bytes": 87330,
+      "sha256": "8b929b58d886911d1a46bc621476137704d6201756ba51c35f39ea72775fdaf1"
+    },
+    {
+      "file": "assets/thumbs/move-anywhere-promo.webp",
+      "source_file": "assets/promo/move-anywhere-promo.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 281944,
+      "bytes": 32760,
+      "sha256": "9f32789dbb33f38ecb579f464068c9e02a1c4ae1a337a10e0bccd52445b88927"
     },
     {
       "file": "assets/thumbs/quiet-mod-fixes.webp",
@@ -258,6 +358,16 @@
       "sha256": "4a5ec1a6b45eaff00cb5bd367de2117a0f33a5223e317ab7e1d40d6a05081394"
     },
     {
+      "file": "assets/thumbs/surprise-gifts-cutout-640.webp",
+      "source_file": "assets/promo/surprise-gifts-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 585,
+      "source_bytes": 239534,
+      "bytes": 71632,
+      "sha256": "0303577d0adf9513bd4f4f57798b889bf0a9082f5ffccbdbebd3e292d60a3cc3"
+    },
+    {
       "file": "assets/thumbs/surprise-gifts-cutout.webp",
       "source_file": "assets/promo/surprise-gifts-cutout.webp",
       "source_width": 1280,
@@ -266,6 +376,56 @@
       "source_bytes": 239534,
       "bytes": 26884,
       "sha256": "b75619e49b043f5b41951500f12713ca939228a78e2999e9bf171ad7310444d7"
+    },
+    {
+      "file": "assets/thumbs/thinking-of-you-cutout-640.webp",
+      "source_file": "assets/promo/thinking-of-you-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 125428,
+      "bytes": 38428,
+      "sha256": "3f61f22d2aa024aa7dc4be48e58719e1213943b15460177ab23d8b9d8a248e82"
+    },
+    {
+      "file": "assets/thumbs/thinking-of-you-cutout.webp",
+      "source_file": "assets/promo/thinking-of-you-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 125428,
+      "bytes": 15144,
+      "sha256": "d2dbff85f524d4be82b42031601d28bb3a6a09f4742906a03283380bbbbdb88b"
+    },
+    {
+      "file": "assets/thumbs/toasts-cutout-640.webp",
+      "source_file": "assets/promo/toasts-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 262292,
+      "bytes": 81442,
+      "sha256": "a8a7fa6e40146f0ad8df8972a21e07c750ba1960fe166c149089c8f262fd14e8"
+    },
+    {
+      "file": "assets/thumbs/toasts-cutout.webp",
+      "source_file": "assets/promo/toasts-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 262292,
+      "bytes": 30488,
+      "sha256": "05b50e90b14c91f93dc8ad99531b21882bd1921922c60185502731679da48095"
+    },
+    {
+      "file": "assets/thumbs/toddler-tv-cutout-640.webp",
+      "source_file": "assets/promo/toddler-tv-cutout.webp",
+      "source_width": 1280,
+      "width": 640,
+      "height": 427,
+      "source_bytes": 178862,
+      "bytes": 57146,
+      "sha256": "72b0593a4c97acab6a9f684ca2e61872bc7fb88803a995dc8e0a8d61be590695"
     },
     {
       "file": "assets/thumbs/toddler-tv-cutout.webp",

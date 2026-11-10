@@ -8,7 +8,7 @@
   "garden_art": "Five original layers copied unchanged from the read-only mods baseline.",
   "article_covers": "Six distinct generated editorial illustrations, clearly labeled. Relevant original gameplay captures also appear inside the articles.",
   "motion": "Bounded decorative parallax, manual pause, reduced-motion support and original captured turntables with still-image fallback.",
-  "review_state": "Unpublished branch preview. Preservation, resource, HTTP and interaction-logic checks pass. User-supplied desktop screenshots reviewed; mobile rendering and live browser interaction review remain pending.",
+  "review_state": "Unpublished branch preview. Preservation, resource, HTTP and interaction-logic checks pass. Isolated headless Chrome review passed desktop, 320/390px mobile emulation, 200% text, gallery, theme and motion checks. Physical-device and other-browser review remain pending.",
   "delivery_optimization": {
     "originals_retained": true,
     "source_bytes": 6957650,
@@ -16,15 +16,15 @@
     "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
   },
   "editorial_changes": "Original article meaning and test results retained; clipped copy and dead-end image referrals revised, and the park article links to the later completed tests.",
-  "local_preview_revision": 12,
+  "local_preview_revision": 13,
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
   "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved.",
   "additional_creator_art": "Distinct note-writing and wayfinding poses for Love Notes and the 404 page, with original props retained.",
   "thumbnail_delivery": {
-    "files": 12,
-    "full_art_bytes": 3419180,
-    "thumbnail_bytes": 373746,
-    "note": "Responsive small-image delivery for ornaments and reading links. Full artwork remains the fallback and article covers are unchanged."
+    "files": 28,
+    "full_art_bytes": 4581026,
+    "thumbnail_bytes": 1267760,
+    "note": "Responsive small-image delivery for ornaments, reading links and promotional mod art. Full artwork remains the fallback and article covers are unchanged."
   }
 }

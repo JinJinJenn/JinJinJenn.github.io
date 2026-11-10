@@ -1,1 +1,1 @@
-(()=>{if(!['127.0.0.1','localhost','[::1]'].includes(location.hostname))return;const badge=document.createElement('aside');badge.className='preview-status';badge.setAttribute('aria-label','Local preview revision');badge.textContent='Garden preview 12';document.body.append(badge);})();
+(()=>{if(!['127.0.0.1','localhost','[::1]'].includes(location.hostname))return;const badge=document.createElement('aside');badge.className='preview-status';badge.setAttribute('aria-label','Local preview revision');badge.textContent='Garden preview 13';document.body.prepend(badge);})();
