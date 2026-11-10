@@ -106,6 +106,20 @@
       "web_sha256": "2753d503b1865911ed88db3799393795006b3538090eba3af1154e4612834ce8",
       "bytes": 409504,
       "source": "Generated editorial illustration for this article; original PNG preserved separately. Soft luminous scenery is part of the artwork."
+    },
+    {
+      "file": "assets/promo/about-notebook-cat.webp",
+      "source_sha256": "23ab35ad0888ac7885e2df6a20f579ee569a6ad7e3617319825cdc5d75e57309",
+      "web_sha256": "12c867358384dd336f626af4731d79d249737a5d8f869df4fcf6dd2c84c426c1",
+      "bytes": 134924,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/devlog-workshop-vignette.webp",
+      "source_sha256": "51dc3504a22260113f1432d4547f01016bce22085d6b2a3d383f505ef82dbc14",
+      "web_sha256": "6d48242169878cf3fde7ae7498aa0a3f65058ff2eebac3bcc9b5d115f7ec6913",
+      "bytes": 74040,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
     }
   ],
   "article_covers": {
