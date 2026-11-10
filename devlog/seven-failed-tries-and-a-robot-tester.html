@@ -16,7 +16,7 @@
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
-<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=b66e4b25ccda" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=6"></script></head>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=7fac282b2795" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=7"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -26,31 +26,31 @@
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
 <main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="A friendly illustrated robot inspecting a miniature house under a protective dome" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/robot-tester.webp"/></div><figcaption>Illustration made with AI for this post.</figcaption></figure>
 <p>Testing a Sims 4 mod by hand goes like this: install it, start the game, wait through the loading screens, load the save, click through six menus, look at the result, quit, tweak the code, repeat. My partner was doing that for the first couple of versions and got, understandably, frustrated.</p>
-<p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and had learned the real lesson: the problem wasn't the mod, it was that every attempt cost ten minutes of clicking and told us almost nothing. So we built an automated QA robot. Thank goodness.</p>
+<p>So, very macho, I took over the testing. After <strong>two</strong> failed iterations I figured it was easy. Seven more failed iterations later I was just as annoyed, and I had learned how little those ten minutes of clicking told us each time. We built an automated QA robot to take over that routine, thank goodness.</p>
 <h2>The tools</h2>
 <ul>
-<li><strong>A launcher</strong> that starts the game, waits through menus and loading screens, closes popups, and loads a <em>test copy</em> of a save.</li>
-<li><strong>A tiny helper mod inside the game</strong> that can read the game's state and run commands. Instead of guessing from screenshots, a test can ask the game directly: "what type is this lot? whose money does build mode spend?"</li>
-<li><strong>A scripted clicker</strong> that drives the real menus like a player, taking a screenshot at every step.</li>
-<li><strong>Checks and a verdict</strong>: a list of pass/fail checks, plus the screenshots. The park run recorded on 6 November 2026 passed all 28 checks.</li>
-<li><strong>The game's own research</strong>: a full readable copy of the game's code, so we can look things up instead of guessing (guessing was how we got to seven failures).</li>
+<li>A launcher starts the game, waits through menus and loading screens, closes popups and loads a <em>test copy</em> of a save.</li>
+<li>A tiny helper mod inside the game reads its state and runs commands, so a test can ask directly what type a lot is or whose money build mode spends instead of guessing from screenshots.</li>
+<li>A scripted clicker drives the real menus like a player and takes a screenshot at every step.</li>
+<li>Each run produces pass/fail checks alongside the screenshots. The park run recorded on 6 November 2026 passed all 28 checks.</li>
+<li>A readable copy of the game's code lets us look things up instead of guessing, which was how we got to seven failures.</li>
 </ul>
 <h2>The recovery</h2>
 <p>Driving a game by robot means things can go wrong, so much of the work went into protecting real saves and making failed tests recoverable:</p>
 <ul>
-<li><strong>Test copies only.</strong> The harness refuses to start the game on anything but a renamed test copy of a save, checks which save actually loaded, and kills the game if it's the wrong one.</li>
-<li><strong>Settings get restored.</strong> Killing the game mid-run once left its settings file empty, so the next start ran with every mod switched off. Now a full known-good copy of the settings is put back after every run.</li>
-<li><strong>Safe installs.</strong> Mods are copied in atomically and only while the game is closed (a half-copied mod crashed one early test), and whatever they replace is backed up first.</li>
-<li><strong>Saves are fenced.</strong> Any save the game attempts during a test is redirected away from the real slots.</li>
-<li><strong>Locked screen? Stop.</strong> If the PC's screen is locked, clicks and screenshots can't work, so the robot says so instead of clicking at nothing.</li>
-<li><strong>Popups can't stall it.</strong> A random "new personality trait" dialog froze one run, so the game's own auto-answer switch is turned on during tests.</li>
-<li><strong>Everything is logged.</strong> Every run leaves a journal and screenshots, so a failure can be replayed on paper instead of redone by hand.</li>
-<li><strong>Keep the receipts.</strong> My working notes and logs used to get deleted after 30 days. Debugging a game for weeks, that's how you lose the "why did we do it this way?" trail. They're now kept for ten years, with a private backup copy.</li>
+<li> The harness refuses to start the game on anything but a renamed test copy of a save, checks which save actually loaded, and kills the game if it's the wrong one.</li>
+<li> Killing the game mid-run once left its settings file empty, so the next start ran with every mod switched off. Now a full known-good copy of the settings is put back after every run.</li>
+<li> Mods are copied in atomically and only while the game is closed (a half-copied mod crashed one early test), and whatever they replace is backed up first.</li>
+<li> Any save the game attempts during a test is redirected away from the real slots.</li>
+<li> If the PC's screen is locked, clicks and screenshots can't work, so the robot says so instead of clicking at nothing.</li>
+<li> A random "new personality trait" dialog froze one run, so the game's own auto-answer switch is turned on during tests.</li>
+<li> Every run leaves a journal and screenshots, so a failure can be replayed on paper instead of redone by hand.</li>
+<li>My working notes and logs used to get deleted after 30 days, which made it easy to lose the "why did we do it this way?" trail while debugging a game for weeks. They're now kept for ten years, with a private backup copy.</li>
 </ul>
 <h2>The best part: a test that can fail</h2>
-<p>We also run the same test with the mod switched off. It <em>must</em> fail. If it passed, the test would be measuring nothing. It fails, the park shows up broken in the screenshots, and the real run goes green. The comparison below shows the same MoveAnywhere test without the mod and after the fix.</p><figure class="post-evidence"><a href="../img/moveanywhere.jpg" title="Open original in-game capture"><img alt="MoveAnywhere comparison: a locked Park lot and broken catalog on the left, and a Residential lot with normal catalog and funds on the right." height="347" loading="lazy" src="../img/moveanywhere.jpg" width="1200"/></a><figcaption>This MoveAnywhere comparison shows the broken park setup on the left and the corrected home setup on the right.</figcaption></figure>
+<p>We also run the same test with the mod switched off, because it needs to catch the broken park setup before we can trust a passing result. That run fails as expected, while the run with the fix passes. The comparison below shows the broken park setup and the corrected home setup.</p><figure class="post-evidence"><a href="../img/moveanywhere.jpg" title="Open original in-game capture"><img alt="MoveAnywhere comparison: a locked Park lot and broken catalog on the left, and a Residential lot with normal catalog and funds on the right." height="347" loading="lazy" src="../img/moveanywhere.jpg" width="1200"/></a><figcaption>This MoveAnywhere comparison shows the broken park setup on the left and the corrected home setup on the right.</figcaption></figure>
 <p>Now the question after every change isn't "does it feel right?" but "what did the run say?" It makes for a much calmer household.</p>
-</main>
+<nav aria-label="More devlog posts" class="post-navigation"><div class="post-navigation-heading"><h2>Keep reading</h2><a href="./">All devlog posts</a></div><div class="post-navigation-grid"><a class="post-navigation-card" href="how-a-park-became-a-home.html" rel="prev"><img alt="" decoding="async" loading="lazy" src="../assets/promo/how-a-park-became-a-home-illustration.webp"/><span><small>Previous post</small><strong>How a park became a home</strong></span></a><a class="post-navigation-card" href="mods-that-did-nothing.html" rel="next"><img alt="" decoding="async" loading="lazy" src="../assets/promo/quiet-mod-fixes.webp"/><span><small>Next post</small><strong>Two mods that quietly did nothing</strong></span></a></div></nav></main>
 <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>
 </body>

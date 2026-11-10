@@ -5,18 +5,18 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Two mods that quietly did nothing · Devlog · JinJinJenn</title>
-<meta content="Surprise Gifts and Toddler TV both loaded fine and did nothing. How the robot tester caught them, and what the fixes were." name="description"/>
+<meta content="Surprise Gifts and Toddler TV loaded without errors but had no effect. Automated testing helped us find and fix both problems." name="description"/>
 <meta content="#2f9e5c" name="theme-color"/>
 <link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://jinjinjenn.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
 <meta content="article" property="og:type"/>
 <meta content="JinJinJenn" property="og:site_name"/>
 <meta content="Two mods that quietly did nothing · Devlog · JinJinJenn" property="og:title"/>
-<meta content="Surprise Gifts and Toddler TV both loaded fine and did nothing. How the robot tester caught them, and what the fixes were." property="og:description"/>
+<meta content="Surprise Gifts and Toddler TV loaded without errors but had no effect. Automated testing helped us find and fix both problems." property="og:description"/>
 <meta content="https://jinjinjenn.github.io/img/og-image.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <link href="../assets/site.css?v=87a78899b176" rel="stylesheet"/>
-<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=b66e4b25ccda" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=6"></script></head>
+<script defer="" src="../assets/site.js?v=10b83adbcf09"></script><link href="../assets/promo.css?v=93a0ebd752ec" rel="stylesheet"/><script defer="" src="../assets/parallax.js?v=ffc9b060f69f"></script><link href="../assets/refinements.css?v=7fac282b2795" rel="stylesheet"/><script defer="" src="../assets/preview-status.js?v=7"></script></head>
 <body class="interior-page journal-page"><a class="skip-link" href="#page-content">Skip to content</a>
 <div class="interior-wrap">
 <header>
@@ -25,15 +25,15 @@
 <p class="meta"><time datetime="2026-11-06">6 Nov 2026</time> · fixes</p>
 <div class="page-controls"><button class="small-button" data-theme-toggle="" type="button">Change theme</button><button class="small-button" data-motion="" type="button">Pause motion</button></div></header>
 <main id="page-content"><figure class="article-cover"><div class="promo-stage" data-parallax-scene=""><span aria-hidden="true" class="promo-orbit"></span><img alt="An illustrated television and gift box with check marks and a magnifying glass" data-parallax-layer="0.6" decoding="async" loading="lazy" src="../assets/promo/quiet-mod-fixes.webp"/></div><figcaption>Illustration made with AI for this post.</figcaption></figure>
-<p>Once the test robot existed, we pointed it at the small mods too. Two of them loaded with no errors and did absolutely nothing. A mod that crashes is easy to notice. A mod that silently does nothing can sit there for weeks.</p>
+<p>Once the test robot existed, we pointed it at the small mods too and found two that loaded without errors but did absolutely nothing. Those failures were harder to spot than a crash, so they could easily have gone unnoticed for weeks.</p>
 <h2>Surprise Gifts</h2>
 <p>The log said <em>"gift candidates: 0"</em> every single day. The mod hunted for gift items by searching object names, but the game's data doesn't carry readable names for them, so the search matched nothing. The fix was a curated list of known items, checked against what the game will actually accept, and a command that hands one over on demand so a test can trigger it.</p><figure class="post-evidence"><a href="../img/surprisegifts.jpg" title="Open original in-game capture"><img alt="An in-game notification says someone left a bouquet of pink roses." height="360" loading="lazy" src="../img/surprisegifts.jpg" width="640"/></a><figcaption>The in-game notification announces a bouquet of pink roses.</figcaption></figure>
 <h2>Toddler TV</h2>
-<p>The game already has a toddler-only "Watch" option on every TV. Only one condition blocked it: the TV has to be switched on. The first version of the mod went after the wrong rule and changed nothing. The fix removes that single condition, and when a toddler starts watching an off TV, the TV turns itself on to the kids' channel and shuts off a few minutes later.</p><figure class="post-evidence"><a href="../img/toddlertv.jpg" title="Open original in-game capture"><img alt="A toddler stands beside a television showing the kids channel." height="360" loading="lazy" src="../img/toddlertv.jpg" width="640"/></a><figcaption>A toddler watches the kids' channel after the television has switched on.</figcaption></figure>
-<p>One honest limit: there's no toddler animation for pressing the remote, so the TV just comes on by itself. Toddlers can't pick channels.</p>
+<p>The game already has a toddler-only "Watch" option on every TV, but it requires the TV to be switched on. The first version of the mod changed the wrong rule and had no effect. The fix removes that condition, so when a toddler starts watching an off TV, it switches itself on to the kids' channel and shuts off a few minutes later.</p><figure class="post-evidence"><a href="../img/toddlertv.jpg" title="Open original in-game capture"><img alt="A toddler stands beside a television showing the kids channel." height="360" loading="lazy" src="../img/toddlertv.jpg" width="640"/></a><figcaption>A toddler watches the kids' channel after the television has switched on.</figcaption></figure>
+<p>There's no toddler animation for pressing the remote, so the TV comes on by itself rather than showing the toddler switch it on, and toddlers still can't pick channels.</p>
 <h2>How we know</h2>
 <p>Both mods were checked in the real game on a test copy of a save, using the game's own checks and actual interactions. The captures above show the gift notification and a toddler watching the television.</p>
-</main>
+<nav aria-label="More devlog posts" class="post-navigation"><div class="post-navigation-heading"><h2>Keep reading</h2><a href="./">All devlog posts</a></div><div class="post-navigation-grid"><a class="post-navigation-card" href="seven-failed-tries-and-a-robot-tester.html" rel="prev"><img alt="" decoding="async" loading="lazy" src="../assets/promo/robot-tester.webp"/><span><small>Previous post</small><strong>Seven failed tries and a robot tester</strong></span></a><a class="post-navigation-card" href="moving-from-in-game-and-evicting.html" rel="next"><img alt="" decoding="async" loading="lazy" src="../assets/promo/two-more-ways-to-move-in.webp"/><span><small>Next post</small><strong>Two more ways to move in</strong></span></a></div></nav></main>
 <footer>JinJinJenn · <a href="https://github.com/JinJinJenn">GitHub</a> · Not affiliated with EA or Maxis.</footer>
 </div>
 </body>
