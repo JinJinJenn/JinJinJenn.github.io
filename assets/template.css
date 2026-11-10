@@ -84,9 +84,9 @@
  .template-page .site-header{gap:12px 8px}
  .template-page .site-header .brand{width:190px}
  .template-site-controls{flex-direction:column;gap:5px}
- .template-site-controls .small-button{min-height:34px;padding:5px 8px}
+ .template-site-controls .small-button{min-height:44px;padding:5px 8px}
  .template-page .site-header nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:9px}
- .template-page .site-header nav a{font-size:.73rem;padding:7px 5px;min-height:42px;transform:none}
+ .template-page .site-header nav a{font-size:.73rem;padding:7px 5px;min-height:44px;transform:none;white-space:normal;text-align:center;overflow-wrap:anywhere}
  .template-page .site-header nav a:before{display:none}
  .template-masthead{min-height:242px}
  .template-masthead .canopy{top:0;width:150%;max-width:none;left:calc(-12% + clamp(-240px,-12vw,-44px))}

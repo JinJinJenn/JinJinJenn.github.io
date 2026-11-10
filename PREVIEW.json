@@ -16,8 +16,15 @@
     "note": "Smaller WebP delivery copies only. Original captures and copied source artwork remain unchanged."
   },
   "editorial_changes": "Original article meaning and test results retained; clipped copy and dead-end image referrals revised, and the park article links to the later completed tests.",
-  "local_preview_revision": 11,
+  "local_preview_revision": 12,
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
-  "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved."
+  "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved.",
+  "additional_creator_art": "Distinct note-writing and wayfinding poses for Love Notes and the 404 page, with original props retained.",
+  "thumbnail_delivery": {
+    "files": 12,
+    "full_art_bytes": 3419180,
+    "thumbnail_bytes": 373746,
+    "note": "Responsive small-image delivery for ornaments and reading links. Full artwork remains the fallback and article covers are unchanged."
+  }
 }

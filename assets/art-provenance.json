@@ -120,6 +120,20 @@
       "web_sha256": "6d48242169878cf3fde7ae7498aa0a3f65058ff2eebac3bcc9b5d115f7ec6913",
       "bytes": 74040,
       "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/love-notes-creator.webp",
+      "source_sha256": "f6d0152364391d3b354b4bd7c919b04a64d9407fdd6c248ce73738a9d5b6c8bd",
+      "web_sha256": "bb9f065294ecd7207494d76ad3d8731986287a0f8825112fc502ebbd10887d7c",
+      "bytes": 116848,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/lost-map-creator.webp",
+      "source_sha256": "89838058a3cb29ea93694c7198569a2a2fdaaec9b1082ffaa9c8b505c6f9628f",
+      "web_sha256": "93cc93490d60cd363adbc9785a4251f7ae03e12a40c387733413b08894ece7fd",
+      "bytes": 104238,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
     }
   ],
   "article_covers": {
@@ -151,5 +165,127 @@
   "additional_sources": {
     "assets/promo/move-anywhere-promo.webp": "User-supplied generated promotional illustration, 9 November 2026.",
     "assets/promo/cozy-computer-den.webp": "Existing generated Cozy rainbow gamer den-2.png from the supplied art collection."
-  }
+  },
+  "thumbnail_derivatives": [
+    {
+      "file": "assets/thumbs/devlog-workshop-vignette.webp",
+      "source_file": "assets/promo/devlog-workshop-vignette.webp",
+      "source_width": 1000,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 74040,
+      "bytes": 14564,
+      "sha256": "4f049e148d6b455ecf435f549c080dbc5bde7ac7da33ed1db6374c4b1ba7182a"
+    },
+    {
+      "file": "assets/thumbs/every-computer-is-a-good-computer.webp",
+      "source_file": "assets/promo/every-computer-is-a-good-computer.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 303156,
+      "bytes": 36474,
+      "sha256": "9cb80c54bdd2870d1b01482a4b2968a56f68e3c933b2aacd4dfc97bf98460b7d"
+    },
+    {
+      "file": "assets/thumbs/hello-world-illustration.webp",
+      "source_file": "assets/promo/hello-world-illustration.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 405800,
+      "bytes": 43424,
+      "sha256": "f82c216ee8f8e5a8e06494240102991608afe49eef098782187d0b7507f99588"
+    },
+    {
+      "file": "assets/thumbs/how-a-park-became-a-home-illustration.webp",
+      "source_file": "assets/promo/how-a-park-became-a-home-illustration.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 409504,
+      "bytes": 36948,
+      "sha256": "91645c2ac974177d68bf21c6cd99e068b6ac4cc004e7ad6e120eccfc6dc2a9ce"
+    },
+    {
+      "file": "assets/thumbs/jenn-robot-workbench.webp",
+      "source_file": "assets/promo/jenn-robot-workbench.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 248,
+      "source_bytes": 301644,
+      "bytes": 35440,
+      "sha256": "ed533c83a0859717d5b83d57c99fe840cdffefd7a692f3cde416f00968723c26"
+    },
+    {
+      "file": "assets/thumbs/love-notes-cutout.webp",
+      "source_file": "assets/promo/love-notes-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 293,
+      "source_bytes": 261130,
+      "bytes": 30982,
+      "sha256": "8b89e897810ede465be7b626c6dddacc4268f85be83774b387e7b8a4d4f060ea"
+    },
+    {
+      "file": "assets/thumbs/move-anywhere-cutout.webp",
+      "source_file": "assets/promo/move-anywhere-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 249,
+      "source_bytes": 354818,
+      "bytes": 35940,
+      "sha256": "3004c29b901ce11afd39429103e6235736dba9093ad7c7c2090bfc448ac71f1f"
+    },
+    {
+      "file": "assets/thumbs/quiet-mod-fixes.webp",
+      "source_file": "assets/promo/quiet-mod-fixes.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 291962,
+      "bytes": 29184,
+      "sha256": "429a6aa1b012cfffe8627ad4176eaa80a47e3c1fd538df3111108f35e8052467"
+    },
+    {
+      "file": "assets/thumbs/robot-tester.webp",
+      "source_file": "assets/promo/robot-tester.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 236684,
+      "bytes": 26324,
+      "sha256": "4a5ec1a6b45eaff00cb5bd367de2117a0f33a5223e317ab7e1d40d6a05081394"
+    },
+    {
+      "file": "assets/thumbs/surprise-gifts-cutout.webp",
+      "source_file": "assets/promo/surprise-gifts-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 293,
+      "source_bytes": 239534,
+      "bytes": 26884,
+      "sha256": "b75619e49b043f5b41951500f12713ca939228a78e2999e9bf171ad7310444d7"
+    },
+    {
+      "file": "assets/thumbs/toddler-tv-cutout.webp",
+      "source_file": "assets/promo/toddler-tv-cutout.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 178862,
+      "bytes": 21404,
+      "sha256": "ac4b30cb217428edad5324ef758a3a57d9f3e7879a669cbe2c52e2f2c5ba0454"
+    },
+    {
+      "file": "assets/thumbs/two-more-ways-to-move-in.webp",
+      "source_file": "assets/promo/two-more-ways-to-move-in.webp",
+      "source_width": 1280,
+      "width": 320,
+      "height": 213,
+      "source_bytes": 362046,
+      "bytes": 36178,
+      "sha256": "901cc29f41697ccbec1c3858d3facded2f8193771e4bb009c5d6bb26c1778160"
+    }
+  ]
 }
