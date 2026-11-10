@@ -20,7 +20,7 @@ Source checks cover original page URLs, six posts, seven mod entries, real scree
 
 ## Remaining review
 
-Headless mobile emulation does not measure a physical phone's GPU, battery use or touch feel. Safari and Firefox have not been tested. The owner should review the visual direction and interactions before replacing the main site. No merge or public deployment is included in this checkpoint.
+Headless mobile emulation does not measure a physical phone's GPU, battery use or touch feel. Safari and Firefox have not been tested. The owner approved publication, and revision 22 went live on 10 November 2026. The checks below describe their individual checkpoints; physical-device and other-browser coverage is still limited.
 
 
 ## Revision 21: interior reading and artwork delivery
@@ -39,3 +39,12 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - Eighteen page/viewport/mode cases passed with no JavaScript errors or overflow. This included all six posts at 320/390px and representative desktop, 200% text, dark and reduced-motion checks. Real screenshot zoom, Escape and focus return still worked.
 - Existing manual pause persisted across all six articles. The home plumbob stopped drawing offscreen and while paused, then resumed after returning to view. This is an isolated-browser observation, not a physical GPU or battery benchmark.
 - Source checks verified unchanged prose, captions, full-cover fallbacks, actual game images and all original routes. Physical-device and other-browser testing remain outstanding.
+
+
+## Revision 23: visitor copy and mod gallery
+
+- The home page and About lead with mod ideas and player benefits. Availability remains explicit; dated test results, limitations and genuine captures remain in the devlogs. Social descriptions and article introductions were rewritten without adding release promises or new claims.
+- Seven existing mods have an image-led gallery, using generated promotional thumbnails totaling 184,944 bytes. The original details and gameplay captures remain reachable through native fragment links and the Details view. Without JavaScript, both views remain available.
+- Thirteen isolated Chrome cases passed: gallery at desktop, 320/390px, dark theme, 200% text, reduced motion and no-JavaScript, plus desktop/mobile Home, About and a representative article. No horizontal overflow, missing gallery images or JavaScript errors were found.
+- Gallery selection, direct-link reloads, Back navigation, view toggles, keyboard focus transfer and original screenshot zoom/Escape/focus return passed. A native-fragment focus reset found during testing was fixed and rechecked.
+- Existing shared layout, all seven detail articles, six post routes, genuine screenshots and three turntables are preserved. This remains emulated-device Chrome coverage, not physical-phone, Safari or Firefox testing.

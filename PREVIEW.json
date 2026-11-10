@@ -20,7 +20,7 @@
   "mod_test_scope": "The development target is The Sims 4 1.105. The dated 28/28 result applies only to the MoveAnywhere park-move scenario; it is not a collection-wide compatibility result. Existing per-mod statuses remain unchanged.",
   "shared_template": "Every route uses the same garden masthead, six primary tabs, display controls, window chrome and footer. Interior content shares a 1200px outer shell and a 72ch article reading measure.",
   "plumbob": "Animated emerald with cached gradient glow cards; capped at 30fps and 1.5 DPR on desktop, 15fps and 1 DPR on mobile. Paused, reduced-motion, hidden and offscreen states stop the animation.",
-  "article_reading_order": "Each of the six posts opens with its unchanged introductory paragraph before the cover illustration, then continues with the remaining original prose and evidence. Responsive delivery preserves the full original cover fallback.",
+  "article_reading_order": "Each post opens with its introduction before the cover, followed by the development story and dated evidence. Responsive delivery preserves the full original cover fallback.",
   "art_direction": "Shared page geometry with topic-specific accents, compact project artwork, two additional transparent illustrations and direct project links. Existing art and real captures remain preserved.",
   "additional_creator_art": "Distinct note-writing, thoughtful, TV-corner, heart-hug and wayfinding poses, plus a gift-courier robot. Original props remain in the compositions. The supplied MoveAnywhere graphic remains unchanged, beside its existing explanation on wide screens.",
   "character_file_access": "Original animation and still-image links remain available without JavaScript or native dialog support; supported browsers enhance normal animation-link clicks into the existing viewer.",
@@ -34,5 +34,6 @@
     "note": "Responsive image delivery for devlog cards and article covers, ornaments, reading links and promotional mod art. Full artwork remains the fallback; original cover files are unchanged."
   },
   "copy_and_browsing": "Seven existing mod anchors have a compact jump list. Three tested/fixed projects link directly to their existing devlogs. Availability and remaining historical safety/stat wording are clarified without adding release promises or changing game evidence.",
-  "visitor_copy": "Player-facing introductions and mod descriptions; unreleased availability remains explicit. Technical test history stays in the devlogs."
+  "visitor_copy": "Player-facing introductions and mod descriptions; unreleased availability remains explicit. Technical test history stays in the devlogs.",
+  "mod_gallery": "Image-first browsing for the seven existing mods, using generated promotional thumbnails and current status/purpose. Original detail articles and gameplay captures remain available through direct hashes and Details; no-JavaScript readers see both views."
 }

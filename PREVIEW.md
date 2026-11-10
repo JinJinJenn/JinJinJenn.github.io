@@ -1,7 +1,8 @@
 # Main site garden preview
 
-This is the unpublished `preview/main-garden` branch of the main profile site.
-The live main branch and the separate `/mods/` repository remain unchanged.
+This source is developed on `preview/main-garden` in the main profile repository.
+Revision 22 was published to the main site on 10 November 2026. Later changes are
+checked on the branch before promotion. The separate `/mods/` repository remains unchanged.
 
 ## View locally
 
