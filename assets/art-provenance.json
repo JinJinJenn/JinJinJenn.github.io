@@ -148,6 +148,20 @@
       "web_sha256": "edae99e6629ef5741f0e8f64a3b264aef9c8260ad59ba3d049a414f4d7f70986",
       "bytes": 108610,
       "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/surprise-gifts-robot.webp",
+      "source_sha256": "135cb0039c15659fea7ddd9e1ff8c23a2445661dd01460d19b9c5055c2037e73",
+      "web_sha256": "9f11a618da474b95a21378ce664feca9a1efd5391bfc00a8e8546b6c6072fd83",
+      "bytes": 110946,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/gentle-hearts-creator.webp",
+      "source_sha256": "0945e1a47ca4ebe58e38824eec3c32133984050104b33813da94951df47de737",
+      "web_sha256": "8a897dccef323f0ba9f8dd5bebe80a758acf0b3edada7dea49c3f3a52486acb8",
+      "bytes": 205016,
+      "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
     }
   ],
   "article_covers": {
@@ -200,6 +214,26 @@
       "source_bytes": 303156,
       "bytes": 36474,
       "sha256": "9cb80c54bdd2870d1b01482a4b2968a56f68e3c933b2aacd4dfc97bf98460b7d"
+    },
+    {
+      "file": "assets/thumbs/gentle-hearts-creator-640.webp",
+      "source_file": "assets/promo/gentle-hearts-creator.webp",
+      "source_width": 962,
+      "width": 616,
+      "height": 640,
+      "source_bytes": 205016,
+      "bytes": 82566,
+      "sha256": "d377244ad5251a51b5a122b260592be2cb480f1d9e0dcfd99a7154031bccbf03"
+    },
+    {
+      "file": "assets/thumbs/gentle-hearts-creator.webp",
+      "source_file": "assets/promo/gentle-hearts-creator.webp",
+      "source_width": 962,
+      "width": 308,
+      "height": 320,
+      "source_bytes": 205016,
+      "bytes": 25548,
+      "sha256": "a17bc3c7c4028b43b5899cab7d940984fbe0b5e204dfd405d6a123a5bacf6eda"
     },
     {
       "file": "assets/thumbs/gentle-hearts-cutout-640.webp",
@@ -390,6 +424,26 @@
       "source_bytes": 239534,
       "bytes": 26884,
       "sha256": "b75619e49b043f5b41951500f12713ca939228a78e2999e9bf171ad7310444d7"
+    },
+    {
+      "file": "assets/thumbs/surprise-gifts-robot-640.webp",
+      "source_file": "assets/promo/surprise-gifts-robot.webp",
+      "source_width": 914,
+      "width": 585,
+      "height": 640,
+      "source_bytes": 110946,
+      "bytes": 53686,
+      "sha256": "8a735daf4d0353cfa6b1ffb431018c766ce1c843b08df5276cf7f8c0cdf3e0a9"
+    },
+    {
+      "file": "assets/thumbs/surprise-gifts-robot.webp",
+      "source_file": "assets/promo/surprise-gifts-robot.webp",
+      "source_width": 914,
+      "width": 292,
+      "height": 320,
+      "source_bytes": 110946,
+      "bytes": 22382,
+      "sha256": "b2f33cac6e8237af1c6731d49e2232f54b8ac1bbddc50306c63328edd8a13ad5"
     },
     {
       "file": "assets/thumbs/thinking-creator-640.webp",
