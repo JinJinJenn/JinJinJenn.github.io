@@ -1,0 +1,11 @@
+/* Compact in-page browsing, without another sticky layer or illustration. */
+.mod-jump-nav{margin:22px 0 28px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.mod-jump-nav>span{display:block;margin-bottom:9px;font-size:.82rem;font-weight:700;color:var(--muted)}
+.mod-jump-nav ul{display:flex;flex-wrap:wrap;gap:7px 10px;list-style:none;margin:0;padding:0}
+.mod-jump-nav li{margin:0;padding:0;min-width:0}
+.mod-jump-nav a{display:flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--lavender);color:var(--ink);font-size:.84rem;line-height:1.4;text-decoration:none;overflow-wrap:anywhere}
+.mod-jump-nav a:hover{border-color:var(--border);text-decoration:underline}
+.mod-jump-nav a:focus-visible,.mod-devlog-link:focus-visible{outline:3px solid var(--story-accent,#9564aa);outline-offset:4px}
+#mods article[id]{scroll-margin-top:28px}
+.mod-devlog-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:12px;font-size:.85rem;line-height:1.5;color:var(--ink)}
+@media(max-width:540px){.mod-jump-nav{padding:13px;margin:18px 0 22px}.mod-jump-nav ul{gap:8px}.mod-jump-nav a{padding:7px 10px}.mod-devlog-link{margin-top:8px}}
