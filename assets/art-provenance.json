@@ -447,5 +447,31 @@
       "bytes": 36178,
       "sha256": "901cc29f41697ccbec1c3858d3facded2f8193771e4bb009c5d6bb26c1778160"
     }
+  ],
+  "layer_kit_derivatives": [
+    {
+      "file": "assets/optimized/garden-edge-left.webp",
+      "source_file": "01-foliage-left.webp",
+      "source_sha256": "28c1d50b57dd891222898d7dd548b3861366f9359c9e52541dee2d4bcff1a567",
+      "web_sha256": "212ca79aaa132846b11501f4469be205bb0eccad0d9e331ef8d86423dd5bf76c",
+      "bytes": 91146,
+      "source": "Original garden layer kit; text-free foliage. Lossless source has the same decoded pixels as the preserved original PNG. Original source remains unchanged."
+    },
+    {
+      "file": "assets/optimized/garden-edge-right.webp",
+      "source_file": "19-foliage-right.webp",
+      "source_sha256": "1ed3e8c17ef2d6ffffe11cbf7db51903858f906b44ddc72c03f12ae2a4497159",
+      "web_sha256": "c1beaa9a35370aaeee144f2bbcc3ff69560471b65c50330b01d27c733eff24ab",
+      "bytes": 108248,
+      "source": "Original garden layer kit; text-free foliage. Lossless source has the same decoded pixels as the preserved original PNG. Original source remains unchanged."
+    },
+    {
+      "file": "assets/optimized/garden-edge-right-small.webp",
+      "source_file": "19-foliage-right.webp",
+      "source_sha256": "1ed3e8c17ef2d6ffffe11cbf7db51903858f906b44ddc72c03f12ae2a4497159",
+      "web_sha256": "9f55f4b8706c5f121d8d4ac1b48b89fdfb52e12a14007183212c39408bfce80f",
+      "bytes": 39994,
+      "source": "Original garden layer kit; text-free foliage. Lossless source has the same decoded pixels as the preserved original PNG. Original source remains unchanged."
+    }
   ]
 }

@@ -38,3 +38,12 @@
 .promo-stage[data-art-layout='creator-note']>.art-character{position:absolute;right:-6%;bottom:0;width:84%;height:100%;object-fit:contain;z-index:2}.promo-stage[data-art-layout='creator-note']>.art-companion{position:absolute;left:1%;bottom:8%;width:32%;height:43%;object-fit:contain;z-index:3}.promo-stage[data-art-layout='wayfinding']{height:330px}.promo-stage[data-art-layout='wayfinding']>.art-character{position:absolute;left:0;bottom:0;width:83%;height:100%;object-fit:contain;z-index:2}.promo-stage[data-art-layout='wayfinding']>.art-companion{position:absolute;right:0;bottom:5%;width:30%;height:42%;object-fit:contain;z-index:3}@media(max-width:580px){.promo-stage[data-art-layout='wayfinding']{height:270px}.template-site-controls .small-button{font-size:.72rem}.template-page .site-header nav a{white-space:normal;text-align:center}}
 /* Hide margin ornaments at enlarged text sizes when the gutter is too small. */
 @media(max-width:78rem){.page-emblem{display:none}}
+
+/* Original, independent botanical layers finish every page without covering copy. */
+.layer-kit-garden{position:relative;isolation:isolate;overflow:hidden;height:clamp(96px,10vw,150px);margin:0;pointer-events:none;background:linear-gradient(0deg,var(--lavender),transparent 72%)}
+.layer-kit-garden img{position:absolute;display:block;max-width:none;object-fit:contain;will-change:transform}
+.layer-kit-garden .garden-edge-left{left:-22px;bottom:-5px;height:260%;width:auto;z-index:1}
+.layer-kit-garden .garden-edge-right{right:-22px;bottom:-3px;height:100%;width:auto;z-index:2}
+@media(max-width:580px){.layer-kit-garden{height:88px}.layer-kit-garden .garden-edge-left{display:none}.layer-kit-garden .garden-edge-right{right:-12px}}
+@media(prefers-reduced-motion:reduce){.layer-kit-garden img{will-change:auto}}
+:root[data-paused='true'] .layer-kit-garden img{will-change:auto}
