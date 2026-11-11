@@ -162,6 +162,18 @@
       "web_sha256": "8a897dccef323f0ba9f8dd5bebe80a758acf0b3edada7dea49c3f3a52486acb8",
       "bytes": 205016,
       "source": "Generated transparent illustration, not an in-game capture. Full PNG, prompt and alpha manifest preserved separately."
+    },
+    {
+      "file": "assets/promo/creator-dollhouse-v1.webp",
+      "web_sha256": "5855c2b148a3075c14cc4fc9ca605fbe64eb39b327f0f74090c7909c7cb3fdb3",
+      "bytes": 320492,
+      "source": "Generated transparent promotional illustration, November 2026. Decorative concept artwork, not a game capture."
+    },
+    {
+      "file": "assets/promo/cat-letters-v1.webp",
+      "web_sha256": "1914126bdfaf4fef25d0ef4702bd91932df5c34562476050e9d778cbfbf9237c",
+      "bytes": 222438,
+      "source": "Generated transparent promotional illustration, November 2026. Decorative concept artwork, not a game capture."
     }
   ],
   "article_covers": {

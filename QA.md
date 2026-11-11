@@ -54,3 +54,13 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - Each of the seven gallery cards now has an Explore artwork action, separate from its existing detail link. The viewer includes previous/next buttons, arrow-key navigation, a full-size image link, and clear generated-art attribution.
 - Node syntax validation and jsdom behavior checks passed for all seven source paths, next/previous wrap, keyboard arrows, close/focus return, reopening at a selected item, pagehide cleanup, and preserved detail anchors. Images are requested only when viewed; no artwork or original routes were removed.
 - Browser visual checks were attempted but could not run: this executor's Chromium cannot create its process singleton socket (`Operation not permitted`), including the permitted escalated attempt. Native dialog focus trapping, Escape/backdrop close, mobile layout, and physical-device behavior remain unverified for this revision.
+
+
+## Revision 25: art woven through existing pages
+
+- Layered creator/prop illustrations on six mod cards, with matching card art proportions.
+- Subject-specific decorative cutouts inside five devlog posts; added a signoff illustration to Hello World and a new cat-and-letter illustration to About.
+- Two newly generated transparent art pieces, optimized WebP derivatives and provenance, including a miniature-home creator on the home page.
+- Shared responsive story-art stylesheet; existing content, real game captures, navigation, and separate mods site preserved.
+- Automated DOM checks: seven source artwork links, viewer navigation, focus return, detail anchors. Local references checked. Transparent art inspected composited on cream.
+- Browser rendering could not be tested in this cloud sandbox; do not treat these DOM checks as visual/mobile performance QA.

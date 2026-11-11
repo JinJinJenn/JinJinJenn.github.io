@@ -1,0 +1,23 @@
+/* Subject-specific cutouts share one rhythm across the existing pages. */
+.story-cutout{float:right;width:clamp(140px,27%,205px);margin:4px -16px 18px 24px;pointer-events:none;shape-outside:ellipse(48% 47%);background:radial-gradient(ellipse at 50% 65%,var(--story-wash,var(--lilac)),transparent 72%)}
+.story-cutout--left{float:left;margin:4px 22px 18px -12px}
+.story-cutout img{display:block;width:100%;height:auto;filter:drop-shadow(0 6px 5px #50304418)}
+.template-reading h2,.template-reading .post-navigation{clear:both}
+.story-signoff{width:min(280px,70%);margin:30px auto 10px;pointer-events:none;background:radial-gradient(ellipse,var(--lilac),transparent 72%)}
+.story-signoff img{width:100%;height:auto;display:block}
+.mod-gallery-art{aspect-ratio:4/5}.layered-card-art{isolation:isolate}
+.mod-gallery-art.layered-card-art .layered-creator{inset:auto;left:8%;bottom:2%;width:88%;height:94%;object-fit:contain;z-index:2;filter:drop-shadow(0 8px 5px #51315115)}
+.mod-gallery-art.layered-card-art .layered-prop{inset:auto;left:3%;top:5%;width:33%;height:35%;object-fit:contain;z-index:1;transform:rotate(-7deg)}
+.mod-gallery-item:nth-child(even) .layered-card-art .layered-creator{left:0;right:8%}
+.mod-gallery-item:nth-child(even) .layered-card-art .layered-prop{left:auto;right:3%;transform:rotate(7deg)}
+.illustrated-future{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--paper);padding:24px!important;box-shadow:0 5px 0 #47244d12}
+.future-concept{height:240px;display:grid;place-items:center;background:radial-gradient(ellipse,var(--lilac),transparent 72%);margin:-8px -8px 18px;pointer-events:none}
+.future-concept img{height:100%;width:100%;object-fit:contain}
+.illustrated-future h2{margin-top:0}
+:root[data-theme='dark'] .story-cutout,:root[data-theme='dark'] .story-signoff,:root[data-theme='dark'] .future-concept{background:radial-gradient(ellipse,#79628440,transparent 72%)}
+@media(max-width:580px){.story-cutout{width:118px;margin:4px 0 12px 14px}.story-cutout--left{margin:4px 14px 12px 0}.future-concept{height:200px}.mod-gallery-art{aspect-ratio:4/3}.mod-gallery-art.layered-card-art .layered-creator{width:82%;height:98%;left:12%}.mod-gallery-art.layered-card-art .layered-prop{width:29%;height:44%}}
+@media(max-width:360px){.story-cutout{float:none;width:150px;margin:12px auto 18px}}
+@media(prefers-reduced-motion:reduce){.story-cutout img,.story-signoff img,.future-concept img{transform:none!important}}
+/* Put the introduction before decorative artwork on phones; give large screens breathing room without narrow poster-sized content. */
+@media(min-width:1600px){:root{--site-shell:min(88vw,1920px)}html{font-size:18px}.template-page .site-header{grid-template-columns:280px minmax(0,1fr) auto}.template-page .site-header .brand{width:280px}.template-page .site-header nav a{font-size:1rem}.template-page .hero-scene>.canopy{width:72%;max-width:2100px}.template-page .hero-layout{gap:60px}.mod-gallery-copy p{font-size:1rem}.template-page .template-reading{max-width:72ch}}
+@media(max-width:580px){.template-page .hero-layout{display:flex;flex-direction:column;padding-top:4px;gap:18px;min-height:0}.template-page .welcome-window{order:0;width:100%;transform:none}.template-page .creator-stage{order:1;max-height:250px;overflow:hidden}.template-page .welcome-copy{padding:22px}.template-page .welcome-copy h1{font-size:clamp(2.8rem,11vw,3.5rem)}.template-page .hero-actions{margin-top:16px}.template-page .site-header{padding-bottom:16px}.template-page .site-header nav{gap:6px}.template-page .hero-scene{min-height:0}}
