@@ -33,3 +33,6 @@
 :root[data-theme='dark'] .template-page .site-header nav a{color:#f4e8f4;background:#33243b}
 :root[data-theme='dark'] .template-page .site-header nav a[aria-current]{background:#623656;color:#fff}
 @media(max-width:580px){.editorial-home .welcome-window{padding:16px 8px}.editorial-home .welcome-copy h1{font-size:clamp(3.1rem,12vw,4.4rem)}}
+
+:root[data-theme='dark'] .template-page .small-button,:root[data-theme='dark'] .template-page .theme-button{background:#432d50;color:#f4e8f4;border-color:#9878ac}
+:root[data-theme='dark'] .mod-topic-buttons [aria-pressed='true']{background:linear-gradient(#ae286e,#8b1655);color:#fff}
