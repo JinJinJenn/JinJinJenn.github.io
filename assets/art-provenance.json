@@ -195,6 +195,11 @@
       "source_sha256": "da10849f9b4d4e10a8c370c1b997ee12b34363d653117daa8b1a5f2e607f5098",
       "web_sha256": "24f33714c602268eb100785c83cc50e212c4fa0754b13106892fb5313e315bea",
       "bytes": 131982
+    },
+    {
+      "file": "assets/promo/presenter-lineup-v1.webp",
+      "source": "User-supplied transparent four-character reference, November 2026. Original preserved in user Library. Delivery format conversion only.",
+      "web_sha256": "98fbd4e6e021965c77f80784e9e7ecb2d3009cd5e7a2fb680318a6e450c0221d"
     }
   ],
   "article_covers": {
