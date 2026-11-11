@@ -79,3 +79,10 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - Generated 1280px and 640px WebP delivery versions with source provenance. This is an imagined studio, labeled accordingly, not a photograph of Jenn's workspace.
 - Added a subtle edge treatment to the phone navigation strip to signal horizontal scrolling.
 - DOM checks for nine pages and seven-card artwork-viewer regressions pass. Awaiting PC1 rendered QA for this revision.
+
+## Revision 28: reference-led home presentation
+
+- Reframed the existing homepage into a character/welcome/featured-project composition, followed by three illustrated routes into Mods, Characters, and Devlog. No invented projects, downloads, or character claims.
+- Preserved all existing mod details, real turntables, navigation, motion/theme controls, and original mod-site link. Featured MoveAnywhere remains marked In testing.
+- Removed the unnecessary public privacy paragraph and repetitive generation/process captions from decorative artwork. Source provenance remains in the repository; actual game captures retain their identity.
+- Nine-page structural/reference checks and artwork-viewer interaction checks pass. Requires PC1 layout checks before considering visual QA complete.
