@@ -6,7 +6,7 @@
   const dialog = document.createElement('dialog');
   dialog.className = 'capture-viewer';
   dialog.setAttribute('aria-labelledby', 'captureTitle');
-  dialog.innerHTML = '<form method="dialog" class="capture-viewer-bar"><h2 id="captureTitle">In-game capture</h2><button class="small-button" autofocus aria-label="Close screenshot viewer">Close</button></form><div class="capture-viewer-tools" aria-label="Screenshot zoom"><button type="button" class="small-button" data-capture-zoom="in">Zoom in</button><button type="button" class="small-button" data-capture-zoom="out" disabled>Zoom out</button><button type="button" class="small-button" data-capture-zoom="fit" disabled>Fit image</button><output aria-live="polite">Fit</output></div><div class="capture-viewer-image"><img alt=""></div><p class="capture-viewer-caption" id="captureCaption"></p><a class="capture-viewer-original">Open original image</a>';
+  dialog.innerHTML = '<form method="dialog" class="capture-viewer-bar"><h2 id="captureTitle">In-game capture</h2><button class="small-button" autofocus aria-label="Close image viewer">Close</button></form><div class="capture-viewer-tools" aria-label="Image zoom"><button type="button" class="small-button" data-capture-zoom="in">Zoom in</button><button type="button" class="small-button" data-capture-zoom="out" disabled>Zoom out</button><button type="button" class="small-button" data-capture-zoom="fit" disabled>Fit image</button><output aria-live="polite">Fit</output></div><div class="capture-viewer-image"><img alt=""></div><p class="capture-viewer-caption" id="captureCaption"></p><a class="capture-viewer-original">Open original image</a>';
   document.body.append(dialog);
   const image = dialog.querySelector('img');
   const title = dialog.querySelector('h2');
@@ -38,7 +38,7 @@
     scale = Math.min(4, next);
     frame.classList.add('is-zoomed');
     frame.tabIndex = 0;
-    frame.setAttribute('aria-label', 'Enlarged screenshot. Scroll to inspect the image.');
+    frame.setAttribute('aria-label', 'Enlarged image. Scroll to inspect the image.');
     image.style.width = Math.round(fitWidth * scale) + 'px';
     frame.scrollLeft = Math.max(0, (frame.scrollWidth - frame.clientWidth) / 2);
     frame.scrollTop = Math.max(0, (frame.scrollHeight - frame.clientHeight) / 2);
@@ -51,6 +51,7 @@
   fit.addEventListener('click', resetZoom);
   image.addEventListener('load', resetZoom);
   for (const link of links) {
+    link.setAttribute('aria-haspopup', 'dialog');
     link.addEventListener('click', event => {
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       const source = link.querySelector('img');

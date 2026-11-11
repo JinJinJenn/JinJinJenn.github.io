@@ -1,4 +1,4 @@
-/* Real screenshots remain normal file links when JavaScript is unavailable. */
+/* Screenshots and artwork remain normal file links without JavaScript. */
 [data-capture-open]{cursor:zoom-in;display:block;position:relative;border-radius:8px}
 [data-capture-open]:focus-visible{outline:3px solid var(--story-accent,#9564aa);outline-offset:5px}
 .capture-viewer-open{overflow:hidden}
