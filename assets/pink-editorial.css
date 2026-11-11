@@ -23,3 +23,13 @@
 @media(max-width:580px){.editorial-home .hero-layout{display:flex;flex-direction:column;gap:10px}.editorial-home .welcome-window{width:100%;order:0}.editorial-home .welcome-copy{padding:14px 10px}.editorial-home .welcome-window .window-bar{padding-left:10px}.editorial-home .welcome-copy h1{font-size:clamp(3.3rem,13vw,4.6rem)}.editorial-home .hero-lede{font-size:1.2rem}.editorial-home .creator-stage{order:1;height:390px;max-height:390px;overflow:hidden;width:100%}.editorial-home .creator{height:390px;margin-top:0;object-position:bottom}.editorial-home .hero-project{order:2;margin-top:12px}.editorial-home .hero-project>a{grid-template-columns:1fr}.editorial-home .hero-project img{height:170px;min-height:0;object-fit:cover}.editorial-home .hero-project h2{font-size:2rem}.editorial-home .hero-project p{display:block;margin:12px 0}.editorial-home .hero-project .pill{display:inline-flex}.editorial-home .hero-project-copy{padding:18px}.editorial-home .hero-scene{border-radius:0 0 35% 3% / 0 0 1% 1%}.character-host-copy .section-heading h2{font-size:2.5rem}}
 
 .presenter-lineup{display:block;max-width:1200px;margin:0 auto 26px;border-radius:34px;background:radial-gradient(ellipse at 50% 80%,#f8acd24d,transparent 70%)}.presenter-lineup img{display:block;width:100%;height:auto}.presenter-lineup:focus-visible{outline:3px solid var(--accent);outline-offset:6px}
+
+/* Keep editorial text readable independently of the moving landscape. */
+.editorial-home .welcome-window{background:#fff1f7;border:1px solid #efc8dc;border-radius:28px;box-shadow:0 12px 35px #481c3820;padding:20px 0}
+.editorial-home .welcome-window .hero-intro,.editorial-home .welcome-window .hero-status{color:#78536d}
+:root[data-theme='dark'] .editorial-home .welcome-window{background:#33243b;border-color:#76506b}
+:root[data-theme='dark'] .editorial-home .welcome-window .hero-intro,:root[data-theme='dark'] .editorial-home .welcome-window .hero-status{color:#dfc9df}
+:root[data-theme='dark'] .template-page .primary-button,:root[data-theme='dark'] .template-page .secondary-button{color:#fff9fc;background:linear-gradient(#ae286e,#8b1655)}
+:root[data-theme='dark'] .template-page .site-header nav a{color:#f4e8f4;background:#33243b}
+:root[data-theme='dark'] .template-page .site-header nav a[aria-current]{background:#623656;color:#fff}
+@media(max-width:580px){.editorial-home .welcome-window{padding:16px 8px}.editorial-home .welcome-copy h1{font-size:clamp(3.1rem,12vw,4.4rem)}}
