@@ -1,0 +1,3 @@
+# Panoramic character group headers
+
+Two original fictional adult Sims-inspired scenes generated with OpenAI image generation for Jenn's site. Original PNGs preserved unchanged. WebP delivery derivatives at1920x640 and1280x427, quality86. Beach scene six adult friends in tasteful colorful swimwear and coverups; studio scene five adult creator friends around a desk in a warm lilac/teal studio. No game captures or photographs of real people. Faces and group composition reviewed at generation resolution. Use full panorama where possible; mobile crops need care to avoid cutting faces. Keep original PNGs as source backups, use responsive WebP on the site.
