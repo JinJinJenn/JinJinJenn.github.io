@@ -31,3 +31,7 @@
 [data-story-theme='gifts'] .article-rail nav:after{background-image:url('promo/wave-mini-v1.webp')}
 [data-story-theme='housing'] .article-rail nav:after{background-image:url('promo/gardener-mini-v1.webp')}
 [data-story-theme='thoughts'] .article-rail nav:after,[data-story-theme='children'] .article-rail nav:after{background-image:url('promo/reader-mini-v1.webp')}
+
+/* Keep the stories first; the full-body pair now closes the devlog page. */
+.devlog-index-grid+.devlog-character-welcome{height:240px;border-top:1px solid var(--line);margin-top:8px;padding-top:16px}
+@media(max-width:580px){.devlog-index-grid+.devlog-character-welcome{height:180px;margin-top:0;padding-top:12px}}
