@@ -64,3 +64,11 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - Shared responsive story-art stylesheet; existing content, real game captures, navigation, and separate mods site preserved.
 - Automated DOM checks: seven source artwork links, viewer navigation, focus return, detail anchors. Local references checked. Transparent art inspected composited on cream.
 - Browser rendering could not be tested in this cloud sandbox; do not treat these DOM checks as visual/mobile performance QA.
+
+## Revision 26: reading rails and compact mobile navigation
+
+- Added in-page contents and illustrated scene rails to articles. Prose retains its reading measure; smaller screens move the illustration after the article.
+- Incorporated two existing user-provided PC1 illustrations, optimized to 960px WebP, with original source hashes and provenance. About now ends with a wide illustrated treehouse scene.
+- Phone navigation becomes a horizontally scrollable row while retaining every link and 44px controls; theme and motion controls share one row.
+- DOM checks passed for unique IDs, valid contents targets, local asset references, single main landmarks, and artwork viewer regression tests.
+- Awaiting PC1 browser QA for this revision.

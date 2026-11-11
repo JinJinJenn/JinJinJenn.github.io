@@ -174,6 +174,20 @@
       "web_sha256": "1914126bdfaf4fef25d0ef4702bd91932df5c34562476050e9d778cbfbf9237c",
       "bytes": 222438,
       "source": "Generated transparent promotional illustration, November 2026. Decorative concept artwork, not a game capture."
+    },
+    {
+      "file": "assets/promo/botanical-fairy-treehouse-cutaway-v001.webp",
+      "source": "User-supplied generated artwork from PC1 asset collection, November 2026. Decorative concept scene, not a game capture.",
+      "source_sha256": "6422f5ab2515535ac2122b77759fe65020abaedfd11591b024ece0011361fa77",
+      "web_sha256": "cce8509707ef31dc7daa71f28a42ef76a1c4a6c2b85a10ed13448dca921b0e1e",
+      "bytes": 229150
+    },
+    {
+      "file": "assets/promo/amethyst-garden-floating-island-diorama-v001.webp",
+      "source": "User-supplied generated artwork from PC1 asset collection, November 2026. Decorative concept scene, not a game capture.",
+      "source_sha256": "12a72d081b296d5c5d3c718ccadba5c0307011cf874d5605f38c6d222c8f8f29",
+      "web_sha256": "2dfcdc556a9098d6fcf3cc6037b63341d5159fd3bbacfa529a4f8fc53c0e4c1a",
+      "bytes": 158850
     }
   ],
   "article_covers": {
