@@ -21,3 +21,13 @@
 .garden-note-copy .mini-sim{width:95px;height:142px;margin:0 0 8px 16px}
 .template-global-footer .footer-brand:before{width:64px;height:96px;align-self:flex-end;margin-top:-20px}
 @media(max-width:580px){.mini-sim{width:78px;height:117px;margin:0 0 6px 12px}.garden-note-copy .mini-sim{width:72px;height:108px}.template-global-footer .footer-brand:before{width:54px;height:81px;margin-top:0}}
+
+/* Different little Sims accompany different subjects; each sprite is shared and cached. */
+[data-template-page='about'] .template-global-footer .footer-brand:before{background-image:url('promo/wave-mini-v1.webp')}
+[data-template-page='devlog-index'] .template-global-footer .footer-brand:before{background-image:url('promo/books-mini-v1.webp')}
+[data-story-theme='letters'] .template-global-footer .footer-brand:before,[data-story-theme='relationships'] .post-navigation-heading:after{background-image:url('promo/reader-mini-v1.webp')}
+[data-story-theme='housing'] .template-global-footer .footer-brand:before,[data-story-theme='gifts'] .template-global-footer .footer-brand:before{background-image:url('promo/wave-mini-v1.webp')}
+[data-story-theme='letters'] .post-navigation-heading:after,[data-story-theme='thoughts'] .post-navigation-heading:after{background-image:url('promo/books-mini-v1.webp')}
+[data-story-theme='gifts'] .article-rail nav:after{background-image:url('promo/wave-mini-v1.webp')}
+[data-story-theme='housing'] .article-rail nav:after{background-image:url('promo/gardener-mini-v1.webp')}
+[data-story-theme='thoughts'] .article-rail nav:after,[data-story-theme='children'] .article-rail nav:after{background-image:url('promo/reader-mini-v1.webp')}
