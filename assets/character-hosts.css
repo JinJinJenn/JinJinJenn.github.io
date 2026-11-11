@@ -11,7 +11,13 @@
 @media(prefers-reduced-motion:reduce){.character-host-art img,.devlog-character-welcome img{transform:none!important}}
 
 /* Tiny hosts recur like bookmarks without sitting over links or prose. */
-.template-global-footer .footer-brand{display:inline-flex;align-items:center;gap:9px}.template-global-footer .footer-brand:before{content:'';display:block;width:54px;height:76px;flex:none;background:url('promo/creator-welcome-v1.webp') center/contain no-repeat}
+.template-global-footer .footer-brand{display:inline-flex;align-items:center;gap:9px}.template-global-footer .footer-brand:before{content:'';display:block;width:54px;height:76px;flex:none;background:url('promo/gamer-mini-v1.webp') center/contain no-repeat}
 .article-rail nav:after{content:'';display:block;width:100%;height:150px;margin:12px auto -14px;background:url('thumbs/love-notes-creator.webp') center/contain no-repeat;pointer-events:none}
-.post-navigation-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.post-navigation-heading:after{content:'';display:block;width:80px;height:90px;margin-left:auto;background:url('thumbs/lost-map-creator.webp') center/contain no-repeat;pointer-events:none}
+.post-navigation-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.post-navigation-heading:after{content:'';display:block;width:80px;height:90px;margin-left:auto;background:url('promo/gardener-mini-v1.webp') center/contain no-repeat;pointer-events:none}
 @media(max-width:580px){.template-global-footer .footer-brand:before{width:45px;height:64px}.post-navigation-heading:after{width:65px;height:76px}}
+
+/* Small recurring characters reuse one cached sprite per role. */
+.mini-sim{float:right;width:100px;height:150px;object-fit:contain;pointer-events:none;margin:-12px 0 8px 18px;filter:drop-shadow(0 5px 3px #50304418)}
+.garden-note-copy .mini-sim{width:95px;height:142px;margin:0 0 8px 16px}
+.template-global-footer .footer-brand:before{width:64px;height:96px;align-self:flex-end;margin-top:-20px}
+@media(max-width:580px){.mini-sim{width:78px;height:117px;margin:0 0 6px 12px}.garden-note-copy .mini-sim{width:72px;height:108px}.template-global-footer .footer-brand:before{width:54px;height:81px;margin-top:0}}
