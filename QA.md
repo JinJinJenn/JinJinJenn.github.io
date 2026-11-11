@@ -72,3 +72,10 @@ Headless mobile emulation does not measure a physical phone's GPU, battery use o
 - Phone navigation becomes a horizontally scrollable row while retaining every link and 44px controls; theme and motion controls share one row.
 - DOM checks passed for unique IDs, valid contents targets, local asset references, single main landmarks, and artwork viewer regression tests.
 - Awaiting PC1 browser QA for this revision.
+
+## Revision 27: illustrated devlog studio
+
+- Reused the user's existing PC1 rainbow studio art in the devlog heading and two technical-post side rails. Kept the shared navigation, page frame, all six posts, original cover art, and real game screenshots.
+- Generated 1280px and 640px WebP delivery versions with source provenance. This is an imagined studio, labeled accordingly, not a photograph of Jenn's workspace.
+- Added a subtle edge treatment to the phone navigation strip to signal horizontal scrolling.
+- DOM checks for nine pages and seven-card artwork-viewer regressions pass. Awaiting PC1 rendered QA for this revision.
