@@ -2,7 +2,7 @@
 
 The redesigned site is published at `/next/` from this repository’s main branch. It is still a preview, not a replacement for the root site. The separate `/mods/` garden and `/town/` game are separate projects and must not be overwritten by a profile-site release.
 
-Serve the repository root with a static HTTP server and open `/next/index.html`. The preview has Home, Mods, Characters, Devlog, About Jenn and six original devlog articles. Keep the original article content, seven mod projects and their documented statuses. Generated character studies and story illustrations are labelled separately from actual game captures; they are not advertised as downloadable custom content.
+Serve the repository root with a static HTTP server and open `/next/index.html`. The preview has Home, Mods, Characters, Devlog, About Jenn six original devlog articles and the Midnight wardrobe concept feature. Keep the original article content, seven mod projects and their documented statuses. Generated character studies and story illustrations are labelled separately from actual game captures; they are not advertised as downloadable custom content.
 
 ## Before a release
 
@@ -15,7 +15,7 @@ python next/checks/test_release_audit.py
 
 From another directory, invoke `release_audit.py` by its absolute path and pass `--root /path/to/checkout`. The synthetic `test_release_audit.py` uses temporary fixtures and does not accept `--root`. It exits nonzero for detected failures and checks:
 
-- Presence of the eleven required preview pages, plus local HTML links, asset references, `srcset` targets and fragment destinations.
+- Presence of the twelve required preview pages, plus local HTML links, asset references, `srcset` targets and fragment destinations.
 - Duplicate IDs, image alt-attribute presence and preview `noindex` metadata.
 - Actual journal anchors to the six original stories and exact status-pill text for all seven mod details.
 - Complete inventory and SHA-256 integrity of thirteen original game-capture files, recorded in `checks/original-captures.json`; an empty or partial manifest fails.

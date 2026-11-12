@@ -13,7 +13,7 @@ VOID = {'area','base','br','col','embed','hr','img','input','link','meta','param
 STORIES = {'hello-world.html','how-a-park-became-a-home.html','seven-failed-tries-and-a-robot-tester.html','mods-that-did-nothing.html','moving-from-in-game-and-evicting.html','every-computer-is-a-good-computer.html'}
 STATUSES = {'moveanywhere':'In testing','love-notes':'In the workshop','surprise-gifts':'In testing','thinking-of-you':'In the workshop','toasts':'In the workshop','gentle-hearts':'In the workshop','toddler-tv':'In testing'}
 
-REQUIRED_PAGES = STORIES | {'index.html','mods.html','characters.html','journal.html','studio.html'}
+REQUIRED_PAGES = STORIES | {'index.html','mods.html','characters.html','journal.html','studio.html','midnight-wardrobe.html'}
 ORIGINAL_CAPTURES = {f'img/characters/char-{i:02d}.{ext}' for i in range(1,4) for ext in ('png','webp')} | {f'img/{name}.jpg' for name in ('moveanywhere','lovenotes','surprisegifts','thinkingofyou','toasts','gentlehearts','toddlertv')}
 
 class Document(HTMLParser):
