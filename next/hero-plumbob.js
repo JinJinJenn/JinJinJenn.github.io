@@ -5,6 +5,20 @@
   const control = document.querySelector('.hero-motion');
   const sharedMotion = document.querySelector('#characterViewer [data-motion]');
   if (!jewel || !control || !sharedMotion || jewel.dataset.plumbobReady !== 'true') return;
+  const row = control.closest('.hero-motion-row');
+  const hero = jewel.closest('.ensemble-hero');
+  const cast = hero.querySelector('.ensemble-cast');
+  const slot = document.createComment('Desktop animation control position');
+  row.before(slot);
+  const stacked = matchMedia('(max-width:1000px)');
+  function placeControl() {
+    const focused = document.activeElement === control;
+    if (stacked.matches) hero.insertBefore(row, cast);
+    else slot.after(row);
+    if (focused) control.focus({preventScroll:true});
+  }
+  stacked.addEventListener('change', placeControl);
+  placeControl();
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   function sync() {
     const paused = root.dataset.paused === 'true' || reduced.matches;

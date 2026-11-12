@@ -4,3 +4,8 @@
 @media(min-width:2200px){.ensemble-hero>.jenn-plumbob{--plumbob-size:218px;right:6%;top:6%}}
 @media(max-width:1000px){.ensemble-hero>.jenn-plumbob{--plumbob-size:120px;right:2%;top:1%}}
 @media(max-width:650px){.ensemble-hero>.jenn-plumbob{--plumbob-size:80px;right:1%;top:0}.hero-motion-row{margin-top:8px}}
+
+/* One reachable control before the stacked cast, never laid over a face. */
+.hero-motion-row:has(.hero-motion[hidden]){display:none}
+@media(max-width:1000px){.ensemble-hero>.hero-motion-row{order:-1;margin:0;padding:12px 150px 8px 30px;position:relative;z-index:4}.ensemble-hero>.hero-motion-row .hero-motion{max-width:100%}}
+@media(max-width:650px){.ensemble-hero>.hero-motion-row{padding:10px 100px 6px 18px}}
