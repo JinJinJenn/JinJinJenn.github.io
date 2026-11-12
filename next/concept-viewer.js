@@ -44,6 +44,7 @@
     frame.classList.remove('is-zoomed');
     frame.removeAttribute('tabindex');
     frame.removeAttribute('aria-label');
+    frame.style.touchAction = group.length > 1 ? 'pan-y pinch-zoom' : 'auto';
     frame.scrollLeft = frame.scrollTop = 0;
     fitWidth = image.getBoundingClientRect().width;
     zoomIn.disabled = !image.complete || !image.naturalWidth;
@@ -56,6 +57,7 @@
     if (scale === 1) fitWidth = image.getBoundingClientRect().width;
     scale = Math.min(4, next);
     frame.classList.add('is-zoomed');
+    frame.style.touchAction = 'auto';
     frame.tabIndex = 0;
     frame.setAttribute('aria-label', 'Enlarged image. Scroll to inspect the image.');
     image.style.width = Math.round(fitWidth * scale) + 'px';
@@ -106,6 +108,21 @@
     current = (current + delta + group.length) % group.length;
     showArtwork(group[current]);
   }
+  // Swipe only fitted concept art. Zoomed images keep native inspection/panning.
+  let swipe = null;
+  frame.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'touch' || !event.isPrimary || scale !== 1 || group.length < 2) { swipe = null; return; }
+    swipe = {id:event.pointerId, x:event.clientX, y:event.clientY};
+    frame.setPointerCapture(event.pointerId);
+  });
+  frame.addEventListener('pointercancel', () => { swipe = null; });
+  frame.addEventListener('pointerup', event => {
+    const start = swipe;
+    swipe = null;
+    if (!start || start.id !== event.pointerId || scale !== 1 || group.length < 2) return;
+    const dx = event.clientX - start.x, dy = event.clientY - start.y;
+    if (Math.abs(dx) >= 55 && Math.abs(dx) > Math.abs(dy) * 1.5) changeArtwork(dx < 0 ? 1 : -1);
+  });
   groupNav.querySelector('[data-concept-prev]').addEventListener('click', () => changeArtwork(-1));
   groupNav.querySelector('[data-concept-next]').addEventListener('click', () => changeArtwork(1));
   dialog.addEventListener('keydown', event => {
@@ -142,6 +159,7 @@
     restoreRetryFocus = false;
     frame.removeAttribute('aria-busy');
     retry.hidden = true;
+    swipe = null;
     group = [];current = 0;
     resetZoom();
     if (trigger?.isConnected) trigger.focus({preventScroll:true});
