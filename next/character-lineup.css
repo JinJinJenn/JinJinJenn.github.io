@@ -25,7 +25,7 @@
  .page-characters [data-household-view=lineup] .char .stage img{height:280px}
  .page-characters [data-household-view=lineup] .char .outfit-copy{padding:20px;min-width:0}
  .page-characters [data-household-view=lineup] .char h3{font-size:1.45rem;line-height:1.2;letter-spacing:-.025em;max-width:none;overflow-wrap:normal}
- .page-characters [data-household-view=lineup] .character-still{display:inline-flex}
+ .page-characters [data-household-view=lineup] .character-still{display:inline-flex;align-items:center;min-height:44px}
  .page-characters [data-household-view=lineup] .character-open{font-size:.85rem;white-space:normal}
  .page-characters [data-household-view=lineup] .character-open:after,.page-characters [data-household-view=lineup] .inline-turntable:after{content:none}
  .page-characters [data-household-view=lineup] .inline-turntable{font-size:.85rem;width:auto;max-width:100%;padding:8px 14px}
