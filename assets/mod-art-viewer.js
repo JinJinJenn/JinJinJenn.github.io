@@ -13,7 +13,10 @@
   function show(index) {
     current = (index + cards.length) % cards.length;
     const card = cards[current], name = card.querySelector('h3').textContent;
-    const source = new URL(card.querySelector('img').getAttribute('src').replace('assets/thumbs/', 'assets/promo/'), document.baseURI).href;
+    // Preview cards lead with a character, while the first image is only a decorative prop.
+    // Keep the original site's artwork selection unchanged.
+    const artwork = (document.body.classList.contains('moonshot') && card.querySelector('.layered-creator')) || card.querySelector('img');
+    const source = new URL(artwork.getAttribute('src').replace('assets/thumbs/', 'assets/promo/'), document.baseURI).href;
     dialog.querySelector('h2').textContent = name;
     image.alt = name + ' promotional illustration';
     image.src = source;
