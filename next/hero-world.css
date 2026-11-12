@@ -7,3 +7,5 @@
 
 /* The previous radial wash must not show beneath the new scenic fade. */
 .ensemble-hero .ensemble-wash{display:none}
+/* A small overscan keeps negative pointer movement from exposing an edge. */
+.hero-world[data-parallax=active] img{width:calc(100% + 12px);height:calc(100% + 8px);max-width:none;transform:translate3d(var(--world-x,0px),var(--world-y,0px),0);transition:transform 160ms ease-out}
