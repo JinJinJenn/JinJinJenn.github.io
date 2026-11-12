@@ -15,3 +15,19 @@
 @media(min-width:2200px){.page-characters [data-household-view=lineup] .char .stage img{height:420px}}
 @media(max-width:750px){.page-characters [data-household-view=lineup] .chars{gap:10px}.page-characters [data-household-view=lineup] .char{border-radius:16px}.page-characters [data-household-view=lineup] .char .stage{padding:15px 5px 10px;gap:10px}.page-characters [data-household-view=lineup] .char .stage img{height:230px}.page-characters [data-household-view=lineup] .outfit-copy{padding:14px 10px}.page-characters [data-household-view=lineup] .char h3{font-size:1.15rem;letter-spacing:-.035em;margin-bottom:16px}.page-characters [data-household-view=lineup] .character-still{display:none}.page-characters [data-household-view=lineup] .character-open{font-size:0;min-width:44px;min-height:44px;padding:9px 12px}.page-characters [data-household-view=lineup] .character-open:after{content:'Open';font-size:.8rem}.page-characters [data-household-view=lineup] .inline-turntable{font-size:0;width:44px;min-width:44px;padding:0}.page-characters [data-household-view=lineup] .inline-turntable:after{content:'↻';font-size:1.3rem}.page-characters [data-household-view=lineup] .inline-turntable[aria-pressed=true]:after{content:'Ⅱ'}}
 @media(max-width:360px){.page-characters [data-household-view=lineup] .chars{gap:6px}.page-characters [data-household-view=lineup] .char .stage img{height:200px}.page-characters [data-household-view=lineup] .outfit-copy{padding:12px 7px}.page-characters [data-household-view=lineup] .char h3{font-size:.9rem;letter-spacing:-.04em}.household-views button{padding-inline:17px}}
+/* Keep names and controls readable instead of squeezing three phone columns. */
+.lineup-scroll-hint{display:none}
+@media(max-width:650px){
+ .page-characters [data-household-view=lineup] .lineup-scroll-hint{display:block;margin:-12px 0 16px;color:var(--muted);font-size:.85rem;line-height:1.6}
+ .page-characters [data-household-view=lineup] .chars{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(min(100%,14rem),72%);gap:14px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scroll-padding-inline:2px;padding:2px 2px 18px;max-width:100%;min-width:0}
+ .page-characters [data-household-view=lineup] .char{scroll-snap-align:start;transform:none}
+ .page-characters [data-household-view=lineup] .char .stage{padding:22px 14px 14px}
+ .page-characters [data-household-view=lineup] .char .stage img{height:280px}
+ .page-characters [data-household-view=lineup] .char .outfit-copy{padding:20px;min-width:0}
+ .page-characters [data-household-view=lineup] .char h3{font-size:1.45rem;line-height:1.2;letter-spacing:-.025em;max-width:none;overflow-wrap:normal}
+ .page-characters [data-household-view=lineup] .character-still{display:inline-flex}
+ .page-characters [data-household-view=lineup] .character-open{font-size:.85rem;white-space:normal}
+ .page-characters [data-household-view=lineup] .character-open:after,.page-characters [data-household-view=lineup] .inline-turntable:after{content:none}
+ .page-characters [data-household-view=lineup] .inline-turntable{font-size:.85rem;width:auto;max-width:100%;padding:8px 14px}
+ .page-characters [data-household-view=lineup] .chars:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+}
