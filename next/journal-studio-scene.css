@@ -1,0 +1,9 @@
+/* A scenic journal entrance; text stays on its own readable surface. */
+.page-journal .journal-masthead{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,72px);align-items:center;padding-block:36px;border-bottom:1px solid var(--line)}
+.journal-studio-scene{margin:0;min-width:0;position:relative;overflow:hidden;border-radius:180px 18px 18px 18px;background:#59406e}
+.journal-studio-scene img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.journal-studio-scene figcaption{padding:10px 20px;color:#fff;background:#372b46;font-size:.8rem;line-height:1.5}
+.journal-heading-copy{min-width:0}.page-journal .journal-heading-copy h1{font-size:clamp(2.7rem,5vw,6rem);line-height:1.04;margin:18px 0 24px;overflow-wrap:anywhere}
+.journal-heading-copy>p{max-width:38ch;color:var(--muted);font-size:1.05rem;line-height:1.75;margin:0}
+@media(max-width:800px){.page-journal .journal-masthead{grid-template-columns:1fr;gap:26px;padding-top:24px}.journal-studio-scene{border-radius:70px 14px 14px 14px}.page-journal .journal-heading-copy h1{font-size:clamp(2.7rem,9vw,4.5rem);max-width:13ch}.journal-heading-copy>p{max-width:48ch}}
+@media(min-width:2200px){.page-journal .journal-masthead{padding-block:55px}.journal-studio-scene figcaption{padding:16px 28px}}
