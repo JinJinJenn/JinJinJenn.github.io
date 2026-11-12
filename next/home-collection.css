@@ -1,0 +1,22 @@
+/* Character-led index; every project keeps its own status and destination. */
+.page-index .project-collection{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.project-card{position:relative;display:flex;flex-direction:column;min-width:0;text-decoration:none;border:1px solid var(--line);border-radius:26px;background:var(--surface);overflow:hidden;color:var(--ink);transition:transform .18s ease,box-shadow .18s ease}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #47133512}
+.project-card:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
+.project-card-art{height:250px;position:relative;isolation:isolate;display:flex;align-items:end;justify-content:center;padding:20px 22px 0}
+.project-card-disc{position:absolute;width:190px;aspect-ratio:1;left:50%;bottom:15px;transform:translateX(-50%);border-radius:50%;background:var(--lavender);z-index:-1;opacity:.65}
+.project-card-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 8px 6px #47133515)}
+.project-card-copy{padding:24px 28px 28px;display:flex;flex:1;flex-direction:column;align-items:start}
+.project-card-status{font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.project-card-copy h3{font-size:clamp(1.8rem,2.4vw,2.6rem);line-height:1.08;margin:12px 0}
+.project-card-copy p{color:var(--muted);font-size:1rem;line-height:1.65;margin:0 0 20px;max-width:35ch}
+.project-card-link{margin-top:auto;font-size:.85rem;font-weight:700;min-height:24px;display:flex;gap:16px;align-items:center}
+.project-card-lead{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:center;background:linear-gradient(115deg,var(--surface),var(--lavender))}
+.project-card-lead .project-card-art{height:330px;padding:20px 30px 0;grid-column:2;grid-row:1}
+.project-card-lead .project-card-disc{width:270px;bottom:20px;background:var(--paper)}
+.project-card-lead .project-card-copy{grid-column:1;grid-row:1;padding:40px 12%}
+.project-card-lead h3{font-size:clamp(2.5rem,4vw,4rem)}
+.page-index .collection-art-note{font-size:.8rem;line-height:1.6;color:var(--muted);margin:20px 0 0;max-width:70ch}
+@media(max-width:1000px){.page-index .project-collection{grid-template-columns:repeat(2,minmax(0,1fr))}.project-card-copy{padding:22px}.project-card-lead .project-card-copy{padding:30px}}
+@media(max-width:600px){.page-index .project-collection{grid-template-columns:1fr;gap:14px}.project-card,.project-card-lead{display:grid;grid-template-columns:36% minmax(0,1fr);align-items:center;border-radius:20px}.project-card .project-card-art{grid-column:1;grid-row:1;height:230px;padding:16px 0;align-self:center}.project-card .project-card-disc{width:120px;max-width:100%;bottom:50px}.project-card .project-card-copy{grid-column:2;grid-row:1;padding:22px 18px 22px 10px}.project-card-copy h3,.project-card-lead h3{font-size:1.65rem;overflow-wrap:anywhere;margin:9px 0 10px}.project-card-copy p{font-size:.88rem;line-height:1.55;margin-bottom:15px}.project-card-status{font-size:.57rem;letter-spacing:.06em}.project-card-link{font-size:.75rem;gap:8px}.project-card-lead{background:var(--surface)}.page-index .collection-art-note{font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){.project-card{transition:none}.project-card:hover{transform:none}}
