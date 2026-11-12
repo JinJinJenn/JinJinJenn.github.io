@@ -4,3 +4,6 @@
 @media(max-width:1000px){.hero-world{height:575px;bottom:auto}.hero-world img{object-position:75% bottom}.hero-world:after{background:linear-gradient(0deg,#fff3f8,transparent 28%)}:root[data-theme=dark] .hero-world:after{background:linear-gradient(0deg,#261523,#26152333 30%)}.ensemble-hero>.jenn-plumbob{right:1%;top:0;--plumbob-size:95px}}
 @media(max-width:650px){.hero-world{height:420px}.ensemble-hero>.jenn-plumbob{--plumbob-size:80px}}
 @media(max-width:360px){.hero-world{height:370px}}
+
+/* The previous radial wash must not show beneath the new scenic fade. */
+.ensemble-hero .ensemble-wash{display:none}
