@@ -16,7 +16,7 @@
   const zoomIn = dialog.querySelector('[data-capture-zoom="in"]');
   const zoomOut = dialog.querySelector('[data-capture-zoom="out"]');
   const fit = dialog.querySelector('[data-capture-zoom="fit"]');
-  const zoomLabel = dialog.querySelector('output');
+  const zoomLabel = dialog.querySelector('.capture-viewer-tools output');
   const groupNav = dialog.querySelector('.concept-viewer-nav');
   const groupCount = groupNav.querySelector('output');
   const imageStatus = dialog.querySelector('.concept-image-status');
