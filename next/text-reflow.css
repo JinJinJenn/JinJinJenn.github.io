@@ -1,0 +1,14 @@
+/* Let enlarged text reflow instead of clipping behind the page shell. */
+.moonshot .mast{flex-wrap:wrap}
+.moonshot .wordmark{white-space:normal;min-width:0;overflow-wrap:anywhere}
+.moonshot .mast>.wordmark{max-width:calc(100% - 56px)}
+.moonshot .mast nav{flex-wrap:wrap;min-width:0}
+.moonshot .mast nav a{max-width:100%;overflow-wrap:anywhere}
+.moonshot .studio-footer>div{min-width:0}
+.moonshot h1,.moonshot h2,.moonshot h3{overflow-wrap:anywhere}
+.moonshot .cta,.moonshot .quiet-link{max-width:100%;overflow-wrap:anywhere}
+.page-index .evidence-facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.page-index .evidence-facts>li{min-width:0}
+.page-index .evidence-facts>li>div{min-width:0;overflow-wrap:anywhere}
+.page-index .evidence-facts>li>span{flex-shrink:0}
+@media(max-width:650px){.page-index .evidence-facts{grid-template-columns:minmax(0,1fr)}}
