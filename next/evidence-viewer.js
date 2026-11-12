@@ -70,7 +70,7 @@
     frame.removeAttribute('aria-busy');
     status.textContent = '';
     resetZoom();
-    if (restoreRetryFocus) zoomIn.focus();
+    if (restoreRetryFocus && (document.activeElement === document.body || document.activeElement === retry)) zoomIn.focus();
     restoreRetryFocus = false;
     retry.hidden = true;
   });
@@ -82,7 +82,7 @@
     retry.hidden = false;
     retry.disabled = false;
     resetZoom();
-    if (restoreRetryFocus) retry.focus();
+    if (restoreRetryFocus && (document.activeElement === document.body || document.activeElement === retry)) retry.focus();
     restoreRetryFocus = false;
   });
   for (const link of links) {
