@@ -20,8 +20,10 @@
   const status = dialog.querySelector('.capture-load-state p');
   const retry = dialog.querySelector('[data-capture-retry]');
   let currentSource = '';
+  let restoreRetryFocus = false;
   let trigger = null;
   function loadImage() {
+    restoreRetryFocus = document.activeElement === retry;
     status.textContent = 'Loading full-size image…';
     retry.disabled = true;
     frame.setAttribute('aria-busy', 'true');
@@ -68,7 +70,8 @@
     frame.removeAttribute('aria-busy');
     status.textContent = '';
     resetZoom();
-    if (document.activeElement === retry) zoomIn.focus();
+    if (restoreRetryFocus) zoomIn.focus();
+    restoreRetryFocus = false;
     retry.hidden = true;
   });
   image.addEventListener('error', () => {
@@ -79,6 +82,8 @@
     retry.hidden = false;
     retry.disabled = false;
     resetZoom();
+    if (restoreRetryFocus) retry.focus();
+    restoreRetryFocus = false;
   });
   for (const link of links) {
     link.setAttribute('aria-haspopup', 'dialog');
@@ -107,6 +112,7 @@
     document.documentElement.classList.remove('capture-viewer-open');
     image.removeAttribute('src');
     status.textContent = '';
+    restoreRetryFocus = false;
     frame.removeAttribute('aria-busy');
     retry.hidden = true;
     resetZoom();
