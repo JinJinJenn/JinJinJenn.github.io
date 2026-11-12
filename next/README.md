@@ -13,7 +13,7 @@ python next/checks/release_audit.py
 python next/checks/test_release_audit.py
 ```
 
-From another directory, use the absolute script path and pass `--root /path/to/checkout`. It exits nonzero for detected failures and checks:
+From another directory, invoke `release_audit.py` by its absolute path and pass `--root /path/to/checkout`. The synthetic `test_release_audit.py` uses temporary fixtures and does not accept `--root`. It exits nonzero for detected failures and checks:
 
 - Presence of the eleven required preview pages, plus local HTML links, asset references, `srcset` targets and fragment destinations.
 - Duplicate IDs, image alt-attribute presence and preview `noindex` metadata.
