@@ -7,7 +7,9 @@
   const image = document.getElementById('viewerImage');
   if (!button || !image) return;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const preferenceKey = 'jenn-moonshot-motion-paused';
   let paused = false;
+  try { paused = localStorage.getItem(preferenceKey) === 'true'; } catch (_) {}
   function applyMotion() {
     const still = paused || reducedMotion.matches;
     document.documentElement.dataset.paused = String(still);
@@ -18,7 +20,11 @@
     const source = still ? image.dataset.still : image.dataset.animated;
     if (source) image.src = source;
   }
-  button.addEventListener('click', () => { paused = !paused; applyMotion(); });
+  button.addEventListener('click', () => {
+    paused = !paused;
+    try { localStorage.setItem(preferenceKey, String(paused)); } catch (_) {}
+    applyMotion();
+  });
   reducedMotion.addEventListener('change', applyMotion);
   applyMotion();
 })();
