@@ -6,3 +6,5 @@
 @media(min-width:2200px){.article-opening .article-cover .promo-stage{height:520px}.article-opening .article-heading h1{font-size:5.5rem}}
 @media(max-width:1000px){.article-page .article-opening{gap:25px}.article-opening .article-heading h1{font-size:3rem}.article-opening .article-cover .promo-stage{height:330px}}
 @media(max-width:650px){.article-page .article-opening{display:flex;flex-direction:column;align-items:stretch;gap:5px;padding:25px 0}.article-opening .article-heading h1{font-size:2.8rem;margin:20px 0;max-width:18ch}.article-opening .article-heading .quiet-link{margin-bottom:25px}.article-opening .article-cover .promo-stage{height:245px}.article-page .article-body{margin-top:28px}.article-contents{margin-bottom:25px}.article-contents summary{padding:14px 16px;font-size:1rem}.article-contents ol{padding:12px 20px 15px 36px}.article-contents li{font-size:.9rem}}
+
+.article-opening .article-heading .kicker{margin-top:0}
