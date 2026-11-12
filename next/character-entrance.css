@@ -12,3 +12,11 @@
 @media(min-width:2200px){.cast-entrance{grid-template-columns:.75fr 1.4fr;padding-top:90px}.cast-intro h1{font-size:7.2rem}}
 @media(max-width:850px){.cast-entrance{grid-template-columns:1fr;padding-top:38px;gap:5px}.cast-intro{padding-bottom:10px}.cast-intro h1{font-size:clamp(3.2rem,8vw,5rem);margin:12px 0 20px}.cast-intro h1 br{display:none}.cast-intro>p:not(.kicker){max-width:48ch}.cast-ensemble{max-width:680px;width:100%;justify-self:center}.cast-ensemble figcaption{padding-top:10px}.page-characters .cast-entrance+.character-route{margin-top:0}}
 @media(max-width:450px){.cast-entrance{padding-top:25px;padding-bottom:20px}.cast-intro h1{font-size:3.2rem}.cast-intro>p:not(.kicker){font-size:1rem}.cast-ensemble figcaption{font-size:.62rem}}
+
+/* Keep all chapter choices without three full-width rows before the captures. */
+@media(max-width:650px){
+ .page-characters .character-route{grid-template-columns:repeat(auto-fit,minmax(min(100%,8rem),1fr));gap:12px 18px;padding-block:14px;margin-bottom:22px}
+ .page-characters .character-route a,.page-characters .character-route a:first-child{min-width:0;min-height:44px;border:0;padding:4px 16px 4px 0;font-size:1rem;line-height:1.35;overflow-wrap:anywhere}
+ .page-characters .character-route span{font-size:.6rem;line-height:1.45;letter-spacing:.035em;margin-bottom:5px}
+ .page-characters .character-route b{right:0;top:auto;bottom:5px}
+}
