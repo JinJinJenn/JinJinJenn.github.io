@@ -1,0 +1,16 @@
+/* Compact paired project introductions; the proof is still the original capture. */
+.page-mods #mods .moodlet-project{padding:28px;overflow:hidden}
+.moodlet-introduction{display:grid;grid-template-columns:1.1fr 1fr;gap:12px;align-items:center;margin-bottom:24px}
+.page-mods #mods .moodlet-project .mod-summary h3{font-size:clamp(1.8rem,2.6vw,2.5rem);line-height:1.1;margin:0 0 14px}
+.page-mods #mods .moodlet-project .mod-summary p{font-size:.95rem;line-height:1.65;margin:14px 0 0}
+.moodlet-character{min-width:0;position:relative;text-align:center}
+.moodlet-character img{display:block;width:100%;height:240px;object-fit:contain;object-position:center bottom}
+.moodlet-character>span{display:block;color:var(--muted);font-size:.6rem;line-height:1.5;margin-top:8px}
+.moodlet-evidence{padding-top:18px;border-top:1px solid var(--line)}
+.page-mods .moodlet-crop{display:block;position:relative;width:100%;aspect-ratio:350/210;overflow:hidden;border-radius:12px;background:#393038;margin-top:12px}
+.page-mods #mods .card .moodlet-crop>img.shot{position:absolute;display:block;width:182.857%;max-width:none;height:auto;left:-48.571%;top:-23.81%;margin:0;border-radius:0}
+.page-mods #gentle-hearts .moodlet-crop{aspect-ratio:350/190}
+.page-mods #mods #gentle-hearts .moodlet-crop>img.shot{left:-31.429%;top:-36.842%}
+.page-mods .moodlet-evidence .capture-link{display:block;text-decoration:none}
+@media(max-width:650px){.page-mods #mods .moodlet-project{padding:22px}.moodlet-introduction{grid-template-columns:1.1fr .9fr;gap:10px;margin-bottom:20px}.moodlet-character img{height:190px}.page-mods #mods .moodlet-project .mod-summary h3{font-size:1.8rem}.page-mods #mods .moodlet-project .mod-summary p{font-size:.9rem}.moodlet-project .pill{white-space:normal}}
+@media(max-width:360px){.page-mods #mods .moodlet-project{padding:18px}.moodlet-introduction{grid-template-columns:1fr}.moodlet-character img{height:150px}.moodlet-character>span{margin-top:0}.moodlet-character{margin-top:4px}}
