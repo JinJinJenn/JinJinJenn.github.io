@@ -38,4 +38,5 @@
   new MutationObserver(render).observe(document.documentElement, {attributes:true, attributeFilter:['data-paused']});
   reducedMotion.addEventListener('change', render);
   render();
+  entries.forEach(({button}) => { button.hidden = false; });
 })();

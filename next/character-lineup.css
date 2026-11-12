@@ -31,3 +31,6 @@
  .page-characters [data-household-view=lineup] .inline-turntable{font-size:.85rem;width:auto;max-width:100%;padding:8px 14px}
  .page-characters [data-household-view=lineup] .chars:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 }
+
+/* Static captures remain usable when playback cannot initialize. */
+.page-characters .inline-turntable[hidden]{display:none!important}
