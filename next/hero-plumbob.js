@@ -7,13 +7,13 @@
   if (!jewel || !control || !sharedMotion || jewel.dataset.plumbobReady !== 'true') return;
   const row = control.closest('.hero-motion-row');
   const hero = jewel.closest('.ensemble-hero');
-  const cast = hero.querySelector('.ensemble-cast');
+  const copy = hero.querySelector('.ensemble-copy');
   const slot = document.createComment('Desktop animation control position');
   row.before(slot);
   const stacked = matchMedia('(max-width:1000px)');
   function placeControl() {
     const focused = document.activeElement === control;
-    if (stacked.matches) hero.insertBefore(row, cast);
+    if (stacked.matches) hero.insertBefore(row, copy);
     else slot.after(row);
     if (focused) control.focus({preventScroll:true});
   }
