@@ -1,0 +1,6 @@
+/* Reuse the bounded original renderer; keep the jewel clear of the cast. */
+.ensemble-hero>.jenn-plumbob{--plumbob-size:180px;position:absolute;z-index:3;right:5%;top:4%}
+.hero-motion-row{margin-top:12px}.moonshot .hero-motion{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;max-width:100%;padding:8px 14px;border:1px solid var(--line);border-radius:24px;background:var(--surface);color:var(--ink);font-size:.8rem;line-height:1.4;text-align:center}.moonshot .hero-motion[hidden]{display:none}.moonshot .hero-motion:disabled{cursor:default}
+@media(min-width:2200px){.ensemble-hero>.jenn-plumbob{--plumbob-size:218px;right:6%;top:6%}}
+@media(max-width:1000px){.ensemble-hero>.jenn-plumbob{--plumbob-size:120px;right:2%;top:1%}}
+@media(max-width:650px){.ensemble-hero>.jenn-plumbob{--plumbob-size:80px;right:1%;top:0}.hero-motion-row{margin-top:8px}}
