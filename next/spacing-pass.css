@@ -20,3 +20,19 @@
 .page-mods .mod-jump-nav a{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border:1px solid var(--line);border-radius:24px;text-decoration:none;background:var(--surface);font-size:.9rem}
 .page-mods .mod-jump-nav a:hover{border-color:var(--accent)}
 .page-mods #mods .window-bar{background:none;border:0;padding:20px 26px 0;min-height:0;color:var(--muted);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+/* Lead with what the project does, then show its evidence. */
+.page-mods #moveanywhere .feature-introduction{grid-template-columns:1.2fr .8fr;gap:30px;margin-bottom:28px}
+.page-mods #moveanywhere .feature-summary h3{font-size:clamp(2.4rem,4vw,4rem);margin:16px 0 20px}
+.page-mods #moveanywhere .feature-summary p{max-width:58ch}
+.page-mods #moveanywhere .move-facts{margin:28px 0;padding:22px 26px;background:var(--paper);border-left:3px solid var(--accent)}
+.page-mods .move-facts h4{font:500 1.5rem Georgia,serif;margin:0 0 15px}
+.page-mods .move-facts ul{margin:0;padding-left:20px;line-height:1.8}
+.page-index .closing{gap:30px}
+@media(max-width:650px){.page-mods #moveanywhere .feature-introduction{grid-template-columns:1fr;gap:12px;margin-bottom:20px}.page-mods #moveanywhere .feature-introduction .promo-stage{height:150px}.page-mods #moveanywhere .feature-introduction .promo-stage img{max-height:150px}.page-mods #moveanywhere .feature-summary h3{font-size:2.5rem}.page-mods #moveanywhere .move-facts{padding:18px;margin:22px 0}.page-index .closing{grid-template-columns:.75fr 1.25fr;gap:15px}.page-index .closing>img{height:280px}.page-index .closing h2{font-size:2.4rem}.page-index .closing .kicker{font-size:.6rem;letter-spacing:.08em}.page-index .closing p:not(.kicker){font-size:.9rem}}
+/* A one-off envelope presenter belongs to the Love Notes introduction. */
+.page-mods #love-notes .letter-introduction{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:16px;padding:12px 0 22px}
+.page-mods #love-notes .letter-host{display:block;width:100%;height:260px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 8px #4c174415)}
+.page-mods #love-notes .mod-summary h3{font-size:2.1rem;line-height:1.1;margin-bottom:12px}
+.page-mods #love-notes .mod-summary p{font-size:.95rem;line-height:1.65;margin-bottom:0}
+.page-mods #love-notes .pill{font-size:.7rem;line-height:1.4;white-space:normal;margin-bottom:14px}
+@media(max-width:650px){.page-mods #love-notes .letter-introduction{grid-template-columns:.75fr 1.25fr;gap:12px}.page-mods #love-notes .letter-host{height:210px}.page-mods #love-notes .mod-summary h3{font-size:1.85rem}.page-mods #love-notes .mod-summary p{font-size:.9rem}}
