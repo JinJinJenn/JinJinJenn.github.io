@@ -18,3 +18,5 @@
 .moonshot .game-proof .text-link{white-space:normal;overflow-wrap:anywhere}
 .moonshot .studio-footer{flex-wrap:wrap}
 .moonshot .studio-footer .footer-top{flex-shrink:0;white-space:normal;max-width:100%}
+/* The desktop hero must grow with enlarged copy and its motion control. */
+@media(min-width:1001px){.page-index .ensemble-hero{height:auto;min-height:max(700px,calc(100svh - 110px));max-height:none}}
