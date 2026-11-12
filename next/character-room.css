@@ -1,0 +1,7 @@
+/* Purpose-built room behind the unchanged concept cast; never game evidence. */
+.cast-ensemble .cast-backdrop{display:none}
+.cast-room{position:absolute;inset:0 0 2.2rem;z-index:0;overflow:hidden;border-radius:36px 36px 12px 12px;mask-image:linear-gradient(to bottom,transparent,#000 9%,#000 86%,transparent)}
+.cast-ensemble .cast-room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:75% center;z-index:0}
+.cast-room:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper),transparent 8%,transparent 92%,var(--paper));pointer-events:none}
+[data-theme="dark"] .cast-room{opacity:.85}
+@media(max-width:650px){.cast-room{inset:0 0 2rem;border-radius:22px 22px 8px 8px}.cast-ensemble .cast-room img{object-position:100% center}}
