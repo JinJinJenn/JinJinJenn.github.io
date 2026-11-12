@@ -6,19 +6,19 @@ Serve the repository root with a static HTTP server and open `/next/index.html`.
 
 ## Before a release
 
-Run the dependency-free, read-only source audit from any directory with Python 3.9 or newer:
+Run the dependency-free, read-only source audit from the repository root with Python 3.9 or newer:
 
 ```sh
 python next/checks/release_audit.py
 python next/checks/test_release_audit.py
 ```
 
-Or pass `--root /path/to/checkout`. It exits nonzero for detected failures and checks:
+From another directory, use the absolute script path and pass `--root /path/to/checkout`. It exits nonzero for detected failures and checks:
 
-- Local HTML links, asset references, `srcset` targets and fragment destinations.
+- Presence of the eleven required preview pages, plus local HTML links, asset references, `srcset` targets and fragment destinations.
 - Duplicate IDs, image alt-attribute presence and preview `noindex` metadata.
-- Links to the six original journal stories and the seven documented mod statuses.
-- SHA-256 integrity of thirteen original game-capture files, recorded in `checks/original-captures.json`.
+- Actual journal anchors to the six original stories and exact status-pill text for all seven mod details.
+- Complete inventory and SHA-256 integrity of thirteen original game-capture files, recorded in `checks/original-captures.json`; an empty or partial manifest fails.
 
 The capture manifest is a preservation baseline, not a security signature. If an original capture intentionally changes, review its provenance and update the manifest explicitly. Do not regenerate it just to silence a failure. Status changes likewise need actual project evidence, not a test-driven copy change.
 
