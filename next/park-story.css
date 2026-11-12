@@ -1,0 +1,5 @@
+/* A character-led story vignette, separate from the untouched game comparison. */
+.park-move-art{margin:0;min-width:0;position:relative;isolation:isolate}
+.park-move-art:before{content:'';position:absolute;inset:5% 2% 12%;background:var(--lavender);border-radius:45% 45% 18% 18%;z-index:-1}
+.park-move-art img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+.park-move-art figcaption,.park-art-caption{text-align:center;font-size:.68rem;color:var(--muted);line-height:1.6;margin-top:12px;padding:0 12px}
