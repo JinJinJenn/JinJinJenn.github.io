@@ -1,0 +1,8 @@
+/* The same story-specific scene links the journal, homepage and article. */
+.journal-budget-art{position:relative;isolation:isolate;min-width:0;width:100%;margin:0;padding:35px 0 0}
+.journal-budget-art>img{display:block;width:100%;height:auto;position:relative;z-index:1}
+.budget-halo{position:absolute;inset:6% 2% 8%;border-radius:50% 50% 22% 22%;background:radial-gradient(ellipse,var(--lavender),var(--surface));z-index:0;transform:rotate(-4deg)}
+.journal-budget-art figcaption,.budget-art-caption{font-size:.68rem;line-height:1.6;text-align:center;color:var(--muted);margin-top:16px;padding:0 12px}
+.page-journal .journal-feature{grid-template-columns:1.25fr 1fr;gap:55px}
+@media(max-width:1000px){.page-journal .journal-feature{gap:28px}}
+@media(max-width:650px){.journal-budget-art{padding-top:8px}.journal-budget-art figcaption{margin-top:10px}.page-journal .journal-feature{gap:24px}}
