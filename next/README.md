@@ -30,7 +30,7 @@ Use PC1 browser QA for mobile, tablet and 4K, light/dark themes and enlarged tex
 
 Work from current main, checkpoint changes to GitHub, then review the exact diff before deployment. Old backup branches and recovery archives contain earlier versions of the preview: never merge them wholesale over later work. Supplied-art originals are separately checkpointed under `checkpoint/supplied-art-20261111`; generated presenter originals under `checkpoint/reference-presenters-20261111`.
 
-Town recovery is not part of the current preview. Its image-upload approval state and version-specific capture provenance must be resolved through the existing workflow before its candidate is resumed. Port only its own new files and surgically reconcile navigation against current pages. Do not restore archived copies of the eleven existing pages.
+The saved Town page candidate is not part of the current preview. Before integrating it, verify its version-specific capture provenance and use the established release workflow. Port only its own new files and surgically reconcile navigation against current pages. Do not restore archived copies of the eleven existing pages.
 
 Root promotion is a separate coordinated step. Preserve or explicitly map `/about.html`, `/devlog/`, all six historical article URLs and root project/section fragments, including `#gamedev` and `#web`. Keep the separate game and mod-garden destinations intact. Reconcile outdated root copy against confirmed current work. Only then review `noindex`, canonical URLs and the sitemap for the chosen public routes.
 
