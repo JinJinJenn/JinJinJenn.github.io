@@ -62,9 +62,9 @@
   function showArtwork(link) {
     const source = link.querySelector('img');
     title.textContent = link.dataset.captureTitle || 'Artwork';
-    caption.textContent = source.alt;
+    caption.textContent = link.dataset.captureAlt || source.alt;
     original.href = link.href;
-    image.alt = source.alt;
+    image.alt = link.dataset.captureAlt || source.alt;
     imageStatus.hidden = false;
     imageStatus.textContent = 'Loading artwork…';
     image.src = link.href;
