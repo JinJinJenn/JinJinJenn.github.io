@@ -1,0 +1,8 @@
+/* A separate room plate gives the unchanged household illustration a setting. */
+.household-scene .household-backdrop{display:none}
+.household-room{position:absolute;inset:0 -4% -1%;z-index:0;overflow:hidden;border-radius:32px 32px 0 0;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 85%,transparent);pointer-events:none}
+.household-room img{width:100%;height:100%;object-fit:cover;object-position:center bottom;opacity:.9}
+.household-room:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--surface),transparent 12%,transparent 88%,var(--surface))}
+html[data-theme=dark] .household-room img{opacity:.7}
+html[data-theme=dark] .household-room:after{background:linear-gradient(90deg,var(--surface),transparent 12%,transparent 88%,var(--surface)),linear-gradient(#301b3c33,#301b3c33)}
+@media(max-width:650px){.household-room{inset:0 0 -1%;border-radius:0;mask-image:linear-gradient(to bottom,transparent,#000 15%,#000 80%,transparent)}.household-room img{object-position:center bottom}.household-room:after{background:linear-gradient(90deg,var(--surface),transparent 10%,transparent 90%,var(--surface))}}
