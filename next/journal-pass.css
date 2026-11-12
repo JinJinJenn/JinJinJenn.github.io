@@ -12,3 +12,7 @@
 @media(min-width:2200px){.journal-feature-art{height:720px}.journal-feature{gap:100px}}
 @media(max-width:1000px){.journal-feature{gap:30px}.journal-feature-art{height:470px}.journal-masthead{gap:25px}.journal-masthead>p{max-width:30ch}.journal-feature-copy h2{font-size:3rem}}
 @media(max-width:650px){.journal-masthead{display:block;padding:35px 0 25px}.journal-masthead h1{font-size:3.4rem;max-width:10ch;line-height:1.05}.journal-masthead>p{max-width:42ch;margin-top:20px}.journal-feature{display:flex;flex-direction:column;gap:10px;padding-block:25px 40px}.journal-feature-art{height:350px;width:100%}.journal-feature-copy{padding:0}.journal-feature-copy h2{font-size:3rem;max-width:14ch;margin:18px 0}.journal-feature-copy>p:not(.kicker){font-size:1rem}.journal-archive{padding-top:30px}.journal-archive-heading{display:block;margin-bottom:25px}.journal-archive-heading h2{max-width:18ch}.journal-archive-heading p{margin-top:15px}.journal-host{right:0}.journal-computer{left:0;width:72%}}
+
+/* A secondary entry into the existing story sequence, not another story card. */
+.journal-feature-copy .journal-start{display:flex;flex-wrap:wrap;align-items:center;gap:0 .4em;min-height:44px;width:fit-content;max-width:100%;margin-top:18px;padding-block:8px;font-size:.9rem;line-height:1.6;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.journal-start>span:first-child{color:var(--muted);text-decoration:none}
