@@ -1,0 +1,13 @@
+/* Native project-to-project routes keep browsing possible at the end of each detail. */
+.page-mods .project-trail{grid-column:1/-1;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px;width:100%;min-width:0}
+.project-trail-back{display:inline-flex;align-items:center;min-height:44px;font-size:.8rem;line-height:1.5;text-underline-offset:4px;align-self:start}
+.project-trail-next{display:grid;grid-template-columns:75px minmax(0,1fr) 24px;gap:14px;align-items:center;min-height:98px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:8px 16px;text-decoration:none}
+.project-trail-next img{width:75px;height:90px;object-fit:contain;object-position:center bottom;display:block}
+.project-trail-next small{display:block;font-size:.6rem;line-height:1.5;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:6px}
+.project-trail-next strong{display:block;font:400 1.5rem/1.2 Georgia,serif;color:var(--ink);overflow-wrap:break-word}
+.project-trail-next b{font-size:1.2rem;font-weight:400}
+.project-trail-next:hover{border-color:var(--ink)}
+.page-mods #moveanywhere>.project-trail{margin:0;padding:22px 30px 30px;background:var(--surface)}
+.page-mods #mod-details>article:focus,.page-mods #mod-details .grid>article:focus,.page-mods #mod-gallery:focus{outline:none}
+@media(min-width:1001px){.page-mods #moveanywhere>.project-trail,.page-mods .gift-feature>.project-trail{flex-direction:row;align-items:center;justify-content:space-between;gap:25px}.page-mods #moveanywhere>.project-trail .project-trail-next,.page-mods .gift-feature>.project-trail .project-trail-next{width:52%;max-width:500px}}
+@media(max-width:450px){.project-trail-next{grid-template-columns:60px minmax(0,1fr) 18px;gap:10px;padding:8px 12px}.project-trail-next img{width:60px;height:80px}.project-trail-next strong{font-size:1.3rem}.page-mods #moveanywhere>.project-trail{padding:18px}.project-trail-back{font-size:.75rem}}
