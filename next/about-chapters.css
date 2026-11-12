@@ -1,0 +1,3 @@
+/* An About-page index, not a second copy of the global project menu. */
+.maker-chapters a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;min-width:0;overflow-wrap:anywhere}.maker-chapters a b{position:static;flex:none}.maker-intro[id],.rig-workbench[id],.studio-notes[id]{scroll-margin-top:24px}
+@media(max-width:650px){.maker-chapters{display:flex;flex-wrap:wrap;gap:8px;padding-block:16px}.maker-chapters a,.maker-chapters a:first-child{flex:1 1 130px;border:1px solid var(--line);border-radius:16px;padding:12px 14px;font:500 .85rem/1.4 system-ui,sans-serif}.maker-chapters a b{font-size:1rem}}
