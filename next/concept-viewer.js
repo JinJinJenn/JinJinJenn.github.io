@@ -94,9 +94,9 @@
   function showArtwork(link) {
     const source = link.querySelector('img');
     title.textContent = link.dataset.captureTitle || 'Artwork';
-    caption.textContent = link.dataset.captureAlt || source.alt;
+    caption.textContent = link.dataset.captureAlt || source?.alt || 'Concept artwork';
     original.href = link.href;
-    image.alt = link.dataset.captureAlt || source.alt;
+    image.alt = link.dataset.captureAlt || source?.alt || 'Concept artwork';
     currentSource = link.href;
     retry.hidden = true;
     loadImage();
@@ -135,7 +135,7 @@
     link.addEventListener('click', event => {
       if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       const source = link.querySelector('img');
-      if (!source || dialog.open) return;
+      if ((!source && !link.dataset.captureAlt) || dialog.open) return;
       event.preventDefault();
       trigger = link;
       group = link.dataset.captureGroup ? links.filter(item => item.dataset.captureGroup === link.dataset.captureGroup) : [link];
