@@ -2,3 +2,13 @@
 /* Reset editorial character-card placements before the compact homepage grid. */
 .moonshot .home-household .char{transform:none}.moonshot .home-household .char .stage,.moonshot .home-household .char .outfit-copy{grid-column:auto;grid-row:auto;min-width:0;transform:none}
 @media(max-width:600px){.moonshot .home-household .char .stage{grid-column:1;grid-row:1}.moonshot .home-household .char .outfit-copy{grid-column:2;grid-row:1}}
+
+/* Give the two retro studies a shared stage instead of a thumbnail. */
+.home-concept-invitation{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);padding:clamp(24px,4vw,48px);border:1px solid var(--line);border-radius:28px;background:var(--surface);overflow:hidden}
+.home-retro-cast{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:end;min-width:0;isolation:isolate;position:relative;padding:16px 0 0}
+.home-retro-cast:before{content:"";position:absolute;inset:14% 0 3%;border-radius:50% 50% 18% 18%;background:radial-gradient(ellipse at 50% 60%,var(--lavender),transparent 72%);z-index:-1}
+.home-retro-cast img{display:block;width:100%;height:clamp(250px,30vw,430px);object-fit:contain;object-position:center bottom;filter:drop-shadow(0 16px 14px #30214318)}
+.home-concept-invitation>div:last-child{min-width:0}
+.home-concept-invitation h3{font-size:clamp(1.8rem,3vw,3.1rem);line-height:1.12;text-wrap:balance}
+.home-concept-invitation .quiet-link{min-height:44px;display:inline-flex;align-items:center;margin-top:12px}
+@media(max-width:760px){.home-concept-invitation{grid-template-columns:minmax(0,1fr);gap:22px}.home-retro-cast{max-width:440px;width:100%;margin-inline:auto}.home-retro-cast img{height:clamp(210px,55vw,340px)}.home-concept-invitation .kicker{font-size:.65rem;letter-spacing:.08em}.home-concept-invitation h3{font-size:2rem}}
