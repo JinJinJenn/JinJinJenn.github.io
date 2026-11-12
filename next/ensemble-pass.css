@@ -11,3 +11,5 @@
 @media(min-width:1001px) and (max-width:2199px){.ensemble-copy{width:35%}.ensemble-cast{width:78%}}
 @media(min-width:651px) and (max-width:1000px){.ensemble-cast img{width:125%;max-width:none;transform:translateX(-20%);object-position:left bottom}}
 @media(max-width:650px){.ensemble-cast img{width:115%;max-width:none;transform:translateX(-18%);object-position:left bottom}}
+/* The curved page edge sits behind the cast, never over their feet. */
+.ensemble-edge{z-index:1}
