@@ -1,0 +1,9 @@
+/* Detail panels retain the original unmodified concept sheet. */
+.garment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:35px}
+.garment-card{margin:0;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.garment-art{display:block;position:relative;overflow:hidden;aspect-ratio:var(--crop-w)/var(--crop-h);background:#fae8d5}
+.garment-art img{position:absolute;display:block;width:calc(1672 / var(--crop-w) * 100%);height:auto;max-width:none;left:calc(-1 * var(--crop-x) / var(--crop-w) * 100%);top:calc(-1 * var(--crop-y) / var(--crop-h) * 100%)}
+.garment-card:nth-child(1){--crop-x:120;--crop-y:0;--crop-w:600;--crop-h:405}.garment-card:nth-child(2){--crop-x:770;--crop-y:0;--crop-w:820;--crop-h:370}.garment-card:nth-child(3){--crop-x:120;--crop-y:405;--crop-w:600;--crop-h:536}.garment-card:nth-child(4){--crop-x:770;--crop-y:375;--crop-w:820;--crop-h:566}.garment-card figcaption{padding:24px 28px;color:var(--ink)}.garment-card h3{font:1.8rem/1.2 Georgia,serif;margin:10px 0 12px;overflow-wrap:anywhere}.garment-card p{font-size:.95rem;line-height:1.7;color:var(--muted);margin:0}
+.garment-art:focus-visible{outline:4px solid var(--ink);outline-offset:-5px}
+@media(max-width:650px){.garment-grid{grid-template-columns:1fr;gap:24px}.garment-card figcaption{padding:20px}.garment-card h3{font-size:1.65rem}}
+
