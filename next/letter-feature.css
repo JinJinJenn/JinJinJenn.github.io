@@ -1,0 +1,16 @@
+/* A full-width letter spread closes the orphaned half-row before Gifts. */
+.page-mods .mod-world .grid>.letter-feature{grid-column:1/-1;display:grid;grid-template-columns:.75fr 1.25fr;gap:22px 45px;align-items:center;padding:40px;background:linear-gradient(130deg,var(--paper),var(--surface));isolation:isolate}
+.page-mods .mod-world .grid>.letter-feature[hidden]{display:none}
+.letter-feature-art{min-width:0;height:430px;position:relative;display:flex;align-items:center;justify-content:center;isolation:isolate}
+.letter-feature-art>img{position:relative;display:block;width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.letter-envelope{position:absolute;inset:30% 0 8%;background:var(--lavender);border:1px solid var(--line);border-radius:14px;transform:rotate(-7deg);z-index:-1;overflow:hidden}
+.letter-envelope:after{content:'';position:absolute;inset:-65% 8% 45%;border:1px solid var(--line);background:var(--surface);transform:rotate(45deg);border-radius:15px}
+.letter-art-caption{position:absolute;left:50%;bottom:0;transform:translateX(-50%);white-space:nowrap;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:6px 10px;font-size:.6rem;color:var(--muted)}
+.letter-feature-copy{min-width:0;padding:16px 0}
+.page-mods #love-notes.letter-feature .mod-summary h3{font-size:clamp(3rem,4vw,4.5rem);line-height:1;margin:0 0 20px}
+.page-mods #love-notes.letter-feature .mod-summary p{font-size:1.08rem;line-height:1.75;max-width:42ch;margin:5px 0 24px}
+.letter-proof{border-top:1px solid var(--line);padding-top:20px}
+.letter-feature>.project-trail{margin-top:10px}
+@media(min-width:1001px){.letter-feature>.project-trail{flex-direction:row;justify-content:space-between;align-items:center;gap:25px}.letter-feature>.project-trail .project-trail-next{width:52%;max-width:500px}}
+@media(max-width:800px){.page-mods .mod-world .grid>.letter-feature{gap:22px;padding:28px;grid-template-columns:.7fr 1.3fr}.letter-feature-art{height:350px}.page-mods #love-notes.letter-feature .mod-summary h3{font-size:2.8rem}.page-mods #love-notes.letter-feature .mod-summary p{font-size:.95rem}}
+@media(max-width:600px){.page-mods .mod-world .grid>.letter-feature{grid-template-columns:1fr;padding:22px;gap:20px}.letter-feature-art{height:280px;max-width:230px;width:100%;margin:auto}.letter-feature-copy{padding:0}.page-mods #love-notes.letter-feature .mod-summary h3{font-size:2.8rem}.letter-feature>.project-trail{margin-top:0}}
