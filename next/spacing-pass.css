@@ -1,0 +1,22 @@
+/* Keep the cast intact on ultrawide displays, not cropped into a torso strip. */
+.lookbook-panel{background:var(--lavender)}
+.lookbook-panel picture{max-width:2200px;margin-inline:auto}
+.lookbook-panel picture img{height:auto;max-height:none;aspect-ratio:auto;object-fit:contain}
+.lookbook-copy{left:max(5vw,calc((100vw - 2100px)/2));bottom:5%;max-width:620px}
+@media(min-width:2200px){.lookbook-copy{padding:26px 34px}.lookbook-copy h2{font-size:4rem}}
+@media(max-width:650px){.lookbook-panel picture{max-width:none}.lookbook-panel picture img{aspect-ratio:3/4;object-fit:cover;object-position:center top}.lookbook-copy{left:auto;bottom:auto}}
+/* Padding percentages used the viewport rather than this capped editorial column. */
+.character-heading-editorial{padding-right:0}
+.character-heading-editorial>h1,.character-heading-editorial>p{width:52%;max-width:none}
+.character-heading-editorial>p:not(.kicker){max-width:45ch}
+.character-heading-editorial>h1{max-width:14ch}
+@media(max-width:650px){.character-heading-editorial>h1,.character-heading-editorial>p{width:100%}.character-heading-editorial>h1{max-width:none}}
+/* Details is a reading view, not a second trip through the catalogue spotlight. */
+.page-mods #mods[data-mod-view=details] .project-spotlight{display:none}
+.page-mods .mod-jump-nav{padding:22px 0;margin:0 0 30px;border-bottom:1px solid var(--line)}
+.page-mods .mod-jump-nav>span{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.page-mods .mod-jump-nav ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.page-mods .mod-jump-nav li{margin:0}
+.page-mods .mod-jump-nav a{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border:1px solid var(--line);border-radius:24px;text-decoration:none;background:var(--surface);font-size:.9rem}
+.page-mods .mod-jump-nav a:hover{border-color:var(--accent)}
+.page-mods #mods .window-bar{background:none;border:0;padding:20px 26px 0;min-height:0;color:var(--muted);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
