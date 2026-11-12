@@ -12,3 +12,9 @@
 .page-index .evidence-facts>li>div{min-width:0;overflow-wrap:anywhere}
 .page-index .evidence-facts>li>span{flex-shrink:0}
 @media(max-width:650px){.page-index .evidence-facts{grid-template-columns:minmax(0,1fr)}}
+.moonshot .home-household .character-file-links{min-width:0;width:100%}
+.moonshot .home-household .character-open{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.moonshot .game-proof>div{min-width:0;overflow-wrap:anywhere}
+.moonshot .game-proof .text-link{white-space:normal;overflow-wrap:anywhere}
+.moonshot .studio-footer{flex-wrap:wrap}
+.moonshot .studio-footer .footer-top{flex-shrink:0;white-space:normal;max-width:100%}
