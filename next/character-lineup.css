@@ -34,3 +34,5 @@
 
 /* Static captures remain usable when playback cannot initialize. */
 .page-characters .inline-turntable[hidden]{display:none!important}
+.turntable-status{display:block;font-size:.85rem;line-height:1.6;color:var(--muted);margin-top:14px;max-width:100%;overflow-wrap:anywhere}
+.turntable-status:empty{display:none}
